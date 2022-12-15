@@ -1,0 +1,206 @@
+﻿# Dutch East Indies
+
+# base flags
+
+DEI_regular = {
+	
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+	
+}
+
+# historically-inspired flags
+
+DEI_majapahit = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = "white"
+		instance = { scale = { 1.00 0.111 } position = { 0.50 0.166 } }
+		instance = { scale = { 1.00 0.111 } position = { 0.50 0.388 } }
+		instance = { scale = { 1.00 0.111 } position = { 0.50 0.600 } }
+		instance = { scale = { 1.00 0.111 } position = { 0.50 0.822 } }
+	}
+	
+}
+
+# specific flags
+
+DEI_subject = {
+	
+	parent = "DEI_regular"
+	
+}
+
+DEI_overlord_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+DEI_overlord_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+DEI_overlord_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+DEI_voc = { # VOC east-india company flag
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DEI_letters_VOC"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+# specific flags
+
+# base + coat-of-arms near center
+
+DEI_coa_regular = {
+	
+	parent = "DEI_regular"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.50 0.50 } position = { 0.50 0.50 } }
+	}
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+DEI_full_coa_regular = {
+	
+	parent = "DEI_regular"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+	}
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
+	}
+	
+}
+
+# subs
+
+sub_DEI_coa = {
+	
+	colored_emblem = {
+		texture = "coa_ribbon.png"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.70 0.50 } position = { 0.50 0.78 } }
+	}
+	colored_emblem = {
+		texture = "lion_supporter.png"
+		color1 = wappenwiki_or									# leeuw
+		color2 = wappenwiki_keel								# getongd en geklauwd
+		color3 = wappenwiki_or									# gekroond
+		instance = { scale = { 0.70 0.70 } position = { 0.32 0.52 } }
+		instance = { scale = { -0.70 0.70 } position = { 0.68 0.52 } }
+	}
+	
+	# regular CoA of Batavia is crowned with a wall, but here we'll use a regular dutch crown
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_sabel
+		color2 = wappenwiki_sabel
+		color3 = wappenwiki_sabel
+		instance = { scale = { 0.42 0.42 } position = { 0.50 0.28 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { scale = { 0.40 0.40 } position = { 0.50 0.28 } }
+	}
+	
+	# coat of arms of Batavia, as proxy for Indies (https://resolver.kb.nl/resolve?urn=ddd:011221495:mpeg21:a0174)
+	# https://nl.wikipedia.org/wiki/Wapen_van_Batavia
+	colored_emblem = { # shield outline
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = { # orange shield
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.44 0.44 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = { # aan weerszijden wapperende linten van zilver
+		texture = "coa_ribbon.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.16 0.32 } position = { 0.50 0.61 } }
+	}
+	colored_emblem = { # omkranst door twee lauwertakken van natuurlijke kleur, gekruist en tezamen gebonden
+		texture = "ce_wreath.dds"
+		color1 = wappenwiki_sinopel
+		instance = { scale = { 0.32 0.16 } position = { 0.50 0.48 } }
+	}
+	colored_emblem = { # sword outline
+		texture = "ce_sword_simple.png"
+		color1 = hsv360 { 40 67 100 }
+		color2 = hsv360 { 0 0 70 }
+		instance = { scale = { 0.50 0.40 } position = { 0.50 0.53 } }
+	}
+	
+}
+
+sub_DEI_letters_VOC = {
+	
+	colored_emblem = {
+		texture = "ce_letter_v_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_o_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.44 0.43 } position = { 0.43 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_c_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.40 0.44 } position = { 0.59 0.46 } }
+	}
+	
+}

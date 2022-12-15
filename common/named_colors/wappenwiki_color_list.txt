@@ -1,0 +1,24 @@
+colors = {
+	
+	# metals
+	wappenwiki_argent		= hsv360 { 0 0 96 }			# argent/silver
+	wappenwiki_or			= hsv360 { 40 67 95 }		# or/goud
+	
+	# regular tinctures
+	wappenwiki_azuur		= hsv360 { 200 91 58 }		# azuur/blauw
+	wappenwiki_keel			= hsv360 { 0 76 74 }		# keel/rood
+	wappenwiki_sinopel		= hsv360 { 120 58 58 }		# sinopel/groen
+	wappenwiki_sabel		= hsv360 { 0 0 20 }			# sabel/zwart
+	wappenwiki_purper		= hsv360 { 327 60 57 }		# purper/paars
+	
+	# irregular tinctures
+	wappenwiki_bisque		= hsv360 { 40 33 96 }		# bisque
+	wappenwiki_bleuceleste	= hsv360 { 192 71 72 }		# bleuceleste
+	wappenwiki_brunatre		= hsv360 { 29 42 45 }		# brunatre
+	wappenwiki_carnation	= hsv360 { 24 31 92 }		# carnation
+	wappenwiki_cendree		= hsv360 { 0 0 80 }			# cendrée
+	wappenwiki_orange		= hsv360 { 28 76 90 }		# orange
+	wappenwiki_rose			= hsv360 { 0 33 85 }		# rose
+	wappenwiki_senois		= hsv360 { 8 63 59 }		# senois
+	
+}

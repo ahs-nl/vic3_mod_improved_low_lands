@@ -1,0 +1,102 @@
+# name: name of entity, as referenced in /gfx/portraits/accessories/item.txt
+# pdxmesh: mesh file, including submeshes for attributes such as fat/old/infant
+#
+# pattern_mask: any 4-channel texture, each channel will be used to mask a pattern from the variation object
+# variation: a "variation" object in gfx/portraits/accessory_variations/
+
+# SASHES
+
+entity = {
+	name = "male_dutch_sash_orange_entity"
+	pdxmesh = "male_sash_european_01_mesh"
+	attribute = { name = "body_bs_fat"								blend_shape = "male_sash_european_01_bs_fat" }
+	attribute = { name = "body_bs_gaunt"							blend_shape = "male_sash_european_01_bs_gaunt" }
+	attribute = { name = "body_bs_infant"							blend_shape = "male_sash_european_01_bs_infant" }
+	attribute = { name = "body_bs_old"								blend_shape = "male_sash_european_01_bs_old" }
+	attribute = { name = "body_bs_thick"							blend_shape = "male_sash_european_01_bs_thick" }
+	attribute = { name = "body_bs_thin"								blend_shape = "male_sash_european_01_bs_thin" }
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/lowlands/male_dutch_sash_basic_masks.dds"
+				variation = "dutch_sash_orange"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "male_dutch_sash_orange_accented_entity"
+	pdxmesh = "male_sash_european_01_mesh"
+	attribute = { name = "body_bs_fat"								blend_shape = "male_sash_european_01_bs_fat" }
+	attribute = { name = "body_bs_gaunt"							blend_shape = "male_sash_european_01_bs_gaunt" }
+	attribute = { name = "body_bs_infant"							blend_shape = "male_sash_european_01_bs_infant" }
+	attribute = { name = "body_bs_old"								blend_shape = "male_sash_european_01_bs_old" }
+	attribute = { name = "body_bs_thick"							blend_shape = "male_sash_european_01_bs_thick" }
+	attribute = { name = "body_bs_thin"								blend_shape = "male_sash_european_01_bs_thin" }
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/lowlands/male_dutch_sash_accented_masks.dds"
+				variation = "dutch_sash_orange_accented"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "male_dutch_sash_red_white_blue_entity"
+	pdxmesh = "male_sash_european_01_mesh"
+	attribute = { name = "body_bs_fat"								blend_shape = "male_sash_european_01_bs_fat" }
+	attribute = { name = "body_bs_gaunt"							blend_shape = "male_sash_european_01_bs_gaunt" }
+	attribute = { name = "body_bs_infant"							blend_shape = "male_sash_european_01_bs_infant" }
+	attribute = { name = "body_bs_old"								blend_shape = "male_sash_european_01_bs_old" }
+	attribute = { name = "body_bs_thick"							blend_shape = "male_sash_european_01_bs_thick" }
+	attribute = { name = "body_bs_thin"								blend_shape = "male_sash_european_01_bs_thin" }
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/lowlands/male_dutch_sash_tricolor_masks.dds"
+				variation = "dutch_sash_red_white_blue"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "male_dutch_sash_orange_white_blue_entity"
+	pdxmesh = "male_sash_european_01_mesh"
+	attribute = { name = "body_bs_fat"								blend_shape = "male_sash_european_01_bs_fat" }
+	attribute = { name = "body_bs_gaunt"							blend_shape = "male_sash_european_01_bs_gaunt" }
+	attribute = { name = "body_bs_infant"							blend_shape = "male_sash_european_01_bs_infant" }
+	attribute = { name = "body_bs_old"								blend_shape = "male_sash_european_01_bs_old" }
+	attribute = { name = "body_bs_thick"							blend_shape = "male_sash_european_01_bs_thick" }
+	attribute = { name = "body_bs_thin"								blend_shape = "male_sash_european_01_bs_thin" }
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/lowlands/male_dutch_sash_tricolor_masks.dds"
+				variation = "dutch_sash_orange_white_blue"
+			}
+		}
+	}
+}
+
+entity = {
+	name = "male_dutch_sash_red_white_lightblue_entity"
+	pdxmesh = "male_sash_european_01_mesh"
+	attribute = { name = "body_bs_fat"								blend_shape = "male_sash_european_01_bs_fat" }
+	attribute = { name = "body_bs_gaunt"							blend_shape = "male_sash_european_01_bs_gaunt" }
+	attribute = { name = "body_bs_infant"							blend_shape = "male_sash_european_01_bs_infant" }
+	attribute = { name = "body_bs_old"								blend_shape = "male_sash_european_01_bs_old" }
+	attribute = { name = "body_bs_thick"							blend_shape = "male_sash_european_01_bs_thick" }
+	attribute = { name = "body_bs_thin"								blend_shape = "male_sash_european_01_bs_thin" }
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/lowlands/male_dutch_sash_tricolor_masks.dds"
+				variation = "dutch_sash_red_white_lightblue"
+			}
+		}
+	}
+}

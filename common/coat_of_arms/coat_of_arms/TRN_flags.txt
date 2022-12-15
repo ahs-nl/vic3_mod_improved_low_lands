@@ -1,0 +1,201 @@
+# Transvaal
+
+# base flags
+
+TRN_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_azuur
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_sinopel
+		instance = { scale = { 0.25 1.0 } position = { 0.125 0.5 } }
+	}
+	
+}
+
+TRN_burgersvlag = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_crossed.png"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_argent
+	}	
+	
+}
+
+# subject
+
+TRN_subject_GBR = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "blue_light"
+		color2 = "blue_light"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }
+	}
+	
+}
+
+TRN_subject = {
+	
+	parent = "TRN_regular"
+	sub = {
+		parent = "sub_black_hole" 
+		instance = { scale = { 0.17 0.17 } offset = { 0.42 0.415 } }
+		instance = { scale = { 0.1333 0.275 } offset = { 0.58 0.3625 } }
+		instance = { scale = { 0.17 0.17 } offset = { 0.71 0.415 } }
+	}
+	sub = {
+		parent = "SAF_voortrekkers"
+		instance = { scale = { 0.1133 0.255 } offset = { 0.59 0.3725 } }
+	}
+	sub = {
+		parent = "NET_regular"
+		instance = { scale = { 0.15 0.15 } offset = { 0.72 0.425 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+TRN_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sinopel
+	
+	# shield
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.50 1.00 } position = { 0.25 0.00 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.50 1.00 } position = { 0.75 0.00 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_sinopel
+		instance = { scale = { 1.00 0.05 } position = { 0.50 0.475 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 1.00 0.01 } position = { 0.50 0.50 } }
+		instance = { scale = { 0.01 0.50 } position = { 0.50 0.25 } }
+		instance = { scale = { 1.00 0.01 } position = { 0.50 0.01 } }
+		instance = { scale = { 1.00 0.01 } position = { 0.50 0.99 } }
+		instance = { scale = { 0.01 1.00 } position = { 0.01 0.50 } }
+		instance = { scale = { 0.01 1.00 } position = { 0.99 0.50 } }
+	}
+	
+	# quarters
+	colored_emblem = {
+		texture = "boer_lion.png"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.55 0.55 } position = { 0.25 0.30 } }
+	}
+	colored_emblem = {
+		texture = "boer_commando.png"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.60 0.60 } position = { 0.75 0.27 } }
+	}
+	colored_emblem = {
+		texture = "boer_wagon.png"
+		color1 = wappenwiki_orange
+		color2 = wappenwiki_brunatre
+		instance = { scale = { 0.60 0.45 } position = { 0.45 0.81 } }
+	}
+	
+	colored_emblem = { # shield
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.42 0.42 } position = { 0.50 0.47 } }
+	}
+	colored_emblem = { # shield
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.40 0.40 } position = { 0.50 0.47 } }
+	}
+	colored_emblem = { # anchor in background
+		texture = "anchor.png"
+		color1 = "grey"
+		color2 = wappenwiki_orange
+		instance = { scale = { 0.30 0.30 } position = { 0.50 0.47 } }
+	}
+	
+}
+
+TRN_anarchy = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_wagon.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.50 0.50 } position = { 0.625 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		instance = { scale = { 0.25 1.00 } position = { 0.125 0.50 } }
+	}
+	
+}
+
+TRN_communism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_lowersixths_horizontal.png"
+		color1 = "white"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_hammer_sickle_star_cogwheel.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.50 0.50 } position = { 0.625 0.32 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		instance = { scale = { 0.25 1.00 } position = { 0.125 0.50 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+# coat-of-arms turned full flags
+

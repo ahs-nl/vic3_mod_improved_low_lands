@@ -1,0 +1,12 @@
+XXX = {
+	use_culture_states = yes
+	required_num_states = 1
+	provinces = { x000000 }
+	states = { STATE_XXX STATE_YYY }
+	ai_will_do = { always = no }
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_releasable_nations }
+		custom_tooltip = { text = csa_releasable_tt has_global_variable = american_civil_war }
+	}
+}

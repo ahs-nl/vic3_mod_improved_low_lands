@@ -1,0 +1,240 @@
+﻿# Low Lands
+
+NET = { # Netherlands
+	#color = hsv360{ 20 80 80 }
+	color = { 204 95 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dutch frisian }
+	religion = protestant
+	capital = STATE_HOLLAND
+}
+
+FRI = { # Frisia
+	color = { 29 109 247 }
+	country_type = recognized
+	tier = principality
+	cultures = { frisian }
+	religion = protestant
+	capital = STATE_FRIESLAND
+	is_named_from_capital = yes
+}
+
+HLN = { # Holland
+	color = { 255 25 10 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_HOLLAND
+	is_named_from_capital = yes
+}
+
+BRB = { # Brabant
+	color = { 168 123 33 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch flemish }
+	religion = catholic
+	capital = STATE_FLANDERS
+	is_named_from_capital = yes
+}
+
+LIM = { # Limburg
+	color = { 130 125 175 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch flemish }
+	religion = catholic
+	capital = STATE_GELRE
+	is_named_from_capital = yes
+}
+
+BEL = { # Belgium
+	color = { 235 200 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { flemish wallonian }
+	religion = catholic
+	capital = STATE_FLANDERS
+}
+
+FLA = { # Flanders
+	color = { 247 181 49 }
+	country_type = recognized
+	tier = principality
+	cultures = { flemish }
+	religion = catholic
+	capital = STATE_FLANDERS
+	is_named_from_capital = yes
+}
+
+WLL = { # Wallonia
+	color = { 131 141 142 }
+	country_type = recognized
+	tier = principality
+	cultures = { wallonian }
+	religion = catholic
+	capital = STATE_WALLONIA
+	is_named_from_capital = yes
+}
+
+LUX = { # Luxembourg
+	color = { 50 160 225 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { wallonian north_german }
+	religion = catholic
+	capital = STATE_WALLONIA
+}
+
+# Americas
+
+# WIN = { # Dutch West Indies
+# }
+
+SUR = { # Suriname
+	color = { 240 170 75 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch } #afro_caribbean amazonian }
+	religion = protestant
+	capital = STATE_GUAYANA
+}
+
+# Western Africa
+
+GLC = { # Dutch Gold Coast / Ghana
+	color = { 255 207 74 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_GHANA
+}
+
+IVC = { # Dutch Ivory Coast / Windward Coast
+	color = { 237 207 103 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_IVORY_COAST
+}
+
+# Southern Africa
+
+NMB = { # Dutch Namibia
+	color = { 237 207 123 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch boer }
+	religion = protestant
+	capital = STATE_NAMAQUALAND
+}
+
+SAF = { # South Africa
+	color = { 180 158 127 }
+	country_type = colonial
+	tier = kingdom
+	cultures = { british boer }
+	religion = protestant
+	capital = STATE_CAPE_COLONY
+}
+
+CAP = { # Cape Province
+	color = { 220 188 67 }
+	country_type = colonial
+	tier = principality
+	cultures = { british boer }
+	religion = protestant
+	capital = STATE_CAPE_COLONY
+}
+
+NAL = { # Natal
+	color = { 120 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_ZULULAND
+}
+
+ORA = { # Orange Free State
+	color = { 224 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_VRYSTAAT
+	is_named_from_capital = yes
+}
+
+TRN = { # Transvaal
+	color = { 170 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+WBL = { # Griqualand
+	color = { 176 206 177 }
+	country_type = decentralized
+	tier = principality
+	cultures = { khoisan tswana }
+	capital = STATE_NORTHERN_CAPE
+	#is_named_from_capital = yes
+}
+
+STL = { # Stellaland
+	color = { 156 178 46 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_NORTHERN_CAPE
+	is_named_from_capital = yes
+}
+
+LYD = { # Lijdensrust
+	color = { 120 99 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_NAMAQUALAND
+	is_named_from_capital = yes
+}
+
+# Belgian Congo -- special case: congo free state dynamic state
+
+# Indies
+
+DEI = { # Dutch East Indies
+	color = { 255 173 193 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_WEST_JAVA
+}
+
+NHL = { # New Holland (Dutch Australia)
+	color = { 255 80 0 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+# Rest of Asia
+
+# CEY = { # Dutch Ceylon
+# }
+
+# FRS = { # Dutch Formosa
+# }

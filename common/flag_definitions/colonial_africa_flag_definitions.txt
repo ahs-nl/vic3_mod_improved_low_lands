@@ -1,0 +1,518 @@
+﻿# Namibia
+#NMB = {
+#}
+
+# South Africa
+SAF = {
+	
+	# base
+	
+	flag_definition = {
+		coa = SAF_regular
+		subject_canton = SAF_regular
+		allow_overlord_canton = yes
+ 		#overlord_canton_scale = { 0.75 0.75 }
+ 		#overlord_canton_offset = { 0.00 0.00 }
+		coa_with_overlord_canton = SAF_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = SAF_overlord_NET
+		coa_with_overlord_canton = SAF_overlord_NET
+		allow_overlord_canton = no
+		priority = 55
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SAF_ensign
+		coa_with_overlord_canton = SAF_ensign
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+	
+	# absolute_monarchy
+	
+	flag_definition = {
+		coa = SAF_coa
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = SAF_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = SAF_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+	# fascism
+	
+	flag_definition = {
+		coa = SAF_fascist
+		subject_canton = SAF_fascist
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_fascism = yes
+		}
+	}
+	
+	# multiculturalism
+	
+	flag_definition = {
+		coa = SAF_modern
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_egalitarianism = yes
+		}
+	}
+	
+}
+
+# Cape Province
+CAP = {
+	
+	# base
+	
+	flag_definition = {
+		coa = CAP_regular
+		subject_canton = CAP_full_coa_regular
+		allow_overlord_canton = yes
+ 		#overlord_canton_scale = { 0.75 0.75 }
+ 		#overlord_canton_offset = { 0.00 0.00 }
+		coa_with_overlord_canton = CAP_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = CAP_overlord_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = CAP_overlord_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 55
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				coa_overlord_has_absolute_monarchy = yes
+				coa_overlord_has_fascism = yes
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = CAP_overlord_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 55
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				coa_overlord_has_radical_republic = yes
+				coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	# absolute monarchy
+	
+	flag_definition = {
+		coa = CAP_full_coa_regular
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = CAP_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = CAP_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}
+
+# Natal
+NAL = {
+	
+	# base
+	
+	flag_definition = {
+		coa = NAL_regular
+		subject_canton = NAL_regular
+		allow_overlord_canton = yes
+ 		overlord_canton_scale = { 0.15 0.15 }
+ 		overlord_canton_offset = { 0.43 0.425 }
+		coa_with_overlord_canton = NAL_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = NAL_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	# absolute monarchy
+	
+	flag_definition = {
+		coa = NAL_coa
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = NAL_anarchy
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = NAL_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}
+
+# Oranje Vrystaat
+ORA = {
+	
+	# base
+	
+	flag_definition = {
+		coa = ORA_regular
+		subject_canton = ORA_regular
+		allow_overlord_canton = yes
+ 		overlord_canton_scale = { 0.15 0.15 }
+ 		overlord_canton_offset = { 0.28335 0.425 }
+		coa_with_overlord_canton = ORA_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = ORA_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = ORA_regular
+		allow_overlord_canton = yes
+		priority = 50
+ 		overlord_canton_scale = { 0.50 0.429 }
+ 		overlord_canton_offset = { 0.00 0.00 }
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	# absolute monarchy
+	
+	flag_definition = {
+		coa = ORA_coa
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = ORA_anarchy
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = ORA_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}
+
+# Transvaal
+TRN = {
+	
+	# base
+	
+	flag_definition = {
+		coa = TRN_regular
+		subject_canton = TRN_regular
+		allow_overlord_canton = yes
+ 		overlord_canton_scale = { 0.15 0.15 }
+ 		overlord_canton_offset = { 0.43 0.425 }
+		coa_with_overlord_canton = TRN_subject
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = TRN_burgersvlag
+		subject_canton = TRN_burgersvlag
+		allow_overlord_canton = no
+		priority = 25
+		trigger = {
+			OR = {
+				coa_has_military_junta = yes
+				coa_has_republican_dictatorship = yes
+				coa_has_radical_republic = yes
+			}
+		}
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = TRN_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}	
+	
+	flag_definition = {
+		coa = TRN_regular
+		allow_overlord_canton = yes
+		priority = 50
+ 		overlord_canton_scale = { 0.75 1.00 }
+ 		overlord_canton_offset = { 0.25 0.00 }
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}	
+	
+	# absolute monarchy
+	
+	flag_definition = {
+		coa = TRN_coa
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = TRN_anarchy
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = TRN_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}
+
+# Griqualand
+#WBL = {
+#	
+#	# base
+#	
+#	flag_definition = {
+#		coa = WBL_regular
+#		subject_canton = WBL_regular
+#		allow_overlord_canton = yes
+#		coa_with_overlord_canton = WBL_subject
+#		priority = 1
+#	}
+#	
+#}
+
+# Stellaland
+STL = {
+	
+	# base
+	
+	flag_definition = {
+		coa = STL_regular
+		subject_canton = STL_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = STL_subject
+		priority = 1
+	}
+	
+	# dictatorship
+	
+	flag_definition = {
+		coa = STL_alternative
+		subject_canton = STL_alternative
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_has_republican_dictatorship = yes
+		}
+	}
+	
+	# absolute monarchy
+	
+	flag_definition = {
+		coa = STL_coa
+		allow_overlord_canton = yes
+		priority = 60
+		trigger = {
+			coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = STL_anarchy
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = STL_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}
+
+# Lijdensrust
+LYD = {
+	
+	# base
+	
+	flag_definition = {
+		coa = LYD_regular
+		subject_canton = LYD_regular
+		allow_overlord_canton = yes
+ 		overlord_canton_scale = { 0.15 0.15 }
+ 		overlord_canton_offset = { 0.28335 0.425 }
+		coa_with_overlord_canton = LYD_subject
+		priority = 1
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = LYD_anarchy
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = LYD_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			coa_has_communism = yes
+		}
+	}
+	
+}

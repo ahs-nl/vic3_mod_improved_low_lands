@@ -1,0 +1,244 @@
+# Suriname
+
+# base flags
+
+SUR_regular = {
+	
+	# Flag of Surinam within dutch Kingdom (1954-1975)
+	# https://nl.wikipedia.org/wiki/Suriname_(Koninkrijk_der_Nederlanden)
+	# Stars not rotated for simplicity
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 1.50 0.75 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.46 0.73 } position = { 0.50 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.30 0.30 } position = { 0.50 0.30 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.40 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.65 0.65 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.35 0.65 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.25 0.40 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.28 0.28 } position = { 0.50 0.30 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "brown"
+		instance = { scale = { 0.28 0.28 } position = { 0.75 0.40 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.28 0.28 } position = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.28 0.28 } position = { 0.35 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.28 0.28 } position = { 0.25 0.40 } }
+	}
+	
+}
+
+SUR_modern = {
+	
+	# Modern flag
+	# https://nl.wikipedia.org/wiki/Suriname
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sinopel
+	
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 0.60 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 1.00 0.40 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.40 0.40 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+SUR_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	sub = {
+		parent = "SUR_regular"
+		instance = { scale = { 0.75 0.75 } offset = { 0.375 0.1875 } }
+	}
+	
+}
+
+SUR_overlord_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_SUR_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+SUR_overlord_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_SUR_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+SUR_overlord_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_SUR_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+SUR_wic = { # WIC west-india company flag
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_SUR_letters_WIC"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.26 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+SUR_coa_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	sub = {
+		parent = "SUR_regular"
+		instance = { scale = { 0.75 0.75 } offset = { 0.375 0.1875 } }
+	}
+	
+	sub = {
+		parent = "sub_SUR_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+SUR_full_coa_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	sub = {
+		parent = "sub_SUR_coa"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
+	}
+	
+}
+
+# subs
+
+sub_SUR_coa = {
+	
+	# https://nl.wikipedia.org/wiki/Wapen_van_Suriname
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.70 0.55 } position = { 0.50 0.72 } }
+	}
+	colored_emblem = {
+		texture = "native_shieldholder.png"
+		color1 = hsv360 { 29 42 65 }
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_argent
+		instance = { scale = { 0.55 0.55 } position = { 0.34 0.50 } }
+		instance = { scale = { -0.55 0.55 } position = { 0.66 0.50 } }
+	}
+	
+	colored_emblem = { # shield outline
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = { # shield
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.44 0.44 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = {
+		texture = "tradeship.png"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_keel
+		instance = { scale = { 0.35 0.35 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.15 0.25 } position = { 0.50 0.65 } }
+		instance = { scale = { 0.10 0.20 } position = { 0.50 0.69 } }
+	}
+	
+}
+
+sub_SUR_letters_WIC = {
+	
+	colored_emblem = {
+		texture = "ce_letter_w_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_g_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.44 0.43 } position = { 0.37 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_c_serif.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.40 0.44 } position = { 0.68 0.46 } }
+	}
+	
+}

@@ -1,0 +1,42 @@
+﻿myculture = {
+	
+	color = rgb{ 255 255 255 }
+
+	religion = protestant
+	traits = { anglophone celtic_people european_heritage }
+	obsessions = { wine }
+	
+	male_common_first_names = {
+		Abraham Abel Arthur
+		Brynmor
+	}
+	female_common_first_names = {
+		Anne Amy Alice Angharad Augusta
+		Caroline Catharine Constance
+	}
+	common_last_names={
+		Allen Abadam Ace Alden
+		Burton Bevan Barrett Bufton Berry Bowen Breese Blackwell Bailey Brigstocke Bellis
+	}
+	noble_last_names = {
+		Coffin Cowell-Stepney Cornwallis-West
+	}
+	male_regal_first_names = {
+		Benedict
+		Charles Constantine
+	}
+	female_regal_first_names = {
+		Anne Annabella
+		Elizabeth Euphemia
+	}
+	regal_last_names = {
+		of_Austria-Este
+		FitzJames FitzClarence
+	}	
+	
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = european
+	
+}

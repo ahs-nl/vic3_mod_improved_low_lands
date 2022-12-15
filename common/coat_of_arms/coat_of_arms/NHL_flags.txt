@@ -1,0 +1,267 @@
+﻿# New Holland (Dutch Australia)
+
+# base flags
+
+NHL_base = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.85 0.85 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+NHL_regular = {
+	
+	# Fantasy flag based on: https://zebratigerfish.blogspot.com/2015/03/new-holland-australia-heritage-flag.html
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.40 0.125 } position = { 0.20 0.0625 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.40 0.125 } position = { 0.20 0.1875 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.40 0.125 } position = { 0.20 0.3125 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.45 0.45 } position = { 0.25 0.70 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.38 0.38 } position = { 0.25 0.70 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+NHL_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
+	}
+	
+}
+
+NHL_overlord_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_NHL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+NHL_overlord_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_NHL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+NHL_overlord_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_NHL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+# specific flags
+
+NHL_anarchism = {
+	
+	# Fantasy flag based on: https://www.alternatehistory.com/forum/threads/communist-flags.417901/page-2
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		instance = { scale = { 0.40 0.40 } position = { 0.20 0.25 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = "red"
+		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
+	}
+	
+}
+
+NHL_communism = {
+	
+	# Fantasy flag based on: https://www.alternatehistory.com/forum/threads/communist-flags.417901/page-2
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.40 0.40 } position = { 0.20 0.25 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
+	}
+	
+}
+
+NHL_fascism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+		
+}
+
+NHL_multiculturalism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+}
+
+# base + coat-of-arms near center
+
+NHL_coa_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_bisque
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
+	}
+	
+	sub = {
+		parent = "sub_NHL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.25 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+NHL_full_coa_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_bisque
+	
+	sub = {
+		parent = "sub_NHL_coa"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
+	}
+	
+}
+
+# subs
+
+sub_NHL_coa = {
+	
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.70 0.75 } position = { 0.50 0.75 } }
+	}
+	colored_emblem = {
+		texture = "kangaroo.png"
+		color1 = wappenwiki_brunatre
+		instance = { scale = { 0.70 0.70 } position = { 0.32 0.50 } }
+	}
+	colored_emblem = {
+		texture = "emu.png"
+		color1 = "grey"
+		color2 = wappenwiki_or
+		color3 = wappenwiki_argent
+		instance = { scale = { -0.70 0.70 } position = { 0.68 0.50 } }
+	}
+	
+	# dutch crown
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_sabel
+		color2 = wappenwiki_sabel
+		color3 = wappenwiki_sabel
+		instance = { scale = { 0.42 0.42 } position = { 0.50 0.27 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { scale = { 0.40 0.40 } position = { 0.50 0.27 } }
+	}
+	
+	colored_emblem = { # shield outline
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = { # shield
+		texture = "ce_shield_heater.dds"
+		color1 = "blue"
+		instance = { scale = { 0.44 0.44 } position = { 0.50 0.52 } }
+	}
+	colored_emblem = { # sword outline
+		texture = "ce_crocodile.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.25 0.25 } position = { 0.50 0.42 } }
+		instance = { scale = { 0.25 0.25 } position = { 0.50 0.51 } }
+		instance = { scale = { 0.25 0.25 } position = { 0.50 0.60 } }
+	}
+	
+}
+
+sub_NHL_southern_cross = {
+	
+	colored_emblem = {
+		texture = "ce_southern_cross_australia.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.85 0.85 } position = { 0.50 0.50 } }
+	}
+	
+}

@@ -1,0 +1,87 @@
+# Upingtonia / Lijdensrust (short-lived Boer republic in North Namibia)
+
+# base flags
+
+LYD_regular = {
+	
+	# https://en.wikipedia.org/wiki/Upingtonia
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sabel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_keel
+	}
+	
+}
+
+# subject
+
+LYD_subject = {
+	
+	parent = "LYD_regular"
+	sub = {
+		parent = "sub_black_hole"
+		instance = { scale = { 0.17 0.17 } offset = { 0.27335 0.415 } }
+		instance = { scale = { 0.1333 0.275 } offset = { 0.43335 0.3625 } }
+		instance = { scale = { 0.17 0.17 } offset = { 0.56335 0.415 } }
+	}
+	sub = {
+		parent = "SAF_voortrekkers"
+		instance = { scale = { 0.1133 0.255 } offset = { 0.44335 0.3725 } }
+	}
+	sub = {
+		parent = "NET_regular"
+		instance = { scale = { 0.15 0.15 } offset = { 0.57335 0.425 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+LYD_anarchy = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = "red"
+		color2 = "black"
+	}
+	colored_emblem = {
+		texture = "ce_wagon.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.50 0.50 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+LYD_communism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_star_05_safcp.dds"
+		color1 = "yellow"
+		color2 = "black"
+		instance = { scale = { 0.50 0.50 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+# coat-of-arms turned full flags
+

@@ -1,0 +1,5 @@
+default_border_canton = {
+	colored_emblem = {
+		texture = "ce_blank.dds"
+	}
+}

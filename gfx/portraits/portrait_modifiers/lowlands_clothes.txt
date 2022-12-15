@@ -1,0 +1,1276 @@
+﻿lowlands_base_uniform = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	lowlands_base_uniform = {
+		dna_modifiers = {
+			
+			# joke: thin, tall, cheese-blonde
+			#morph = {
+			#	mode = replace
+			#	gene = gene_bs_body_type
+			#	template = body_fat_head_fat_low
+			#	value = 0.01
+			#}
+			#morph = {
+			#	mode = replace
+			#	gene = gene_height
+			#	template = normal_height
+			#	value = 0.8
+			#}
+			color = {
+				mode = replace
+				gene = hair_color
+				x = 0.15
+				y = 0.10
+			}
+			
+			# no vanilla coat
+			accessory = {
+				mode = add
+				gene = coats
+				template = no_coat
+				range = { 0 1 }
+			}
+			
+			# no vanilla belt
+			accessory = {
+				mode = add
+				gene = belts
+				template = no_belt
+				range = { 0 1 }
+			}
+			
+			# no vanilla legwear
+			accessory = {
+				mode = add
+				gene = legwear
+				template = no_legwear
+				range = { 0 1 }
+			}
+			
+			# no outfit
+			accessory = {
+				mode = add
+				gene = outfits
+				template = no_outfit
+				range = { 0 1 }
+			}
+			
+			# no civilian_coat
+            accessory = {
+                mode = add
+                gene = civilian_coats
+                template = no_civilian_coat
+                range = { 0 1 }
+            }
+			
+			# no waistcoat
+			accessory = {
+				mode = add
+				gene = waistcoats
+				template = no_waistcoat
+				range = { 0 1 }
+			}
+			
+			# no vanilla sash
+			accessory = {
+				mode = add
+				gene = sashes
+				template = no_sash
+				range = { 0 1 }
+			}
+			
+			# no necklace
+			accessory = {
+				mode = add
+				gene = necklaces
+				template = no_necklace
+				range = { 0 1 }
+			}
+			
+			# no shirt
+			accessory = {
+				mode = add
+				gene = shirt
+				template = no_shirts
+				range = { 0 1 }
+			}
+			
+			# no headgear
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_uniform = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	dutch_base_uniform = {
+		dna_modifiers = {
+			
+			# dutch dark blue plain single-breasted uniform dutch_coats
+			accessory = {
+				mode = add
+				gene = dutch_coats
+				template = all_dutch_coats
+				range = { 0.0 0.1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = dutch_belts
+				template = orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = dutch_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:dutch
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:dutch
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	frisian_base_uniform = {
+		dna_modifiers = {
+			
+			# dutch dark blue plain single-breasted uniform dutch_coats
+			accessory = {
+				mode = add
+				gene = dutch_coats
+				template = all_frisian_coats
+				range = { 0.0 0.1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = dutch_belts
+				template = orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = dutch_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:frisian
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:frisian
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	flemish_base_uniform = {
+		dna_modifiers = {
+			
+			# dutch dark blue plain single-breasted uniform dutch_coats
+			accessory = {
+				mode = add
+				gene = dutch_coats
+				template = all_flemish_coats
+				range = { 0.0 0.1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = dutch_belts
+				template = orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = dutch_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:flemish
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:flemish
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	wallonian_base_uniform = {
+		dna_modifiers = {
+			
+			# dutch dark blue plain single-breasted uniform dutch_coats
+			accessory = {
+				mode = add
+				gene = dutch_coats
+				template = all_wallonian_coats
+				range = { 0.0 0.1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = dutch_belts
+				template = orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = dutch_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:wallonian
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:wallonian
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	boer_base_uniform = {
+		dna_modifiers = {
+			
+			# dutch dark blue plain single-breasted uniform dutch_coats
+			accessory = {
+				mode = add
+				gene = dutch_coats
+				template = all_boer_coats
+				range = { 0.0 0.1 }
+			}
+			
+			# basic european shirt
+			#accessory = {
+			#	mode = add
+			#	gene = shirt
+			#	template = working_class_shirt
+			#	range = { 0.0 0.5 }
+			#}
+			
+			# orange dutch_belt
+			#accessory = {
+			#	mode = add
+			#	gene = dutch_belts
+			#	template = orange_belt
+			#	range = { 0 1 }
+			#}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = dutch_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					lowlands_uniform_char_trigger = yes
+					lowlands_uniform_pop_trigger = yes
+				}
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_epaulettes = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# tier 1 (male_epaulettes_04): long-threaded epaulettes
+	lowlands_epaulettes_highest = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = epaulettes
+				template = all_epaulettes
+				value = 0.75
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					OR = {
+						is_ruler = yes
+						is_heir = yes
+						commander_rank = 6 # ruler
+						commander_rank = 5
+						commander_rank = 4
+					}
+				}
+			}
+			modifier = {
+				add = -5000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# tier 2 (male_epaulettes_01): non-threaded epaulettes
+	lowlands_epaulettes_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = epaulettes
+				template = all_epaulettes
+				value = 0.15
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					commander_rank = 3
+				}
+			}
+			modifier = {
+				add = -5000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# tier 3 (male_epaulettes_03): thickly winded epaulettes
+	lowlands_epaulettes_medium = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = epaulettes
+				template = all_epaulettes
+				value = 0.50
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					commander_rank = 2
+				}
+			}
+			modifier = {
+				add = -5000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# tier 4 (male_epaulettes_02): thinly winded epaulettes
+	lowlands_epaulettes_low = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = epaulettes
+				template = all_epaulettes
+				value = 0.35
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					AND = {
+						lowlands_uniform_char_trigger = yes
+						exists = scope:character
+						scope:character = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+							commander_rank = 1
+						}
+					}
+					AND = {
+						lowlands_uniform_pop_trigger = yes
+						exists = scope:pop
+						scope:pop = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+							is_pop_type = officers
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -5000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no epaulettes
+	lowlands_epaulettes_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = epaulettes
+				template = no_epaulette
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_pop_trigger = yes
+				exists = scope:pop
+				scope:pop = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					is_pop_type = soldiers
+				}
+			}
+			modifier = {
+				add = 5000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_sashes = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# option 1: orange sash
+	netherlands_sash_orange = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = sash_orange
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					netherlands_royalist_trigger = yes
+				}
+			}
+		}
+	}
+	
+	# option 2: orange sash with dark blue lines
+	netherlands_sash_orange_accented = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = sash_orange_accented
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					netherlands_royalist_trigger = yes
+				}
+			}
+		}
+	}
+	
+	# option 3: red-white-blue sash
+	netherlands_sash_red_white_blue = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = sash_red_white_blue
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					netherlands_republican_trigger = yes
+				}
+			}
+		}
+	}
+	
+	# option 4: orange-white-blue sash
+	netherlands_sash_orange_white_blue = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = sash_orange_white_blue
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					netherlands_absolutist_trigger = yes
+				}
+			}
+		}
+	}
+	
+	# option 5: red-white-lightblue sash
+	netherlands_sash_red_white_lightblue = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = sash_red_white_lightblue
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					OR = {
+						netherlands_statist_trigger = yes
+						AND = {
+							owner = { c:LUX = this }
+							owner = { is_subject = no }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no sash
+	netherlands_sash_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_sash
+				template = no_sash
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					is_ruler = yes
+					netherlands_apolitical_trigger = yes
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_medals = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# tier 1 (male_medals_generic_01_05): whole bunch of medals
+	lowlands_medals_highest = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = generic_medals
+				value = 0.75
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					OR = {
+						is_ruler = yes
+						is_heir = yes
+						commander_rank = 6 # ruler
+						commander_rank = 5
+					}
+				}
+			}
+		}
+	}
+	
+	# tier 2 (male_medals_generic_01_03): star and four medals
+	lowlands_medals_high = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = generic_medals
+				value = 0.33
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					commander_rank = 4
+				}
+			}
+		}
+	}
+	
+	# tier 3 (male_medals_generic_01_01): star and three medals
+	lowlands_medals_medium = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = generic_medals
+				value = 0.10
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					commander_rank = 3
+				}
+			}
+		}
+	}
+	
+	# tier 4 (male_medals_generic_01_02): star and two medals
+	lowlands_medals_low = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = generic_medals
+				value = 0.25
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_char_trigger = yes
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					commander_rank = 2
+				}
+			}
+		}
+	}
+	
+	# tier 5 (male_medals_generic_01_04): star and one medal
+	lowlands_medals_lowest = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = generic_medals
+				value = 0.65
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				OR = {
+					AND = {
+						lowlands_uniform_char_trigger = yes
+						exists = scope:character
+						scope:character = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+							commander_rank = 1
+						}
+					}
+					AND = {
+						lowlands_uniform_pop_trigger = yes
+						exists = scope:pop
+						scope:pop = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+							is_pop_type = officers
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no medals
+	lowlands_medals_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = medals
+				template = no_medals
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				lowlands_uniform_pop_trigger = yes
+				exists = scope:pop
+				scope:pop = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					is_pop_type = soldiers
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_aiguillettes = {
+	# heet een nestel in het nederlands
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# with aiguillettes
+	lowlands_aiguilletes_true = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = aiguillettes
+				template = all_aiguillettes
+				value = 0.1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					AND = {
+						lowlands_uniform_char_trigger = yes
+						exists = scope:character
+						scope:character = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+							commander_rank >= 1
+							commander_rank < 6
+						}
+					}
+					AND = {
+						lowlands_uniform_pop_trigger = yes
+						exists = scope:pop
+						scope:pop = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -1000
+				OR = {
+					AND = {
+						exists = scope:character
+						scope:character = {
+							culture = cu:boer
+						}
+					}
+					AND = {
+						exists = scope:pop
+						scope:pop = {
+							culture = cu:boer
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no aiguillettes
+	lowlands_aiguilletes_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = aiguillettes
+				template = no_aiguillettes
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					AND = {
+						lowlands_uniform_char_trigger = yes
+						exists = scope:character
+						scope:character = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+						}
+					}
+					AND = {
+						lowlands_uniform_pop_trigger = yes
+						exists = scope:pop
+						scope:pop = {
+							culture = {
+								has_discrimination_trait = beneluxian_culture_group
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_mantle = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# with funny-looking royal mantle
+	lowlands_royalmantle_true = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = top_layer
+				template = european_top_layer
+				value = 0.75
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = yes
+						owner = {
+							has_law = law_type:law_monarchy
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no royal mantle
+	lowlands_royalmantle_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = top_layer
+				template = no_top_layer
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = no
+					}
+				}
+			}
+			modifier = {
+				add = 150
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = yes
+						owner = {
+							has_law = law_type:law_monarchy
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+lowlands_headgear = {
+	
+	usage = game
+	selection_behavior = weighted_random
+	
+	# test
+	lowlands_headgear_true = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = dutch_headgear
+				template = all_dutch_headgear
+				value = 0.50
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = yes
+						owner = {
+							has_law = law_type:law_monarchy
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# no headgear
+	lowlands_headgear_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = top_layer
+				template = no_top_layer
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 5000
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = no
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				exists = scope:character
+				scope:character = {
+					culture = {
+						has_discrimination_trait = beneluxian_culture_group
+					}
+					AND = {
+						is_ruler = yes
+						owner = {
+							has_law = law_type:law_monarchy
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

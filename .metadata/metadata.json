@@ -1,0 +1,12 @@
+{
+  "name" : "Improved Low Lands",
+  "id" : "",
+  "version" : "0.0.5",
+  "supported_game_version" : "1.0.3",
+  "short_description" : "",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

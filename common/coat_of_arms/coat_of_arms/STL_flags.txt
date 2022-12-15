@@ -1,0 +1,179 @@
+# Stellaland
+
+# base flags
+
+STL_regular = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Stellaland
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sinopel
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+STL_alternative = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Stellaland
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sinopel
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.50 1.00 } position = { 0.75 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# subject
+
+STL_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sinopel
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.75 1.00 } position = { 0.375 0.50 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+STL_coa = {
+	
+	# shield
+	pattern = "pattern_checkered.png"
+	color1 = wappenwiki_argent
+	color2 = wappenwiki_sinopel
+	color3 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.50 0.50 } position = { 0.75 0.75 } }
+	}
+	
+	# first quarter
+	colored_emblem = {
+		texture = "ce_bird_paradise.dds"	# close enough?
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_brunatre
+		instance = { scale = { 0.55 0.55 } position = { 0.25 0.28 } }
+	}
+	colored_emblem = {
+		texture = "ce_hand.dds"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.25 0.40 } position = { 0.30 0.40 } rotation = 270 }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.15 0.10 } position = { 0.425 0.40 } }
+	}
+	# second quarter
+	colored_emblem = {
+		texture = "ce_star_05_tilted.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { -0.5 0.5 } position = { 0.75 0.27 } }
+	}
+	# third quarter
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.10 0.10 } position = { 0.15 0.80 } }
+		instance = { scale = { 0.10 0.10 } position = { 0.35 0.80 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.10 } position = { 0.25 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_pointed.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.40 0.40 } position = { 0.25 0.70 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.10 } position = { 0.25 0.59 } }
+	}
+	colored_emblem = {
+		texture = "ce_chevron.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_azuur
+		instance = { scale = { 0.05 0.10 } position = { 0.15 0.75 } }
+		instance = { scale = { 0.05 0.10 } position = { 0.35 0.75 } }
+	}
+	# fourth quarter
+	colored_emblem = {
+		texture = "ce_scimitar.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.4 -0.7 } position = { 0.76 0.75 } rotation = 280 }
+	}
+	colored_emblem = {
+		texture = "ce_fish_oudh.dds"		# close enough?
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_sabel
+		color3 = wappenwiki_sabel
+		instance = { scale = { -0.40 0.40 } position = { 0.76 0.65 } }
+		instance = { scale = { 0.40 0.40 } position = { 0.74 0.77 } }
+	}
+	
+}
+
+STL_anarchy = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		instance = { scale = { 0.50 1.00 } position = { 0.75 0.50 } }
+	}
+	
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+STL_communism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+# coat-of-arms turned full flags
+

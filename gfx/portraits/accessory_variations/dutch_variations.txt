@@ -1,0 +1,384 @@
+﻿### pattern_textures
+
+pattern_textures = {
+	name = "lowlands_wool"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_wool_standard_plain_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_wool_standard_plain_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_wool_standard_plain_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "lowlands_silk"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_standard_plain_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_standard_plain_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_standard_plain_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "lowlands_silk_fine"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_fine_plain_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_fine_plain_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_silk_fine_plain_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "lowlands_gold_trim"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_gold_trim_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_gold_trim_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_gold_trim_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "lowlands_velvet"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_velvet_standard_plain_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_velvet_standard_plain_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_velvet_standard_plain_01_properties.dds"
+}
+
+pattern_textures = {
+	name = "lowlands_leather"
+	colormask = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_leather_standard_plain_01_masks.dds"
+	normal = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_leather_standard_plain_01_normal.dds"
+	properties = "gfx/portraits/accessory_variations/textures/patterns/generic/generic_leather_standard_plain_01_properties.dds"
+}
+
+### pattern_layout
+
+pattern_layout = {
+	name = "lowlands_fabric_layout"
+	scale = { min = 0.25 max = 0.25 }
+	rotation = { min = 0 max = 0 }
+	offset = {
+		x = { min = 0 max = 0 }
+		y = { min = 0 max = 0 }
+	}
+}
+
+### variation
+
+# coats
+
+variation = {
+	name = "dutch_uniform_coat"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coats.png"
+	}
+}
+
+variation = {
+	name = "frisian_uniform_coat"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/frisian_uniform_coats.png"
+	}
+}
+
+variation = {
+	name = "flemish_uniform_coat"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/flemish_uniform_coats.png"
+	}
+}
+
+variation = {
+	name = "wallonian_uniform_coat"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/wallonian_uniform_coats.png"
+	}
+}
+
+variation = {
+	name = "boer_uniform_coat"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coats.png"
+	}
+}
+
+# trousers
+
+variation = {
+	name = "dutch_uniform_trousers"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers.png"
+	}
+}
+
+# sashes
+
+variation = {
+	name = "dutch_sash_orange"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange.png"
+	}
+}
+
+variation = {
+	name = "dutch_sash_orange_accented"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_accented.png"
+	}
+}
+
+variation = {
+	name = "dutch_sash_red_white_blue"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_blue.png"
+	}
+}
+
+variation = {
+	name = "dutch_sash_orange_white_blue"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_white_blue.png"
+	}
+}
+
+variation = {
+	name = "dutch_sash_red_white_lightblue"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_lightblue.png"
+	}
+}

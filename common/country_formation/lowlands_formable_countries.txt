@@ -1,0 +1,29 @@
+﻿NET = { # Netherlands
+	states = {
+		STATE_HOLLAND
+		STATE_FRIESLAND
+		STATE_GELRE
+	}
+	required_states_fraction = 1.0
+	ai_will_do = { always = no }
+}
+
+BEL = { # Belgium
+	states = {
+		STATE_WALLONIA
+		STATE_FLANDERS
+	}
+	ai_will_do = { always = no }
+}
+
+SAF = { # South Africa
+	states = {
+		STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+		STATE_ZULULAND
+		STATE_VRYSTAAT
+		STATE_TRANSVAAL
+	}
+	ai_will_do = { always = yes }
+}

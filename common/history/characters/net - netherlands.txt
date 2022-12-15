@@ -1,0 +1,381 @@
+﻿CHARACTERS = {
+	
+	c:NET = {
+		
+		### Royals
+		
+		# King Willem I of the Netherlands: https://en.wikipedia.org/wiki/William_I_of_the_Netherlands
+		create_character = {
+			first_name = "Willem"
+			last_name = "van_Oranje-Nassau"
+			female = no
+			ruler = yes
+			noble = yes
+			birth_date = 1772.8.24
+			#age = 64
+			dna = dna_king_william_01
+			culture = cu:dutch
+			religion = protestant
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_royalist
+			traits = { romantic }
+		}
+		
+		# King Willem II of the Netherlands: https://en.wikipedia.org/wiki/William_II_of_the_Netherlands
+		create_character = {
+			first_name = "Willem"
+			last_name = "van_Oranje-Nassau"
+			heir = yes
+			noble = yes
+			birth_date = 1792.12.6
+			#age = 44
+			dna = dna_king_william_02
+			culture = cu:dutch
+			religion = protestant
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			traits = { persistent }
+		}
+		
+		# King Willem III of the Netherlands: https://en.wikipedia.org/wiki/William_III_of_the_Netherlands
+		create_character = {
+			first_name = "Willem"
+			last_name = "van_Oranje-Nassau"
+			heir = no
+			noble = yes
+			birth_date = 1817.2.19
+			#age = 19
+			dna = dna_king_william_03
+			culture = cu:dutch
+			religion = protestant
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = { romantic }
+		}
+		
+		### Generals
+		
+		# Lt-Gen David Hendrik Chassé: https://en.wikipedia.org/wiki/David_Hendrik_Chass%C3%A9
+		create_character = {
+			first_name = David_Hendrik
+			last_name = Chasse
+			noble = no
+			birth_date = 1765.3.18
+			#age = 71
+			dna = dna_general_chasse
+			culture = cu:dutch
+			religion = protestant
+			is_general = yes
+			#is_admiral = yes
+			#hq = region_england
+			#commander_rank = commander_rank_3
+			traits = {
+				wrathful
+				wounded # Right upper arm
+			}
+		}
+		
+		### Admirals
+		
+		# Lt-Adm Engelbertus Lucas Jr.: https://en.wikipedia.org/wiki/Engelbertus_Lucas_Jr.
+		#create_character = { # Admiral
+		#	first_name = Engelbertus
+		#	last_name = Lucas
+		#	noble = no
+		#	birth_date = 1785.5.30
+		#	#age = 51
+		#	culture = cu:dutch
+		#	religion = protestant
+		#	is_admiral = yes
+		#	traits = {
+		#		experienced_naval_commander
+		#		wrathful
+		#	}
+		#}
+		
+		# Charles baron Nepveu: https://nl.wikipedia.org/wiki/Charles_Nepveu
+		#create_character = {
+		#	first_name = Charles
+		#	last_name = Nepveu
+		#	noble = yes
+		#	birth_date = 1791.10.5
+		#	#age = 45
+		#	culture = cu:dutch
+		#	religion = protestant
+		#	is_general = yes
+		#	traits = {
+		#		bigoted
+		#		#powerful_friends
+		#	}
+		#}
+		
+		# Lt-Gen Karel Bernhard van Saksen-Weimar-Eisenach: https://nl.wikipedia.org/wiki/Karel_Bernhard_van_Saksen-Weimar-Eisenach
+		#create_character = {
+		#	is_general = yes
+		#	first_name = Karel_Bernhard
+		#	last_name = van_Saksen_Weimar_Eisenach
+		#	noble = yes
+		#	birth_date = 1792.5.30
+		#	#age = 44
+		#	culture = cu:north_german
+		#	religion = protestant
+		#	traits = {
+		#		#smart_trait
+		#		#uncommonly_young
+		#	}
+		#
+		#}
+		
+		# Lt-Gen Hendrik Duycker: https://nl.wikipedia.org/wiki/Hendrik_Frederik_Karel_Duycker
+		#create_character = {
+		#	is_general = yes
+		#	first_name = Hendrik
+		#	last_name = Duycker
+		#	noble = no
+		#	birth_date = 1792.9.6
+		#	#age = 44
+		#	culture = cu:dutch
+		#	religion = protestant
+		#	traits = {
+		#		#mediocre
+		#	   	#military_family
+		#	}
+		#
+		#}
+		
+		### Politicians
+		#
+		# interest_group:
+		#
+		# [x] ig_armed_forces
+		# [ ] ig_devout
+		# [x] ig_industrialists
+		# [x] ig_intelligentsia
+		# [x] ig_landowners
+		# [x] ig_petty_bourgeoisie
+		# [x] ig_rural_folk
+		# [ ] ig_trade_unions
+		#
+		# ideology:
+		#
+		# [x] ideology_moderate
+		# [x] ideology_traditionalist
+		# [ ] ideology_atheist
+		# [x] ideology_republican_leader
+		# [ ] ideology_radical
+		# [x] ideology_reformer
+		# [ ] ideology_feminist
+		# [ ] ideology_abolitionist
+		# [ ] ideology_slaver
+		# [ ] ideology_pacifist
+		# [ ] ideology_jingoist_leader
+		# [ ] ideology_royalist
+		# [ ] ideology_social_democrat
+		# [ ] ideology_communist
+		# [ ] ideology_vanguardist
+		# [ ] ideology_fascist
+		# [ ] ideology_anarchist
+		# [ ] ideology_ethno_nationalist
+		# [ ] ideology_theocrat
+		# [ ] ideology_market_liberal
+		#
+		
+		# Godert van der Capellen: https://nl.wikipedia.org/wiki/Godert_van_der_Capellen
+		create_character = {
+			first_name = Godert
+			last_name = van_der_Capellen
+			birth_date = 1778.12.15
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Marinus Piepers: https://nl.wikipedia.org/wiki/Marinus_Piepers
+		create_character = {
+			first_name = Marinus
+			last_name = Piepers
+			birth_date = 1771.11.19
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Gerard George Clifford: https://nl.wikipedia.org/wiki/Gerard_George_Clifford
+		create_character = {
+			first_name = Gerard
+			last_name = Clifford
+			birth_date = 1779.2.16
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Anton Reinhard Falck: https://nl.wikipedia.org/wiki/Anton_Reinhard_Falck
+		create_character = {
+			first_name = Anton
+			last_name = Falck
+			birth_date = 1777.3.19
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_reformer
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Gerrit Schimmelpenninck: https://nl.wikipedia.org/wiki/Gerrit_Schimmelpenninck_(1794-1863)
+		create_character = {
+			first_name = Gerrit
+			last_name = Schimmelpenninck
+			birth_date = 1794.10.4
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Daam Fockema: https://nl.wikipedia.org/wiki/Daam_Fockema
+		create_character = {
+			first_name = Daam
+			last_name = Fockema
+			birth_date = 1771.6.6
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_republican_leader
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Antoine Warin: https://nl.wikipedia.org/wiki/Antoine_Warin
+		create_character = {
+			first_name = Antoine
+			last_name = Warin
+			birth_date = 1772.12.1
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			traits = {
+				#cautious
+			}
+		}
+		
+		# Johan Gijsbert Verstolk van Soelen: 
+		create_character = {
+			first_name = Johan_Gijsbert
+			last_name = Verstolk_van_Soelen
+			birth_date = 1776.3.16
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				#imperious
+				#arrogant
+			}
+		}
+		
+		# Maurits van Hall: https://nl.wikipedia.org/wiki/Maurits_Cornelis_van_Hall_(1768-1858)
+		create_character = {
+			first_name = Maurits
+			last_name = van_Hall
+			birth_date = 1794.10.4
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				#reserved
+			}
+		}
+		
+		# Arnoldus Josephus Ingenhousz: https://nl.wikipedia.org/wiki/Arnoldus_Josephus_Ingenhousz
+		create_character = {
+			first_name = Arnold
+			last_name = Ingenhousz
+			birth_date = 1766.5.4
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_reformer
+			traits = {
+				#reserved
+			}
+		}
+		
+		# Gerard Beelaerts van Blokland: https://nl.wikipedia.org/wiki/Gerard_Beelaerts_van_Blokland
+		create_character = {
+			first_name = Gerard
+			last_name = Beelaerts_van_Blokland
+			birth_date = 1772.7.5
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = {
+				#imperious
+			}
+		}
+		
+		# Willem Jan Elias van Lynden: https://nl.wikipedia.org/wiki/Willem_Jan_Elias_van_Lynden
+		create_character = {
+			first_name = Willem
+			last_name = van_Lynden
+			birth_date = 1791.12.9
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_reformer
+			traits = {
+				#imperious
+			}
+		}
+
+		# Anne Willem Carel baron van Nagell: https://nl.wikipedia.org/wiki/Anne_Willem_Carel_van_Nagell
+		create_character = {
+			first_name = Anne
+			last_name = van_Nagell
+			birth_date = 1756.1.4
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_royalist
+			traits = {
+				#imperious
+			}
+		}
+		
+		# François Arnould Noël Simons: https://nl.wikipedia.org/wiki/Fran%C3%A7ois_Arnould_No%C3%ABl_Simons
+		create_character = {
+			first_name = Francois
+			last_name = Simons
+			birth_date = 1779.11.3
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				#imperious
+			}
+		}
+		
+		# Johannes Luyben: https://nl.wikipedia.org/wiki/Johannes_Luyben
+		create_character = {
+			first_name = Johannes
+			last_name = Luyben
+			birth_date = 1786.12.14
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_reformer
+			traits = {
+				#imperious
+			}
+		}
+		
+	}
+	
+}

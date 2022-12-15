@@ -1,0 +1,102 @@
+﻿frisian = {
+	
+	color = hsv{ 0.02 0.65 0.80 }
+	
+	religion = protestant
+	traits = { beneluxian_culture_group frisophone european_heritage }
+	
+	male_common_first_names = {
+		Adelbrik Aitet Aldgisl Anne Audulf Auke Auutet Avin Avo Avuko Avutet
+		Bavo Bentet Bernhard Blekulf Blithulf Brunhard Bauke Bubo
+		Doede Douwe Duco
+		Edulf Eelke Egildeg Eilbern Eilherd Eilulf Eilward Eldei Elderd Elhard Engilbald Enhard Entet Esulf Euitet Euuerhard
+		Focko Fokke Folcbald Folkbern Folkert Folkhard Folkward Frethirik Frethold Frethuhard Frethwi Frithunath
+		Geldulf Geltet Gerbald Gerbrand Gerbruht Gerdeg Gerhard Gerold Gerulf Gerwar Gosse
+		Habo Haring Hathuward Hatto Hebetet Helibad Hessel Hobern Hoitet Hylke
+		Jelle Jelmer Jelte Jouke Jurjen Juw
+		Liaftet Lieuwe Liudbad Liudbald Liudger Liudgod Liudulf Liudward Liuppo Lubbiko
+		Magnus Meginbraht Meginhard Meginulf Meintet Menbold Menfrid Menger Menhard Menhold Meniko Mentet Menward Merulf Miginward
+		Nanne Notheri
+		Occo Odo Osnath
+		Pier Popetet Poppo
+		Raeddeg Rauantet Redbad Reginhard Reinbern Reinier Reinder Renhard Renward Riklef Rikwi Ruurd Rodbern
+		Saco Sake Salaco Sibod Sibraht Sicco Sico Sidei Sikke Silef Sipke Siward Siwi Sjoerd Sjouke Sybren Sybrand Sytse
+		Taco Tadaco Tado Thancward Thankbern Thiadbold Thiadbrund Thiaddi Thiaderd Thiadulf Thiadward Thiadwi Thiedold Thonkrik Tjerk
+		Wambald Wening Wentet Wibad Wibraht Wibrund Wiebe Wieger Wietse Wiftet Wigbald Wigerd Wihard Wilbrand Wilco Wiltet Wulfnoth Wijtse
+		Ygo
+	}
+	female_common_first_names = {
+		Aleberna Alena Aleydis Alretieren Amalburga Amelgeir Anna Atghardis Aue Auesoete Aukje
+		Badeloghen Baua Berber Berta Bet Breghlent Brundonis
+		Dieuwke Douwen Doutsen
+		Eingeliadis Elke Emgelberna Erkenradis Ermegardis Esa
+		Femke Fenna Folqui Frouke
+		Geeske Gerburgis Ghela Ghodelde
+		Hadewigis Heike Hersewindis Hodine
+		Imma Imsoete Inka Ilse Iris Itsburgis
+		Jeltsje Jeltje
+		Lenildis Liedelde Liudburgis Lutghardis Lys
+		Maike Mareike Mette Minke
+		Nienke
+		Rengnalda Rianne
+		Sietske
+		Tjitske
+		Volcwiif
+		Wendelmodis Wiebke Wobbe Wietske
+		Yda Ymmekine
+	}
+	noble_last_names = {
+		Abbema Aebinga Aesgema Auckama
+		Bonninga Buma
+		Cammingha
+		Douma
+		Eelsma
+		Feytsma Foppinga
+		Gerbranda Goslinga
+		Haerda Hania Harixma Herema Hoytema
+		Ockinga Osinga
+		Popma Postma
+		Rinia Roorda
+		Scheltema Sixma Solckema Stania
+		Tiara Tjaerda
+		Ydmsa
+	}
+	common_last_names = {
+		Abdena Aggere Allena Andringa
+		Bauwenga Beninga Boltinge Botta Buning Butzel
+		Cammingha Cirksema Clant Coenders Cordinghe
+		Dives
+		Ewsum
+		Folkerdinga
+		Gaykema Ghetzerka Gockinga Goltraven
+		Haijkama Hallum Harting Heddama Hedegu Hedinge Helpman Hornada Hornekingh Houwerda Huginge Huninga Huwenga
+		Idzarda Ildsisma
+		Jarges
+		Kalemere Kater Korenporta Kote
+		Lewe
+		Manninga Martena Meckema Mepsche Mernseta
+		Niding
+		Oenema Omken Ommeloop Onsta
+		Papinge Poder Pol Popinghe Potens
+		Reding Remian Rengers Rickwardsma Ripperda Rodmersma
+		Schulte Serda Sickinge Spegel Stickel Suanckerus Swaneke
+		Tayingha Tiddinga Tjarksena
+		Ukena Umbelap
+		Wiemken
+	}
+	male_regal_first_names = {
+		# populate with names here
+	}
+	female_regal_first_names = {
+		# populate with names here
+	}
+	regal_last_names = {
+		# populate with names here
+	}	
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+	
+}

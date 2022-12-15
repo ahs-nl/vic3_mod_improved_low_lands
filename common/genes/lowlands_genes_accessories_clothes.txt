@@ -1,0 +1,336 @@
+﻿special_genes = {
+	
+	accessory_genes = {
+		
+		# COATS
+		
+		dutch_coats = {
+			
+			inheritable = no
+			
+			no_coat = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+			
+			all_dutch_coats = {
+				index = 1
+				male = {
+					1 = male_dutch_coat_01
+					1 = male_dutch_coat_03
+					1 = male_dutch_coat_06
+					1 = male_dutch_coat_08
+					1 = male_dutch_coat_09
+					1 = male_dutch_coat_10
+					1 = male_dutch_coat_11
+				}
+				female = {
+					1 = female_outfit_european_common_01
+					1 = female_outfit_polynesian_01_high
+				}
+				boy = male
+				girl = female
+			}
+			
+			all_frisian_coats = {
+				index = 2
+				male = {
+					1 = male_frisian_coat_01
+					1 = male_frisian_coat_03
+					1 = male_frisian_coat_06
+					1 = male_frisian_coat_08
+					1 = male_frisian_coat_09
+					1 = male_frisian_coat_10
+					1 = male_frisian_coat_11
+				}
+				female = {
+					1 = female_outfit_european_common_01
+					1 = female_outfit_polynesian_01_high
+				}
+				boy = male
+				girl = female
+			}
+			
+			all_flemish_coats = {
+				index = 3
+				male = {
+					1 = male_flemish_coat_01
+					1 = male_flemish_coat_03
+					1 = male_flemish_coat_06
+					1 = male_flemish_coat_08
+					1 = male_flemish_coat_09
+					1 = male_flemish_coat_10
+					1 = male_flemish_coat_11
+				}
+				female = {
+					1 = female_outfit_european_common_01
+					1 = female_outfit_polynesian_01_high
+				}
+				boy = male
+				girl = female
+			}
+			
+			all_wallonian_coats = {
+				index = 4
+				male = {
+					1 = male_wallonian_coat_01
+					1 = male_wallonian_coat_03
+					1 = male_wallonian_coat_06
+					1 = male_wallonian_coat_08
+					1 = male_wallonian_coat_09
+					1 = male_wallonian_coat_10
+					1 = male_wallonian_coat_11
+				}
+				female = {
+					1 = female_outfit_european_common_01
+					1 = female_outfit_polynesian_01_high
+				}
+				boy = male
+				girl = female
+			}
+			
+			all_boer_coats = {
+				index = 5
+				male = {
+					1 = male_boer_coat_01
+					1 = male_boer_coat_03
+					1 = male_boer_coat_06
+					1 = male_boer_coat_08
+					1 = male_boer_coat_09
+					1 = male_boer_coat_10
+					1 = male_boer_coat_11
+				}
+				female = {
+					1 = female_outfit_european_common_01
+					1 = female_outfit_polynesian_01_high
+				}
+				boy = male
+				girl = female
+			}
+			
+		}
+		
+		# TROUSERS
+		
+		dutch_trousers = {
+			
+			inheritable = no
+			
+			no_trousers = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}	
+			
+			all_dutch_trousers = {
+				index = 1
+				male = {
+					1 = male_dutch_trousers_basic
+					1 = male_dutch_trousers_sidelinesthin
+					1 = male_dutch_trousers_sidelinesthick
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			dutch_trousers_basic = {
+				index = 2
+				male = {
+					1 = male_dutch_trousers_basic
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			dutch_trousers_sidelinesthin = {
+				index = 3
+				male = {
+					1 = male_dutch_trousers_sidelinesthin
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			dutch_trousers_sidelinesthick = {
+				index = 4
+				male = {
+					1 = male_dutch_trousers_sidelinesthick
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+		}
+		
+		# SASHES
+		
+		dutch_sash = {
+			
+			inheritable = no
+			
+			no_sash = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}	
+			
+			all_dutch_sashes = {
+				index = 1
+				male = {
+					2 = male_dutch_sash_orange
+					3 = male_dutch_sash_orange_accented
+					1 = male_dutch_sash_red_white_blue
+					1 = male_dutch_sash_orange_white_blue
+					1 = male_dutch_sash_red_white_lightblue
+				}
+				female = male
+				boy = male
+				girl = male
+			}	
+			
+			sash_orange = {
+				index = 2
+				male = {
+					1 = male_dutch_sash_orange
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			sash_orange_accented = {
+				index = 3
+				male = {
+					1 = male_dutch_sash_orange_accented
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			sash_red_white_blue = {
+				index = 4
+				male = {
+					1 = male_dutch_sash_red_white_blue
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			sash_orange_white_blue = {
+				index = 5
+				male = {
+					1 = male_dutch_sash_orange_white_blue
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			sash_red_white_lightblue = {
+				index = 6
+				male = {
+					1 = male_dutch_sash_red_white_lightblue
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+		}
+		
+		# BELTS
+		
+		dutch_belts = {
+			
+			inheritable = no
+			
+			no_belt = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}	
+			
+			all_dutch_belts = {
+				index = 1
+				male = {
+					1 = male_dutch_orange_belt
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+			orange_belt = {
+				index = 2
+				male = {
+					1 = male_dutch_orange_belt
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+		}
+		
+		# HEADGEAR
+		
+		dutch_headgear = {
+			
+			inheritable = no
+			
+			no_headgear = {
+				index = 0
+				male = {
+					1 = empty
+				}
+				female = male
+				boy = male
+				girl = male
+			}	
+			
+			all_dutch_headgear = {
+				index = 1
+				male = {
+					1 = male_headgear_european_military_01 # amerikaanse legermuts, sjako KNIL (tot 1894)
+					#1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
+					#1 = male_headgear_european_military_02 # franse kepi
+					#1 = male_headgear_european_military_03 # duitse militaire pet
+					#1 = male_headgear_european_military_05 # admiraalssteek
+					#1 = male_headgear_european_military_06 # cowboyhoed amerikaanse leger
+					#1 = male_headgear_european_military_08 # britse metalen helm met pluimen
+					#1 = male_headgear_european_military_09 # beige britse tropenhelm
+					#1 = male_headgear_european_military_10 # pickelhaube
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
+		}
+		
+	}
+	
+}

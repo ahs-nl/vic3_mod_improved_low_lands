@@ -1,0 +1,16 @@
+﻿# Netherlands
+united_netherlands = {
+	
+	color = "united_netherlands_orange"
+	
+	possible = {
+		exists = c:NET
+		THIS = c:NET
+		owns_entire_state_region = STATE_HOLLAND
+		owns_entire_state_region = STATE_FRIESLAND
+		owns_entire_state_region = STATE_GELRE
+		owns_entire_state_region = STATE_FLANDERS
+		owns_entire_state_region = STATE_WALLONIA
+	}
+	
+}

@@ -1,0 +1,179 @@
+﻿# Tests is character is (a) of beneluxian culture group, and (b) ruler or heir
+#lowlands_isruler_trigger = {
+#	exists = scope:character
+#	scope:character = {
+#		culture = {
+#			has_discrimination_trait = beneluxian_culture_group
+#		}
+#		OR = {
+#			is_ruler = yes
+#			is_heir = yes
+#		}
+#	}
+#}
+
+# Tests is character/pop needs to wear a uniform
+lowlands_uniform_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		OR = {
+			interest_group = { is_interest_group_type = ig_armed_forces }
+			AND = {
+				OR = {
+					is_ruler = yes
+					is_heir = yes
+				}
+				owner = {
+					has_law = law_type:law_monarchy
+				}
+			}
+			has_role = general
+			has_role = admiral
+		}
+	}
+}
+lowlands_uniform_pop_trigger = {
+	exists = scope:pop
+	scope:pop = {
+		OR = {
+			is_pop_type = soldiers
+			is_pop_type = officers
+		}
+	}
+}
+
+# Tests is character is (a) part of or subject of NET, and (b) is a royalist/republican/statist/absolutist
+netherlands_royalist_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:NET
+		owner = {
+			OR = {
+				AND = {
+					c:NET = this
+					is_subject = no
+				}
+				is_subject_of = c:NET
+			}
+			OR = {
+				coa_monarchy_trigger = yes
+				coa_constitutional_monarchy_trigger = yes
+				coa_absolute_monarchy_trigger = yes
+				coa_oligarchy_trigger = yes
+			}
+			coa_anarchy_trigger = no
+			coa_communism_trigger = no
+			coa_theocracy_trigger = no
+			coa_egalitarianism_trigger = no
+		}
+	}
+}
+netherlands_republican_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:NET
+		owner = {
+			OR = {
+				AND = {
+					c:NET = this
+					is_subject = no
+				}
+				is_subject_of = c:NET
+			}
+			coa_republic_trigger = yes
+			coa_anarchy_trigger = no
+			coa_communism_trigger = no
+			coa_theocracy_trigger = no
+			coa_egalitarianism_trigger = no
+		}
+	}
+}
+netherlands_statist_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:NET
+		owner = {
+			OR = {
+				AND = {
+					c:NET = this
+					is_subject = no
+				}
+				is_subject_of = c:NET
+			}
+			OR = {
+				coa_radical_republic_trigger = yes
+				coa_republican_dictatorship_trigger = yes
+			}
+			coa_anarchy_trigger = no
+			coa_communism_trigger = no
+			coa_theocracy_trigger = no
+			coa_egalitarianism_trigger = no
+		}
+	}
+}
+netherlands_absolutist_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:NET
+		owner = {
+			OR = {
+				AND = {
+					c:NET = this
+					is_subject = no
+				}
+				is_subject_of = c:NET
+			}
+			OR = {
+				coa_fascism_trigger = yes
+				coa_military_junta_trigger = yes
+			}
+			coa_anarchy_trigger = no
+			coa_communism_trigger = no
+			coa_theocracy_trigger = no
+			coa_egalitarianism_trigger = no
+		}
+	}
+}
+netherlands_apolitical_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:NET
+		owner = {
+			OR = {
+				AND = {
+					c:NET = this
+					is_subject = no
+				}
+				is_subject_of = c:NET
+			}
+			coa_monarchy_trigger = no
+			coa_constitutional_monarchy_trigger = no
+			coa_absolute_monarchy_trigger = no
+			coa_oligarchy_trigger = no
+			coa_republic_trigger = no
+			coa_radical_republic_trigger = no
+			coa_republican_dictatorship_trigger = no
+			coa_fascism_trigger = no
+			coa_military_junta_trigger = no
+		}
+	}
+}
+
+# Tests is character is (a) of beneluxian culture group, and (b) the game is in an early or in a late stage
+lowlands_earlygame_trigger = {
+	exists = scope:character
+	scope:character = {
+		culture = {
+			has_discrimination_trait = beneluxian_culture_group
+		}
+	}
+}
+lowlands_lategame_trigger = {
+	exists = scope:character
+	scope:character = {
+		OR = {
+			culture = cu:dutch
+			culture = cu:frisian
+		}
+	}
+}

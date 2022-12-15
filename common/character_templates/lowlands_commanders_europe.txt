@@ -1,0 +1,151 @@
+﻿# Belgium - BEL
+
+bel_general_prisse = {
+	first_name = Albert_Florent_Joseph
+	last_name = Prisse
+	culture = cu:wallonian
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1788.6.24
+	traits = {
+		surveyor
+		basic_diplomat
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:BEL
+			this = c:BEL
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1855.1.1	
+		chance = 50
+	}
+}
+
+# Netherlands - NET
+
+net_admiral_rijk = {
+	first_name = Julius
+	last_name = Rijk
+	culture = cu:dutch
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1787.1.1
+	traits = {
+		experienced_naval_commander
+		innovative
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1850.1.1	
+		chance = 50
+	}
+}
+
+net_general_cochius = {
+	first_name = Frans_David
+	last_name = Cochius
+	culture = cu:dutch
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1787.12.3
+	traits = {
+		forest_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1865.1.1	
+		chance = 50
+	}
+}
+
+net_general_de_kock = {
+	first_name = Hendrik_Merkus
+	last_name = de_Kock
+	culture = cu:dutch
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1779.5.25
+	traits = {
+		forest_commander
+		ambitious
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1865.1.1	
+		chance = 50
+	}
+}
+
+net_general_michiels = {
+	first_name = Andreas_Victor
+	last_name = Michiels
+	culture = cu:dutch
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1797.5.30
+	traits = {
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1865.1.1	
+		chance = 50
+	}
+}
+
+net_general_list = {
+	first_name = Frederik_Carel
+	last_name = List
+	culture = cu:dutch
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1784.2.5
+	traits = {
+		basic_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1850.1.1	
+		chance = 50
+	}
+}

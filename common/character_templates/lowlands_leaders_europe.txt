@@ -1,0 +1,36 @@
+﻿# Johan Rudolph Thorbecke: https://nl.wikipedia.org/wiki/Johan_Rudolph_Thorbecke
+NET_thorbecke_character_template = {
+	
+	first_name = Johan_Rudolph
+	last_name = Thorbecke
+	
+	dna = dna_thorbecke
+	culture = cu:dutch
+	religion = protestant
+	female = no
+	birth_date = 1798.1.14
+	
+	ideology = ideology_reformer
+	interest_group = ig_intelligentsia
+	
+	traits = {
+		expert_political_operator
+		charismatic
+		inspirational_orator
+	}
+	
+	interest_group_leader_usage = {
+		country_trigger = {
+			exists = c:NET
+			this = c:NET
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_intelligentsia
+		}   
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1872.6.4
+		chance = 66
+	}
+	
+}
