@@ -14,11 +14,6 @@ Improved Low Lands mod for Victoria 3
 - Historical leaders and political characters with DNA at startup and for spawning
 - Reworked map colours for scoped countries and cultures
 
-## Limitations
-
-- No changes in provincial setup, leaving that to other mods
-- No combat unit illustration graphics, in order not to overwrite vanilla `combat_unit_types`
-
 ## Scope
 
 - Low Lands countries (Netherlands, Belgium, Luxembourg)
@@ -28,6 +23,13 @@ Improved Low Lands mod for Victoria 3
 
 ## Design philosophy
 
+- Historical plausibility (no crazy flags, funny countries, imaginary uniforms)
 - No overwriting of vanilla files beyond absolutely necessary (e.g. correcting errors)
-- Following vanilla style
+- Following vanilla style for graphics and form
 - Should fit seamlessly into any other mod
+- Use PNG for image assets, rather than DDS where possible (since much easier editing and workflows from e.g. inkscape)
+
+## Limitations
+
+- No changes in provincial setup, leaving that to other mods (or depending submods, t.b.d.)
+- No combat unit illustration graphics, in order not to overwrite vanilla `combat_unit_types`

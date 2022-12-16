@@ -186,7 +186,7 @@
 				male = {
 					1 = empty
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = male
 			}	
@@ -200,7 +200,7 @@
 					1 = male_dutch_sash_orange_white_blue
 					1 = male_dutch_sash_red_white_lightblue
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = male
 			}	
@@ -210,7 +210,7 @@
 				male = {
 					1 = male_dutch_sash_orange
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -220,7 +220,7 @@
 				male = {
 					1 = male_dutch_sash_orange_accented
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -230,7 +230,7 @@
 				male = {
 					1 = male_dutch_sash_red_white_blue
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -240,7 +240,7 @@
 				male = {
 					1 = male_dutch_sash_orange_white_blue
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -250,7 +250,7 @@
 				male = {
 					1 = male_dutch_sash_red_white_lightblue
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -268,7 +268,7 @@
 				male = {
 					1 = empty
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = male
 			}	
@@ -278,7 +278,7 @@
 				male = {
 					1 = male_dutch_orange_belt
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -288,7 +288,7 @@
 				male = {
 					1 = male_dutch_orange_belt
 				}
-				female = male
+				female = {}
 				boy = male
 				girl = female
 			}
@@ -315,7 +315,7 @@
 				index = 1
 				male = {
 					1 = male_headgear_european_military_01 # amerikaanse legermuts, sjako KNIL (tot 1894)
-					#1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
+					1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
 					#1 = male_headgear_european_military_02 # franse kepi
 					#1 = male_headgear_european_military_03 # duitse militaire pet
 					#1 = male_headgear_european_military_05 # admiraalssteek
@@ -324,7 +324,27 @@
 					#1 = male_headgear_european_military_09 # beige britse tropenhelm
 					#1 = male_headgear_european_military_10 # pickelhaube
 				}
-				female = male
+				female = {}
+				boy = male
+				girl = female
+			}
+			
+			dutch_shako = {
+				index = 2
+				male = {
+					1 = male_headgear_european_military_01 # amerikaanse legermuts, sjako KNIL (tot 1894)
+				}
+				female = {}
+				boy = male
+				girl = female
+			}
+			
+			dutch_pith_helmet = {
+				index = 3
+				male = {
+					1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
+				}
+				female = {}
 				boy = male
 				girl = female
 			}

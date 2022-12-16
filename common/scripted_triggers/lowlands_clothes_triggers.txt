@@ -1,60 +1,194 @@
-﻿# Tests is character is (a) of beneluxian culture group, and (b) ruler or heir
-#lowlands_isruler_trigger = {
-#	exists = scope:character
-#	scope:character = {
-#		culture = {
-#			has_discrimination_trait = beneluxian_culture_group
-#		}
-#		OR = {
-#			is_ruler = yes
-#			is_heir = yes
-#		}
-#	}
-#}
+﻿# Name these triggers lowlands_*_trigger for consistency and to prevent clashing with other mods and vanilla
 
-# Tests is character/pop needs to wear a uniform
-lowlands_uniform_char_trigger = {
-	exists = scope:character
-	scope:character = {
-		OR = {
-			interest_group = { is_interest_group_type = ig_armed_forces }
-			AND = {
-				OR = {
-					is_ruler = yes
-					is_heir = yes
-				}
-				owner = {
-					has_law = law_type:law_monarchy
+# Tests if this character/pop is of beneluxian culture group
+lowlands_has_beneluxian_culture_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				culture = {
+					has_discrimination_trait = beneluxian_culture_group
 				}
 			}
-			has_role = general
-			has_role = admiral
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				culture = {
+					has_discrimination_trait = beneluxian_culture_group
+				}
+			}
 		}
 	}
 }
-lowlands_uniform_pop_trigger = {
+
+# Tests if this character/pop is living in NET/BEL/DEI or a subject thereof
+lowlands_is_located_in_NET_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:NET
+				owner = {
+					OR = {
+						AND = {
+							c:NET = this
+							is_subject = no
+						}
+						is_subject_of = c:NET
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:NET
+				owner = {
+					OR = {
+						AND = {
+							c:NET = this
+							is_subject = no
+						}
+						is_subject_of = c:NET
+					}
+				}
+			}
+		}
+	}
+}
+lowlands_is_located_in_DEI_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:DEI
+				owner = {
+					OR = {
+						AND = {
+							c:DEI = this
+							is_subject = yes
+							is_subject_of = c:NET
+						}
+						is_subject_of = c:DEI
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:DEI
+				owner = {
+					OR = {
+						AND = {
+							c:DEI = this
+							is_subject = yes
+							is_subject_of = c:NET
+						}
+						is_subject_of = c:DEI
+					}
+				}
+			}
+		}
+	}
+}
+lowlands_is_located_in_BEL_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:BEL
+				owner = {
+					OR = {
+						AND = {
+							c:BEL = this
+							is_subject = no
+						}
+						is_subject_of = c:BEL
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:BEL
+				owner = {
+					OR = {
+						AND = {
+							c:BEL = this
+							is_subject = no
+						}
+						is_subject_of = c:BEL
+					}
+				}
+			}
+		}
+	}
+}
+
+# Tests if character/pop needs to wear a uniform and if so which
+lowlands_is_ig_armed_forces_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		interest_group = { is_interest_group_type = ig_armed_forces }
+	}
+}
+lowlands_is_ruler_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		is_ruler = yes
+	}
+}
+lowlands_is_monarch_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		is_ruler = yes
+		owner = {
+			has_law = law_type:law_monarchy
+		}
+	}
+}
+lowlands_is_monarch_heir_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		is_heir = yes
+		owner = {
+			has_law = law_type:law_monarchy
+		}
+	}
+}
+lowlands_is_general_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		has_role = general
+	}
+}
+lowlands_is_admiral_char_trigger = {
+	exists = scope:character
+	scope:character = {
+		has_role = admiral
+	}
+}
+lowlands_is_officer_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		OR = {
-			is_pop_type = soldiers
-			is_pop_type = officers
-		}
+		is_pop_type = officers
+	}
+}
+lowlands_is_soldier_pop_trigger = {
+	exists = scope:pop
+	scope:pop = {
+		is_pop_type = soldiers
 	}
 }
 
-# Tests is character is (a) part of or subject of NET, and (b) is a royalist/republican/statist/absolutist
-netherlands_royalist_trigger = {
+# Tests is character is living in a royalist/republican/statist/absolutist state
+lowlands_is_royalist_trigger = {
 	exists = scope:character
 	scope:character = {
-		exists = c:NET
 		owner = {
-			OR = {
-				AND = {
-					c:NET = this
-					is_subject = no
-				}
-				is_subject_of = c:NET
-			}
 			OR = {
 				coa_monarchy_trigger = yes
 				coa_constitutional_monarchy_trigger = yes
@@ -68,18 +202,10 @@ netherlands_royalist_trigger = {
 		}
 	}
 }
-netherlands_republican_trigger = {
+lowlands_is_republican_trigger = {
 	exists = scope:character
 	scope:character = {
-		exists = c:NET
 		owner = {
-			OR = {
-				AND = {
-					c:NET = this
-					is_subject = no
-				}
-				is_subject_of = c:NET
-			}
 			coa_republic_trigger = yes
 			coa_anarchy_trigger = no
 			coa_communism_trigger = no
@@ -88,18 +214,10 @@ netherlands_republican_trigger = {
 		}
 	}
 }
-netherlands_statist_trigger = {
+lowlands_is_statist_trigger = {
 	exists = scope:character
 	scope:character = {
-		exists = c:NET
 		owner = {
-			OR = {
-				AND = {
-					c:NET = this
-					is_subject = no
-				}
-				is_subject_of = c:NET
-			}
 			OR = {
 				coa_radical_republic_trigger = yes
 				coa_republican_dictatorship_trigger = yes
@@ -111,18 +229,10 @@ netherlands_statist_trigger = {
 		}
 	}
 }
-netherlands_absolutist_trigger = {
+lowlands_is_absolutist_trigger = {
 	exists = scope:character
 	scope:character = {
-		exists = c:NET
 		owner = {
-			OR = {
-				AND = {
-					c:NET = this
-					is_subject = no
-				}
-				is_subject_of = c:NET
-			}
 			OR = {
 				coa_fascism_trigger = yes
 				coa_military_junta_trigger = yes
@@ -134,18 +244,10 @@ netherlands_absolutist_trigger = {
 		}
 	}
 }
-netherlands_apolitical_trigger = {
+lowlands_is_other_political_trigger = {
 	exists = scope:character
 	scope:character = {
-		exists = c:NET
 		owner = {
-			OR = {
-				AND = {
-					c:NET = this
-					is_subject = no
-				}
-				is_subject_of = c:NET
-			}
 			coa_monarchy_trigger = no
 			coa_constitutional_monarchy_trigger = no
 			coa_absolute_monarchy_trigger = no
@@ -159,21 +261,122 @@ netherlands_apolitical_trigger = {
 	}
 }
 
-# Tests is character is (a) of beneluxian culture group, and (b) the game is in an early or in a late stage
-lowlands_earlygame_trigger = {
-	exists = scope:character
-	scope:character = {
-		culture = {
-			has_discrimination_trait = beneluxian_culture_group
+# Tests if character/pop lives in an earl/mid/late stage in the game
+lowlands_is_early_game_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				owner = {
+					AND = {
+						game_date < 1850.1.1
+						NOT = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							has_technology_researched = civilizing_mission
+							has_technology_researched = pan-nationalism
+						}
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				owner = {
+					AND = {
+						game_date < 1850.1.1
+						NOT = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							has_technology_researched = civilizing_mission
+							has_technology_researched = pan-nationalism
+						}
+					}
+				}
+			}
 		}
 	}
 }
-lowlands_lategame_trigger = {
-	exists = scope:character
-	scope:character = {
-		OR = {
-			culture = cu:dutch
-			culture = cu:frisian
+lowlands_is_mid_game_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				owner = {
+					OR = {
+						AND = {
+							game_date >= 1850.1.1
+							game_date < 1875.1.1
+						}
+						AND = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							NOT = {
+								has_technology_researched = civilizing_mission
+								has_technology_researched = pan-nationalism
+							}
+						}
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				owner = {
+					OR = {
+						AND = {
+							game_date >= 1850.1.1
+							game_date < 1875.1.1
+						}
+						AND = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							NOT = {
+								has_technology_researched = civilizing_mission
+								has_technology_researched = pan-nationalism
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+lowlands_is_late_game_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				owner = {
+					OR = {
+						game_date >= 1875.1.1
+						AND = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							has_technology_researched = civilizing_mission
+							has_technology_researched = pan-nationalism
+						}
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				owner = {
+					OR = {
+						game_date >= 1875.1.1
+						AND = {
+							has_technology_researched = quinine
+							has_technology_researched = nationalism
+							has_technology_researched = civilizing_mission
+							has_technology_researched = pan-nationalism
+						}
+					}
+				}
+			}
 		}
 	}
 }
