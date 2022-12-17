@@ -2,6 +2,14 @@
 
 Improved Low Lands mod for Victoria 3
 
+## To do
+
+- Add license
+- Begin description with a short list of what your mod adds to or changes about the game. Add more detailed info at the bottom.
+- Clearly state whether your mod is compatible with achievements and ironman saves.
+- Provide links to your mod on other platforms (Workshop, Paradox Mods, forums)
+- Add screenshots
+
 ## Features
 
 - New releasable countries, regions, provinces in the netherlands and colonial regions
