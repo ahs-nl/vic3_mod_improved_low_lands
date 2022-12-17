@@ -4,6 +4,7 @@ Improved Low Lands mod for Victoria 3
 
 ## To do
 
+- add "how to install" section and link to steamworkshop/paradoxmods
 - Add license
 - Begin description with a short list of what your mod adds to or changes about the game. Add more detailed info at the bottom.
 - Clearly state whether your mod is compatible with achievements and ironman saves.
