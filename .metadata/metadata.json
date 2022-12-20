@@ -1,9 +1,9 @@
 {
   "name" : "Improved Low Lands",
-  "id" : "",
-  "version" : "0.0.6",
+  "id" : "ill.base",
+  "version" : "2022.19.12",
   "supported_game_version" : "1.*.*",
-  "short_description" : "",
+  "short_description" : "Enhanced realism and depth for lowlandish countries",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {

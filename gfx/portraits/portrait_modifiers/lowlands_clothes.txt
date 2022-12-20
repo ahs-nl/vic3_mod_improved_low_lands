@@ -125,7 +125,7 @@ lowlands_uniform = {
 			# dutch dark blue plain single-breasted uniform dutch_coats
 			accessory = {
 				mode = add
-				gene = dutch_coats
+				gene = lowlands_coats
 				template = all_dutch_coats
 				range = { 0.0 0.1 }
 			}
@@ -133,15 +133,15 @@ lowlands_uniform = {
 			# orange dutch_belt
 			accessory = {
 				mode = add
-				gene = dutch_belts
-				template = orange_belt
+				gene = lowlands_belts
+				template = dutch_orange_belt
 				range = { 0 1 }
 			}
 			
 			# uniform-like dutch_trousers (with/without sidelines (biezen))
 			accessory = {
 				mode = add
-				gene = dutch_trousers
+				gene = lowlands_trousers
 				template = all_dutch_trousers
 				#template = dutch_trousers_basic
 				#template = dutch_trousers_sidelinesthin
@@ -175,7 +175,7 @@ lowlands_uniform = {
 			# dutch dark blue plain single-breasted uniform dutch_coats
 			accessory = {
 				mode = add
-				gene = dutch_coats
+				gene = lowlands_coats
 				template = all_dutch_coats
 				range = { 0.0 0.1 }
 			}
@@ -183,15 +183,15 @@ lowlands_uniform = {
 			# orange dutch_belt
 			accessory = {
 				mode = add
-				gene = dutch_belts
-				template = orange_belt
+				gene = lowlands_belts
+				template = dutch_orange_belt
 				range = { 0 1 }
 			}
 			
 			# uniform-like dutch_trousers (with/without sidelines (biezen))
 			accessory = {
 				mode = add
-				gene = dutch_trousers
+				gene = lowlands_trousers
 				template = all_dutch_trousers
 				#template = dutch_trousers_basic
 				#template = dutch_trousers_sidelinesthin
@@ -225,7 +225,7 @@ lowlands_uniform = {
 			# dutch dark blue plain single-breasted uniform dutch_coats
 			accessory = {
 				mode = add
-				gene = dutch_coats
+				gene = lowlands_coats
 				template = all_flemish_coats
 				range = { 0.0 0.1 }
 			}
@@ -233,15 +233,15 @@ lowlands_uniform = {
 			# orange dutch_belt
 			accessory = {
 				mode = add
-				gene = dutch_belts
-				template = orange_belt
+				gene = lowlands_belts
+				template = dutch_orange_belt
 				range = { 0 1 }
 			}
 			
 			# uniform-like dutch_trousers (with/without sidelines (biezen))
 			accessory = {
 				mode = add
-				gene = dutch_trousers
+				gene = lowlands_trousers
 				template = all_dutch_trousers
 				#template = dutch_trousers_basic
 				#template = dutch_trousers_sidelinesthin
@@ -793,7 +793,7 @@ lowlands_headgear = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_headgear
+				gene = lowlands_headgear
 				template = dutch_shako
 				range = { 0 1 }
 			}
@@ -836,7 +836,7 @@ lowlands_headgear = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_headgear
+				gene = lowlands_headgear
 				template = dutch_pith_helmet
 				range = { 0 1 }
 			}
@@ -969,8 +969,8 @@ lowlands_sashes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = sash_orange
+				gene = lowlands_sashes
+				template = dutch_sash_orange
 				range = { 0 1 }
 			}
 		}
@@ -1008,8 +1008,8 @@ lowlands_sashes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = sash_orange_accented
+				gene = lowlands_sashes
+				template = dutch_sash_orange_accented
 				range = { 0 1 }
 			}
 		}
@@ -1047,8 +1047,8 @@ lowlands_sashes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = sash_red_white_blue
+				gene = lowlands_sashes
+				template = dutch_sash_red_white_blue
 				range = { 0 1 }
 			}
 		}
@@ -1070,8 +1070,8 @@ lowlands_sashes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = sash_orange_white_blue
+				gene = lowlands_sashes
+				template = dutch_sash_orange_white_blue
 				range = { 0 1 }
 			}
 		}
@@ -1093,8 +1093,8 @@ lowlands_sashes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = sash_red_white_lightblue
+				gene = lowlands_sashes
+				template = dutch_sash_red_white_lightblue
 				range = { 0 1 }
 			}
 		}
@@ -1111,13 +1111,13 @@ lowlands_sashes = {
 		}
 	}
 	
-	# no sash
-	netherlands_sash_none = {
+	# option 6: red sash (Order of Leopold, was red earlier)
+	belgian_sash_red = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = dutch_sash
-				template = no_sash
+				gene = lowlands_sashes
+				template = belgian_sash_red
 				range = { 0 1 }
 			}
 		}
@@ -1125,9 +1125,92 @@ lowlands_sashes = {
 			base = 0
 			modifier = {
 				add = 100
-				lowlands_is_located_in_NET_trigger = yes
-				lowlands_is_statist_trigger = yes
-				lowlands_is_other_political_trigger = yes
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_royalist_trigger = yes
+				OR = {
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 3
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_early_game_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_mid_game_trigger = yes
+			}
+			modifier = {
+				factor = 1
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_late_game_trigger = yes
+			}
+		}
+	}
+	
+	# option 7: purple sash (Order of Leopold, was purple later)
+	belgian_sash_purple = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = lowlands_sashes
+				template = belgian_sash_purple
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_royalist_trigger = yes
+				OR = {
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 1
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_early_game_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_mid_game_trigger = yes
+			}
+			modifier = {
+				factor = 3
+				lowlands_is_located_in_BEL_trigger = yes
+				lowlands_is_late_game_trigger = yes
+			}
+		}
+	}
+	
+	# no sash
+	lowlands_sash_none = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = lowlands_sashes
+				template = no_sash
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					lowlands_is_located_in_NET_trigger = yes
+					lowlands_is_located_in_BEL_trigger = yes
+				}
+				#OR = {
+				#	lowlands_is_statist_trigger = yes
+				#	lowlands_is_other_political_trigger = yes
+				#}
 				lowlands_is_monarch_char_trigger = no
 				lowlands_is_monarch_heir_char_trigger = no
 			}
@@ -1174,7 +1257,7 @@ lowlands_mantle = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 101
+				add = 200
 				lowlands_has_beneluxian_culture_trigger = yes
 				lowlands_is_monarch_char_trigger = yes
 			}

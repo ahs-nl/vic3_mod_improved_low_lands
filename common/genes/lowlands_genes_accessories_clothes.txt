@@ -4,7 +4,7 @@
 		
 		# COATS
 		
-		dutch_coats = {
+		lowlands_coats = {
 			
 			inheritable = no
 			
@@ -117,7 +117,7 @@
 		
 		# TROUSERS
 		
-		dutch_trousers = {
+		lowlands_trousers = {
 			
 			inheritable = no
 			
@@ -177,7 +177,7 @@
 		
 		# SASHES
 		
-		dutch_sash = {
+		lowlands_sashes = {
 			
 			inheritable = no
 			
@@ -205,8 +205,19 @@
 				girl = male
 			}	
 			
-			sash_orange = {
+			all_belgian_sashes = {
 				index = 2
+				male = {
+					1 = male_belgian_sash_red
+					1 = male_belgian_sash_purple
+				}
+				female = {}
+				boy = male
+				girl = male
+			}	
+			
+			dutch_sash_orange = {
+				index = 3
 				male = {
 					1 = male_dutch_sash_orange
 				}
@@ -215,8 +226,8 @@
 				girl = female
 			}
 			
-			sash_orange_accented = {
-				index = 3
+			dutch_sash_orange_accented = {
+				index = 4
 				male = {
 					1 = male_dutch_sash_orange_accented
 				}
@@ -225,8 +236,8 @@
 				girl = female
 			}
 			
-			sash_red_white_blue = {
-				index = 4
+			dutch_sash_red_white_blue = {
+				index = 5
 				male = {
 					1 = male_dutch_sash_red_white_blue
 				}
@@ -235,8 +246,8 @@
 				girl = female
 			}
 			
-			sash_orange_white_blue = {
-				index = 5
+			dutch_sash_orange_white_blue = {
+				index = 6
 				male = {
 					1 = male_dutch_sash_orange_white_blue
 				}
@@ -245,10 +256,30 @@
 				girl = female
 			}
 			
-			sash_red_white_lightblue = {
-				index = 6
+			dutch_sash_red_white_lightblue = {
+				index = 7
 				male = {
 					1 = male_dutch_sash_red_white_lightblue
+				}
+				female = {}
+				boy = male
+				girl = female
+			}
+			
+			belgian_sash_red = {
+				index = 8
+				male = {
+					1 = male_belgian_sash_red
+				}
+				female = {}
+				boy = male
+				girl = female
+			}
+			
+			belgian_sash_purple = {
+				index = 9
+				male = {
+					1 = male_belgian_sash_purple
 				}
 				female = {}
 				boy = male
@@ -259,7 +290,7 @@
 		
 		# BELTS
 		
-		dutch_belts = {
+		lowlands_belts = {
 			
 			inheritable = no
 			
@@ -283,7 +314,7 @@
 				girl = female
 			}
 			
-			orange_belt = {
+			dutch_orange_belt = {
 				index = 2
 				male = {
 					1 = male_dutch_orange_belt
@@ -297,7 +328,7 @@
 		
 		# HEADGEAR
 		
-		dutch_headgear = {
+		lowlands_headgear = {
 			
 			inheritable = no
 			

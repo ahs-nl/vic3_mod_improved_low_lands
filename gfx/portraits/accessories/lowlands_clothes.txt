@@ -224,6 +224,14 @@ male_dutch_sash_red_white_lightblue = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_red_white_lightblue_entity" }
 }
 
+male_belgian_sash_red = {
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_sash_red_entity" }
+}
+
+male_belgian_sash_purple = {
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_sash_purple_entity" }
+}
+
 # BELTS
 
 male_dutch_orange_belt = {
