@@ -85,12 +85,12 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coats.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat.png"
 	}
 }
 
 variation = {
-	name = "frisian_uniform_coat"
+	name = "dutch_uniform_coat_navy"
 	pattern = {
 		weight = 1
 		# jas
@@ -116,12 +116,12 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/frisian_uniform_coats.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat_navy.png"
 	}
 }
 
 variation = {
-	name = "flemish_uniform_coat"
+	name = "lowlands_uniform_coat_chasseurs"
 	pattern = {
 		weight = 1
 		# jas
@@ -147,12 +147,12 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/flemish_uniform_coats.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_coat_chasseurs.png"
 	}
 }
 
 variation = {
-	name = "wallonian_uniform_coat"
+	name = "belgian_uniform_coat"
 	pattern = {
 		weight = 1
 		# jas
@@ -178,7 +178,38 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/wallonian_uniform_coats.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat.png"
+	}
+}
+
+variation = {
+	name = "belgian_uniform_coat_navy"
+	pattern = {
+		weight = 1
+		# jas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# mouwuiteinden
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# kraag
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# biezen
+		a = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat_navy.png"
 	}
 }
 
@@ -209,7 +240,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coats.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat.png"
 	}
 }
 
@@ -243,6 +274,130 @@ variation = {
 	color_palette = {
 		weight = 1
 		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers.png"
+	}
+}
+
+variation = {
+	name = "dutch_uniform_trousers_navy"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers_navy.png"
+	}
+}
+
+variation = {
+	name = "lowlands_uniform_trousers_chasseurs"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_trousers_chasseurs.png"
+	}
+}
+
+variation = {
+	name = "belgian_uniform_trousers"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers.png"
+	}
+}
+
+variation = {
+	name = "belgian_uniform_trousers_navy"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers_navy.png"
 	}
 }
 
@@ -436,4 +591,3 @@ variation = {
 		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_purple.png"
 	}
 }
-

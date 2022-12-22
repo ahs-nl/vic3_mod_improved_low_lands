@@ -118,16 +118,17 @@ lowlands_uniform = {
 	usage = game
 	selection_behavior = weighted_random
 	
-	# dutch base uniform
+	# dutch base regular uniform
 	dutch_base_uniform = {
 		dna_modifiers = {
 			
-			# dutch dark blue plain single-breasted uniform dutch_coats
+			# dark blue plain single-breasted uniform
 			accessory = {
 				mode = add
 				gene = lowlands_coats
-				template = all_dutch_coats
-				range = { 0.0 0.1 }
+				template = dutch_army_coats
+				#value = 0.9
+				range = { 0 1 }
 			}
 			
 			# orange dutch_belt
@@ -153,16 +154,117 @@ lowlands_uniform = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				lowlands_is_located_in_NET_trigger = yes
 				OR = {
 					lowlands_is_ig_armed_forces_char_trigger = yes
-					lowlands_is_monarch_char_trigger = yes
-					lowlands_is_monarch_heir_char_trigger = yes
 					lowlands_is_general_char_trigger = yes
 					lowlands_is_admiral_char_trigger = yes
 					lowlands_is_officer_pop_trigger = yes
 					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
+		}
+	}
+	
+	# dutch base navy uniform
+	dutch_navy_uniform = {
+		dna_modifiers = {
+			
+			# dark blue plain single-breasted uniform
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = dutch_navy_coats
+				#value = 0.9
+				range = { 0 1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = lowlands_belts
+				template = dutch_orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_NET_trigger = yes
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = no
+			}
+		}
+	}
+	
+	# dutch monarch uniform
+	dutch_monarch_uniform = {
+		dna_modifiers = {
+			
+			# dark blue plain single-breasted uniform
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = all_dutch_coats
+				#value = 0.9
+				range = { 0 1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = lowlands_belts
+				template = dutch_orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_NET_trigger = yes
+				OR = {
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
 				}
 			}
 		}
@@ -172,12 +274,12 @@ lowlands_uniform = {
 	dutch_knil_base_uniform = {
 		dna_modifiers = {
 			
-			# dutch dark blue plain single-breasted uniform dutch_coats
+			# dark blue plain single-breasted uniform
 			accessory = {
 				mode = add
 				gene = lowlands_coats
 				template = all_dutch_coats
-				range = { 0.0 0.1 }
+				range = { 0 1 }
 			}
 			
 			# orange dutch_belt
@@ -203,7 +305,7 @@ lowlands_uniform = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5001
+				add = 200
 				lowlands_is_located_in_DEI_trigger = yes
 				OR = {
 					lowlands_is_ig_armed_forces_char_trigger = yes
@@ -215,6 +317,62 @@ lowlands_uniform = {
 					lowlands_is_soldier_pop_trigger = yes
 				}
 			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
+		}
+	}
+	
+	# lowlandish chasseurs/jagers uniform
+	lowlands_chasseurs_uniform = {
+		dna_modifiers = {
+			
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = lowlands_chasseurs_coats
+				range = { 0 1 }
+			}
+			
+			accessory = {
+				mode = add
+				gene = lowlands_belts
+				template = dutch_orange_belt
+				range = { 0 1 }
+			}
+			
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = lowlands_chasseurs_trousers
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				#add = 20
+				add = 2000
+				OR = {
+					lowlands_is_located_in_NET_trigger = yes
+					lowlands_is_located_in_BEL_trigger = yes
+				}
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
 		}
 	}
 	
@@ -222,12 +380,12 @@ lowlands_uniform = {
 	belgian_base_uniform = {
 		dna_modifiers = {
 			
-			# dutch dark blue plain single-breasted uniform dutch_coats
+			# dark blue plain single-/double-breasted uniform
 			accessory = {
 				mode = add
 				gene = lowlands_coats
-				template = all_flemish_coats
-				range = { 0.0 0.1 }
+				template = belgian_army_coats
+				range = { 0 1 }
 			}
 			
 			# orange dutch_belt
@@ -253,16 +411,117 @@ lowlands_uniform = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				lowlands_is_located_in_BEL_trigger = yes
 				OR = {
 					lowlands_is_ig_armed_forces_char_trigger = yes
-					lowlands_is_monarch_char_trigger = yes
-					lowlands_is_monarch_heir_char_trigger = yes
 					lowlands_is_general_char_trigger = yes
 					lowlands_is_admiral_char_trigger = yes
 					lowlands_is_officer_pop_trigger = yes
 					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
+		}
+	}
+	
+	# belgian base navy uniform
+	belgian_navy_uniform = {
+		dna_modifiers = {
+			
+			# dark blue plain single-/double-breasted uniform
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = belgian_navy_coats
+				#value = 0.9
+				range = { 0 1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = lowlands_belts
+				template = dutch_orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_BEL_trigger = yes
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = no
+			}
+		}
+	}
+	
+	# belgian monarch uniform
+	belgian_monarch_uniform = {
+		dna_modifiers = {
+			
+			# dark blue plain single-breasted uniform
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = all_belgian_coats
+				#value = 0.9
+				range = { 0 1 }
+			}
+			
+			# orange dutch_belt
+			accessory = {
+				mode = add
+				gene = lowlands_belts
+				template = dutch_orange_belt
+				range = { 0 1 }
+			}
+			
+			# uniform-like dutch_trousers (with/without sidelines (biezen))
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = all_dutch_trousers
+				#template = dutch_trousers_basic
+				#template = dutch_trousers_sidelinesthin
+				#template = dutch_trousers_sidelinesthick
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_BEL_trigger = yes
+				OR = {
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
 				}
 			}
 		}
@@ -288,7 +547,7 @@ lowlands_epaulettes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				OR = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
@@ -332,7 +591,7 @@ lowlands_epaulettes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				OR = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
@@ -368,7 +627,7 @@ lowlands_epaulettes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				OR = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
@@ -404,7 +663,7 @@ lowlands_epaulettes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				OR = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
@@ -437,7 +696,7 @@ lowlands_epaulettes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 5000
+				add = 100
 				OR = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
@@ -746,6 +1005,10 @@ lowlands_aiguillettes = { # nestel in het nederlands
 					lowlands_is_officer_pop_trigger = yes
 				}
 			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
 		}
 	}
 	
@@ -789,7 +1052,7 @@ lowlands_headgear = {
 	selection_behavior = weighted_random
 	
 	# dutch shako
-	lowlands_headgear_true = {
+	lowlands_headgear_shako = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -828,11 +1091,15 @@ lowlands_headgear = {
 				lowlands_is_located_in_NET_trigger = yes
 				lowlands_is_late_game_trigger = yes
 			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
 		}
 	}
 	
 	# dutch KNIL pith helmet
-	lowlands_headgear_true = {
+	lowlands_headgear_pith_helmet = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -886,6 +1153,30 @@ lowlands_headgear = {
 				lowlands_is_located_in_DEI_trigger = yes
 				lowlands_is_late_game_trigger = yes
 			}
+			modifier = {
+				factor = 0
+				lowlands_is_admiral_char_trigger = yes
+			}
+		}
+	}
+	
+	# dutch navy bicorne
+	lowlands_headgear_navy_bicorne = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = european_admiral_headgear
+				range = { 0 1 }
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_is_located_in_NET_trigger = yes
+				lowlands_is_admiral_char_trigger = yes
+			}
 		}
 	}
 	
@@ -894,8 +1185,8 @@ lowlands_headgear = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = top_layer
-				template = no_top_layer
+				gene = lowlands_headgear
+				template = no_headgear
 				range = { 0 1 }
 			}
 		}
@@ -913,6 +1204,10 @@ lowlands_headgear = {
 					lowlands_is_officer_pop_trigger = yes
 					lowlands_is_soldier_pop_trigger = yes
 				}
+			}
+			modifier = {
+				factor = 0.5
+				lowlands_is_admiral_char_trigger = yes
 			}
 		}
 	}

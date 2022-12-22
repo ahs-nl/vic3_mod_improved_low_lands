@@ -1,151 +1,61 @@
 ﻿# COATS
 
-male_dutch_coat_01 = {
+# dutch base
+male_dutch_coat_base_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_01_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_base_01_entity" }
 }
-male_dutch_coat_03 = {
+male_dutch_coat_base_02 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_03_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_base_02_entity" }
 }
-male_dutch_coat_06 = {
+male_dutch_coat_base_03 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_06_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_base_03_entity" }
 }
-male_dutch_coat_08 = {
+male_dutch_coat_base_04 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_08_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_base_04_entity" }
 }
-male_dutch_coat_09 = {
+# dutch navy
+male_dutch_coat_navy_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_09_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_navy_01_entity" }
 }
-male_dutch_coat_10 = {
+male_dutch_coat_navy_02 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_10_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_navy_02_entity" }
 }
-male_dutch_coat_11 = {
+# lowlandish jagers/chasseurs
+male_lowlands_coat_chasseurs_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_11_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_lowlands_coat_chasseurs_01_entity" }
 }
-male_dutch_coat_c1 = {
+# belgian base
+male_belgian_coat_base_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_c1_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_base_01_entity" }
 }
-male_dutch_coat_c2 = {
+male_belgian_coat_base_02 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_coat_c2_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_base_02_entity" }
 }
-
-male_frisian_coat_01 = {
+male_belgian_coat_base_03 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_01_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_base_03_entity" }
 }
-male_frisian_coat_03 = {
+male_belgian_coat_base_04 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_03_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_base_04_entity" }
 }
-male_frisian_coat_06 = {
+# belgian navy
+male_belgian_coat_navy_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_06_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_navy_01_entity" }
 }
-male_frisian_coat_08 = {
+male_belgian_coat_navy_02 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_08_entity" }
-}
-male_frisian_coat_09 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_09_entity" }
-}
-male_frisian_coat_10 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_10_entity" }
-}
-male_frisian_coat_11 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_11_entity" }
-}
-male_frisian_coat_c1 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_c1_entity" }
-}
-male_frisian_coat_c2 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_frisian_coat_c2_entity" }
-}
-
-male_flemish_coat_01 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_01_entity" }
-}
-male_flemish_coat_03 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_03_entity" }
-}
-male_flemish_coat_06 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_06_entity" }
-}
-male_flemish_coat_08 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_08_entity" }
-}
-male_flemish_coat_09 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_09_entity" }
-}
-male_flemish_coat_10 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_10_entity" }
-}
-male_flemish_coat_11 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_11_entity" }
-}
-male_flemish_coat_c1 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_c1_entity" }
-}
-male_flemish_coat_c2 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_flemish_coat_c2_entity" }
-}
-
-male_wallonian_coat_01 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_01_entity" }
-}
-male_wallonian_coat_03 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_03_entity" }
-}
-male_wallonian_coat_06 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_06_entity" }
-}
-male_wallonian_coat_08 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_08_entity" }
-}
-male_wallonian_coat_09 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_09_entity" }
-}
-male_wallonian_coat_10 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_10_entity" }
-}
-male_wallonian_coat_11 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_11_entity" }
-}
-male_wallonian_coat_c1 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_c1_entity" }
-}
-male_wallonian_coat_c2 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_wallonian_coat_c2_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_coat_navy_02_entity" }
 }
 
 male_boer_coat_01 = {
@@ -187,19 +97,70 @@ male_boer_coat_c2 = {
 
 # TROUSERS
 
+# dutch base
 male_dutch_trousers_basic = {
 	set_tags = "shrink_belly,shrink_legs"
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_basic_entity" }
 }
-
 male_dutch_trousers_sidelinesthin = {
 	set_tags = "shrink_belly,shrink_legs"
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_sidelinesthin_entity" }
 }
-
 male_dutch_trousers_sidelinesthick = {
 	set_tags = "shrink_belly,shrink_legs"
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_sidelinesthick_entity" }
+}
+# dutch navy
+male_dutch_trousers_navy_basic = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_navy_basic_entity" }
+}
+male_dutch_trousers_navy_sidelinesthin = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_navy_sidelinesthin_entity" }
+}
+male_dutch_trousers_navy_sidelinesthick = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_trousers_navy_sidelinesthick_entity" }
+}
+# lowlandish jagers/chasseurs
+male_lowlands_trousers_chasseurs_basic = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_lowlands_trousers_chasseurs_basic_entity" }
+}
+male_lowlands_trousers_chasseurs_sidelinesthin = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_lowlands_trousers_chasseurs_sidelinesthin_entity" }
+}
+male_lowlands_trousers_chasseurs_sidelinesthick = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_lowlands_trousers_chasseurs_sidelinesthick_entity" }
+}
+# belgian base
+male_belgian_trousers_basic = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_basic_entity" }
+}
+male_belgian_trousers_sidelinesthin = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_sidelinesthin_entity" }
+}
+male_belgian_trousers_sidelinesthick = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_sidelinesthick_entity" }
+}
+# belgian navy
+male_belgian_trousers_navy_basic = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_navy_basic_entity" }
+}
+male_belgian_trousers_navy_sidelinesthin = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_navy_sidelinesthin_entity" }
+}
+male_belgian_trousers_navy_sidelinesthick = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_navy_sidelinesthick_entity" }
 }
 
 # SASHES
