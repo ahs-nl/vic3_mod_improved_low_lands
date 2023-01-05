@@ -1,6 +1,6 @@
-﻿boer = {
+﻿voortrekker = {
 	
-	color = hsv{ 0.05 0.80 0.86 }
+	color = hsv{ 0.10 0.80 0.86 }
 	
 	religion = protestant # reformed
 	traits = { beneluxian_culture_group dutchophone european_heritage african_settler }

@@ -217,22 +217,22 @@ variation = {
 	name = "boer_uniform_coat"
 	pattern = {
 		weight = 1
-		# jas
+		# jasje
 		r = {
 			textures = "lowlands_wool"
 			layout = "lowlands_fabric_layout"
 		}
-		# mouwuiteinden
+		# hemd
 		g = {
-			textures = "lowlands_silk"
+			textures = "lowlands_wool"
 			layout = "lowlands_fabric_layout"
 		}
-		# kraag
+		# nekband
 		b = {
 			textures = "lowlands_wool"
 			layout = "lowlands_fabric_layout"
 		}
-		# biezen
+		# borstzak
 		a = {
 			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
@@ -241,6 +241,37 @@ variation = {
 	color_palette = {
 		weight = 1
 		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat.png"
+	}
+}
+
+variation = {
+	name = "boer_uniform_coat_inversed"
+	pattern = {
+		weight = 1
+		# overjas
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# vest
+		g = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# hemd
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# knopen
+		a = {
+			textures = "lowlands_gold_trim"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat_inversed.png"
 	}
 }
 
@@ -401,6 +432,93 @@ variation = {
 	}
 }
 
+variation = {
+	name = "boer_trousers"
+	pattern = {
+		weight = 1
+		# base fabric
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		# sidelines (if enabled by mask)
+		g = {
+			textures = "lowlands_silk"
+			layout = "lowlands_fabric_layout"
+		}
+		# shoes
+		b = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		# unused
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_trousers.png"
+	}
+}
+
+# headgear
+
+variation = {
+	name = "dutch_uniform_headgear"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_headgear.png"
+	}
+}
+
+variation = {
+	name = "boer_slouch_hat"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_leather"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_slouch_hat.png"
+	}
+}
+
 # sashes
 
 variation = {
@@ -412,11 +530,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -439,11 +557,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -466,11 +584,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -493,11 +611,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -520,11 +638,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -547,11 +665,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -574,11 +692,11 @@ variation = {
 			layout = "lowlands_fabric_layout"
 		}
 		g = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		b = {
-			textures = "lowlands_wool"
+			textures = "lowlands_silk_fine"
 			layout = "lowlands_fabric_layout"
 		}
 		a = {
@@ -589,5 +707,32 @@ variation = {
 	color_palette = {
 		weight = 1
 		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_purple.png"
+	}
+}
+
+variation = {
+	name = "belgian_sash_black_yellow_red"
+	pattern = {
+		weight = 1
+		r = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		g = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		b = {
+			textures = "lowlands_silk_fine"
+			layout = "lowlands_fabric_layout"
+		}
+		a = {
+			textures = "lowlands_wool"
+			layout = "lowlands_fabric_layout"
+		}
+	}
+	color_palette = {
+		weight = 1
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_black_yellow_red.png"
 	}
 }

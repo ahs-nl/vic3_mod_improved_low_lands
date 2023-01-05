@@ -128,23 +128,14 @@
 			}
 			
 			all_boer_coats = {
-				# male_civilian_coat_european_01 (jasje)
-				# male_waistcoat_european_03 (vest met hemd)
-				# male_outfit_polynesian_01_high (jasje dasje)
-				# male_outfit_slavic_01_low (lange overjas over vest met hemd)
 				index = 8
 				male = {
-					#1 = male_boer_coat_01
-					#1 = male_boer_coat_03
-					#1 = male_boer_coat_06
-					#1 = male_boer_coat_08
-					#1 = male_boer_coat_09
-					#1 = male_boer_coat_10
-					#1 = male_boer_coat_11
+					1 = male_boer_coat_01
+					1 = male_boer_coat_02
 					#1 = male_civilian_coat_european_01
 					#1 = male_waistcoat_european_03
 					#1 = male_outfit_polynesian_01_high
-					1 = male_outfit_slavic_01_low
+					#1 = male_outfit_slavic_01_low
 				}
 				female = {
 					1 = female_outfit_european_common_01
@@ -262,6 +253,16 @@
 				girl = female
 			}
 			
+			boer_trousers = {
+				index = 8
+				male = {
+					1 = male_boer_trousers
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			
 		}
 		
 		# SASHES
@@ -278,7 +279,7 @@
 				female = {}
 				boy = male
 				girl = male
-			}	
+			}
 			
 			all_dutch_sashes = {
 				index = 1
@@ -292,18 +293,19 @@
 				female = {}
 				boy = male
 				girl = male
-			}	
+			}
 			
 			all_belgian_sashes = {
 				index = 2
 				male = {
 					1 = male_belgian_sash_red
 					1 = male_belgian_sash_purple
+					1 = male_belgian_sash_black_yellow_red
 				}
 				female = {}
 				boy = male
 				girl = male
-			}	
+			}
 			
 			dutch_sash_orange = {
 				index = 3
@@ -375,6 +377,16 @@
 				girl = female
 			}
 			
+			belgian_sash_black_yellow_red = {
+				index = 10
+				male = {
+					1 = male_belgian_sash_black_yellow_red
+				}
+				female = {}
+				boy = male
+				girl = female
+			}
+			
 		}
 		
 		# BELTS
@@ -391,7 +403,7 @@
 				female = {}
 				boy = male
 				girl = male
-			}	
+			}
 			
 			all_dutch_belts = {
 				index = 1
@@ -429,13 +441,13 @@
 				female = male
 				boy = male
 				girl = male
-			}	
+			}
 			
 			all_dutch_headgear = {
 				index = 1
 				male = {
-					1 = male_headgear_european_military_01 # amerikaanse legermuts, sjako KNIL (tot 1894)
-					1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
+					1 = male_dutch_shako
+					1 = male_dutch_colonial_hat
 					#1 = male_headgear_european_military_02 # franse kepi
 					#1 = male_headgear_european_military_03 # duitse militaire pet
 					#1 = male_headgear_european_military_05 # admiraalssteek
@@ -452,7 +464,7 @@
 			dutch_shako = {
 				index = 2
 				male = {
-					1 = male_headgear_european_military_01 # amerikaanse legermuts, sjako KNIL (tot 1894)
+					1 = male_dutch_shako # model van amerikaanse legermuts, sjako Nederlandse leger en ook KNIL (tot 1894)
 				}
 				female = {}
 				boy = male
@@ -463,6 +475,16 @@
 				index = 3
 				male = {
 					1 = male_dutch_colonial_hat # tropenhoed KNIL (introductie in 1894)
+				}
+				female = {}
+				boy = male
+				girl = female
+			}
+			
+			boer_slouch_hat = {
+				index = 4
+				male = {
+					1 = male_boer_slouch_hat
 				}
 				female = {}
 				boy = male

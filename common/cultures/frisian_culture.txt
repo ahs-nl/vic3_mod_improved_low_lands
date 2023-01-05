@@ -2,7 +2,7 @@
 	
 	color = hsv{ 0.02 0.65 0.80 }
 	
-	religion = protestant
+	religion = protestant # reformed
 	traits = { beneluxian_culture_group frisophone european_heritage }
 	
 	male_common_first_names = {
@@ -96,7 +96,7 @@
 	
 	graphics = european
 	ethnicities = {
-		1 = caucasian
+		1 = lowlandish
 	}
 	
 }

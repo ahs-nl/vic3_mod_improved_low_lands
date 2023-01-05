@@ -62,37 +62,10 @@ male_boer_coat_01 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_01_entity" }
 }
-male_boer_coat_03 = {
+
+male_boer_coat_02 = {
 	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_03_entity" }
-}
-male_boer_coat_06 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_06_entity" }
-}
-male_boer_coat_08 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_08_entity" }
-}
-male_boer_coat_09 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_09_entity" }
-}
-male_boer_coat_10 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_10_entity" }
-}
-male_boer_coat_11 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_11_entity" }
-}
-male_boer_coat_c1 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_c1_entity" }
-}
-male_boer_coat_c2 = {
-	set_tags = "shrink_arms,shrink_chest,shrink_belly"
-	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_c2_entity" }
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_coat_02_entity" }
 }
 
 # TROUSERS
@@ -162,25 +135,26 @@ male_belgian_trousers_navy_sidelinesthick = {
 	set_tags = "shrink_belly,shrink_legs"
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_trousers_navy_sidelinesthick_entity" }
 }
+# boer
+male_boer_trousers = {
+	set_tags = "shrink_belly,shrink_legs"
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_boer_trousers_entity" }
+}
 
 # SASHES
 
 male_dutch_sash_orange = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_orange_entity" }
 }
-
 male_dutch_sash_orange_accented = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_orange_accented_entity" }
 }
-
 male_dutch_sash_red_white_blue = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_red_white_blue_entity" }
 }
-
 male_dutch_sash_orange_white_blue = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_orange_white_blue_entity" }
 }
-
 male_dutch_sash_red_white_lightblue = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_dutch_sash_red_white_lightblue_entity" }
 }
@@ -188,9 +162,11 @@ male_dutch_sash_red_white_lightblue = {
 male_belgian_sash_red = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_sash_red_entity" }
 }
-
 male_belgian_sash_purple = {
 	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_sash_purple_entity" }
+}
+male_belgian_sash_black_yellow_red = {
+	entity = { required_tags = "" shared_pose_entity = torso entity = "male_belgian_sash_black_yellow_red_entity" }
 }
 
 # BELTS
@@ -201,8 +177,18 @@ male_dutch_orange_belt = {
 
 # HEADGEAR
 
-male_dutch_colonial_hat = {
+male_dutch_shako = {
 	set_tags = "cap1"
 	#set_tags = "no_hair"
+	entity = { required_tags = "" shared_pose_entity = head entity = "male_dutch_shako_entity" }
+}
+
+male_dutch_colonial_hat = {
+	set_tags = "cap1"
 	entity = { required_tags = "" shared_pose_entity = head entity = "male_dutch_colonial_hat_entity" }
+}
+
+male_boer_slouch_hat = {
+	set_tags = "cap1"
+	entity = { required_tags = "" shared_pose_entity = head entity = "male_boer_slouch_hat_entity" }
 }

@@ -69,6 +69,14 @@ This mod has been built with the option in mind to integrate with any mod and va
 Integration with the following mods has been verified:
 - [Victorian Flavor Mod](https://github.com/Radsterman/Victorian-Flavor-Mod)
 
+## Licence
+
+- No Diffusion
+- No Derivative Works
+- No Modification
+- Non Commercial
+
+
 ## To do
 
 - Add license
