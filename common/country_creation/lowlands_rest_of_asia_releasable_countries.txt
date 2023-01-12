@@ -1,0 +1,23 @@
+﻿NHL = { # New Holland (Dutch Australia)
+	states = {
+		STATE_NEW_SOUTH_WALES
+		STATE_VICTORIA
+		STATE_TASMANIA
+		STATE_QUEENSLAND
+		STATE_SOUTH_AUSTRALIA
+		STATE_WESTERN_AUSTRALIA
+		STATE_NORTHERN_TERRITORY
+	}
+	required_num_states = 5
+	possible = {
+		exists = c:NET
+		this = c:NET
+	}
+	ai_will_do = { always = no }
+}
+
+# CEY = { # Dutch Ceylon
+# }
+
+# FRS = { # Dutch Formosa
+# }

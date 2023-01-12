@@ -1,0 +1,20 @@
+# Winburg
+
+# base flags
+
+WIB_regular = {
+	
+	# Flag of Winburg: https://af.wikipedia.org/wiki/Winburg
+	# Republic of Winburg-Potchefstroom: https://af.wikipedia.org/wiki/Republiek_Winburg-Potchefstroom
+	# Using the Winburg / Voortrekker flag instead of the Zoutpansberg / Burgers' flag to make in-game distinction
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_crossed.png"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_azuur
+	}	
+	
+}

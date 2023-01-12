@@ -2,26 +2,21 @@
 
 # base flags
 
-CAP_base = {
-	
-	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_orange
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
-		color1 = wappenwiki_argent
-		color2 = wappenwiki_azuur
-	}
-	
-}
-
 CAP_regular = {
 	
-	parent = "CAP_base"
+	parent = "NET_prinsenvlag"
 	
 	sub = {
-		parent = "sub_CAP_coa"
+		parent = "sub_CAP_helper_circle"
 		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.15 } }
 	}
 	
 }
@@ -29,6 +24,152 @@ CAP_regular = {
 # historically-inspired flags
 
 # subject
+
+CAP_subject_GBR = {
+	
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "blue"
+	color2 = "blue"
+	
+	# circle frame argent in background
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.50 0.50 } position = { 0.75 0.50 } }
+	}
+	# on top of shield allegory representation of Good Hope
+	colored_emblem = {
+		texture = "hope_allegory.png"
+		color1 = wappenwiki_bleuceleste
+		instance = { scale = { 0.20 0.20 } position = { 0.75 0.35 } }
+	}
+	# shield supporter sinister: kudu (used vanilla deer instead)
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_brunatre
+		instance = { scale = { 0.33 0.33 } position = { 0.85 0.52 } }
+	}
+	# shield supporter dexter: gnu (used vanilla yalis instead)
+	colored_emblem = {
+		texture = "ce_supporter_yalis.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_orange
+		instance = { scale = { 0.33 0.33 } position = { 0.65 0.52 } }
+	}
+	# shield gules with argent top border
+	colored_emblem = { # shield outline
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.54 } }
+	}
+	colored_emblem = { # shield
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.28 0.28 } position = { 0.75 0.54 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.11 0.06 } position = { 0.75 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.10 0.05 } position = { 0.75 0.45 } }
+	}
+	# top border charge: three fleur-de-lys or (skipped) on azure circles
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.035 0.035 } position = { 0.72 0.45 } }
+		instance = { scale = { 0.035 0.035 } position = { 0.75 0.45 } }
+		instance = { scale = { 0.035 0.035 } position = { 0.78 0.45 } }
+	}
+	# main charge: three rings or and lion or
+	colored_emblem = { # outside layer
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.05 0.05 } position = { 0.72 0.53 } }
+		instance = { scale = { 0.05 0.05 } position = { 0.78 0.53 } }
+		instance = { scale = { 0.05 0.05 } position = { 0.75 0.63 } }
+	}
+	colored_emblem = { # inside layer
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.04 0.04 } position = { 0.72 0.53 } }
+		instance = { scale = { 0.04 0.04 } position = { 0.78 0.53 } }
+		instance = { scale = { 0.04 0.04 } position = { 0.75 0.63 } }
+	}
+	colored_emblem = { # lion or
+		texture = "coa_brabant.png"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.16 0.16 } position = { 0.75 0.58 } }
+	}
+	# band with motto "Spes Bona" (letters left out)
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_cendree
+		instance = { scale = { 0.25 0.50 } position = { 0.75 0.68 } }
+	}
+	
+}
+
+CAP_subject_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_CAP_helper_circle"
+		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.15 } }
+	}
+	
+}
+
+CAP_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_CAP_helper_circle"
+		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.15 } }
+	}
+	
+}
+
+CAP_subject_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_CAP_helper_circle"
+		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.15 } }
+	}
+	
+}
 
 CAP_subject = {
 	
@@ -45,43 +186,13 @@ CAP_subject = {
 		color1 = wappenwiki_cendree
 		instance = { scale = { 0.45 0.45 } position = { 0.75 0.50 } }
 	}
-	
 	sub = {
-		parent = "sub_CAP_coa"
-		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.25 } }
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 0.55 0.55 } offset = { 0.50 0.225 } }
 	}
-		
-}
-
-CAP_overlord_NET_regular = {
-	
-	parent = "NET_regular"
-	
 	sub = {
-		parent = "sub_CAP_coa"
-		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
-	}
-	
-}
-
-CAP_overlord_NET_prinsenvlag = {
-	
-	parent = "NET_prinsenvlag"
-	
-	sub = {
-		parent = "sub_CAP_coa"
-		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
-	}
-	
-}
-
-CAP_overlord_NET_statenvlag = {
-	
-	parent = "NET_statenvlag"
-	
-	sub = {
-		parent = "sub_CAP_coa"
-		instance = { scale = { 0.45 0.45 } offset = { 0.275 0.275 } }
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 0.65 0.65 } offset = { 0.50 0.15 } }
 	}
 	
 }
@@ -91,18 +202,18 @@ CAP_overlord_NET_statenvlag = {
 CAP_anarchism = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = "red"
+	color1 = "black"
 	
 	colored_emblem = {
 		texture = "ce_tricolor_horizontal.png"
-		color1 = "black"
-		color2 = "red"
+		color1 = "red"
+		color2 = "black"
 	}
 	colored_emblem = {
-		texture = "ce_frame_star.dds"
+		texture = "anchor.png"
 		color1 = "black"
-		color2 = "red"
-		instance = { scale = { 0.60 0.60 } position = { 0.50 0.35 } }
+		color2 = "black"
+		instance = { scale = { 0.40 0.40 } position = { 0.50 0.50 } }
 	}
 	
 }
@@ -118,44 +229,25 @@ CAP_communism = {
 		color2 = "blue"
 	}
 	colored_emblem = {
-		texture = "ce_mining_hammers.dds"
+		texture = "anchor.png"
 		color1 = "yellow"
-		color2 = "red"
-		instance = { scale = { 0.60 0.60 } position = { 0.50 0.35 } }
+		color2 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.50 0.35 } }
 	}
 	
 }
 
 # base + coat-of-arms near center
 
-# coat-of-arms turned full flags
-
-CAP_full_coa_regular = {
-	
-	pattern = "pattern_solid.tga"
-	color1 = "blue"
-	
+sub_CAP_helper_circle = {
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_azuur
-		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
 	}
-	colored_emblem = {
-		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_cendree
-		instance = { scale = { 0.85 0.85 } position = { 0.50 0.50 } }
-	}
-	
-	sub = {
-		parent = "sub_CAP_coa"
-		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
-	}
-	
 }
 
-# subs
-
-sub_CAP_coa = {
+sub_CAP_coa_holders = {
 	
 	colored_emblem = { # laurel wreath instead of rubans (reusing what we have...)
 		texture = "ce_wreath.dds"
@@ -171,8 +263,11 @@ sub_CAP_coa = {
 		instance = { scale = { 0.88 0.88 } position = { 0.50 0.50 } }
 	}
 	
-	# coat of arms of Jan van Riebeeck
+}
+
+sub_CAP_coa_minimal = {
 	
+	# coat of arms of Jan van Riebeeck
 	colored_emblem = { # shield outline
 		texture = "ce_shield_heater.dds"
 		color1 = wappenwiki_sabel
@@ -196,6 +291,35 @@ sub_CAP_coa = {
 		instance = { scale = { 0.07 0.07 } position = { 0.46 0.55 } }
 		instance = { scale = { 0.07 0.07 } position = { 0.54 0.55 } }
 		instance = { scale = { 0.07 0.07 } position = { 0.50 0.66 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+CAP_full_coa_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_cendree
+		instance = { scale = { 0.85 0.85 } position = { 0.50 0.50 } }
+	}
+	
+	sub = {
+		parent = "sub_CAP_coa_holders"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "sub_CAP_coa_minimal"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
 	}
 	
 }

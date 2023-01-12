@@ -1,0 +1,21 @@
+﻿DEI = { # Dutch East Indies
+	states = {
+		STATE_WEST_JAVA
+		STATE_EAST_JAVA
+		STATE_CENTRAL_JAVA
+		STATE_NORTH_SUMATRA
+		STATE_SOUTH_SUMATRA
+		STATE_ACEH
+		STATE_MOLUCCAS
+		STATE_CELEBES
+		STATE_WEST_BORNEO
+		STATE_EAST_BORNEO
+		STATE_SUNDA_ISLANDS
+	}
+	required_num_states = 5
+	possible = {
+		exists = c:NET
+		this = c:NET
+	}
+	ai_will_do = { always = no }
+}

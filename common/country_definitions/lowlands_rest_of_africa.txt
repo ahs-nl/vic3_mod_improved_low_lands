@@ -1,0 +1,17 @@
+﻿GLC = { # Dutch Gold Coast / Ghana
+	color = { 255 207 74 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_GHANA
+}
+
+IVC = { # Dutch Ivory Coast / Windward Coast
+	color = { 237 207 103 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_IVORY_COAST
+}

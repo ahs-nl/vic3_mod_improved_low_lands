@@ -1,35 +1,31 @@
-﻿# Flanders
-FLA = {
+﻿# Wallonia
+WLL = {
 	
 	# base
 	
 	flag_definition = {
-		coa = FLA_regular
-		subject_canton = FLA_regular
-		allow_overlord_canton = yes
+		coa = WLL_regular
+		subject_canton = WLL_regular
+		allow_overlord_canton = no
 		priority = 1
 	}
 	
+	# traditional republic
 	flag_definition = {
-		coa = FLA_full_coa
-		subject_canton = FLA_full_coa
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = FLA_full_coa_subject
-		priority = 3
+		coa = WLL_republic
+		subject_canton = WLL_republic
+		allow_overlord_canton = no
+		priority = 100
 		trigger = {
-			OR = {
-				coa_has_absolute_monarchy = yes
-				coa_has_republican_dictatorship = yes
-				coa_has_military_junta = yes
-				coa_has_fascism = yes
-			}
+			lowlands_coa_has_republic = yes
 		}
 	}
+
 	
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = FLA_subject_NET_orange_nassau_on_flag
+		coa = WLL_subject_NET_orange_nassau_on_flag
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -39,7 +35,7 @@ FLA = {
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_NET_dutch_republic_old
+		coa = WLL_subject_NET_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
@@ -51,7 +47,7 @@ FLA = {
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_NET_dutch_republic_new
+		coa = WLL_subject_NET_dutch_republic_new
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
@@ -64,7 +60,7 @@ FLA = {
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_FRI
+		coa = WLL_subject_FRI
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -79,7 +75,7 @@ FLA = {
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_HLN
+		coa = WLL_subject_HLN
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -94,22 +90,7 @@ FLA = {
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_BRB
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_BRB_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
-		}
-	}
-	
-	flag_definition = {
-		coa = FLA_subject_LIM
+		coa = WLL_subject_LIM
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -123,8 +104,23 @@ FLA = {
 		}
 	}
 	
+	flag_definition = {
+		coa = WLL_subject_BRB
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_BRB_overlord = yes
+			OR = {
+				coa_overlord_has_monarchy = yes
+				coa_overlord_has_republican_dictatorship = yes
+				coa_overlord_has_military_junta = yes
+				coa_overlord_has_fascism = yes
+			}
+		}
+	}
+	
 	#flag_definition = {
-	#	coa = FLA_subject_BEL
+	#	coa = WLL_subject_BEL
 	#	allow_overlord_canton = no
 	#	priority = 5
 	#	trigger = {
@@ -137,28 +133,13 @@ FLA = {
 	#		}
 	#	}
 	#}
-	#
-	#flag_definition = {
-	#	coa = FLA_subject_FLA
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_FLA_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
-		
+	
 	flag_definition = {
-		coa = FLA_subject_WLL
+		coa = WLL_subject_FLA
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
-			coa_WLL_overlord = yes
+			coa_FLA_overlord = yes
 			OR = {
 				coa_overlord_has_monarchy = yes
 				coa_overlord_has_republican_dictatorship = yes
@@ -168,8 +149,23 @@ FLA = {
 		}
 	}
 	
+	#flag_definition = {
+	#	coa = WLL_subject_WLL
+	#	allow_overlord_canton = no
+	#	priority = 5
+	#	trigger = {
+	#		coa_WLL_overlord = yes
+	#		OR = {
+	#			coa_overlord_has_monarchy = yes
+	#			coa_overlord_has_republican_dictatorship = yes
+	#			coa_overlord_has_military_junta = yes
+	#			coa_overlord_has_fascism = yes
+	#		}
+	#	}
+	#}
+	
 	flag_definition = {
-		coa = FLA_subject_LUX
+		coa = WLL_subject_LUX
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {

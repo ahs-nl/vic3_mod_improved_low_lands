@@ -16,7 +16,7 @@ FRI = {
 		allow_overlord_canton = yes
 		priority = 2
 		trigger = {
-			coa_has_monarchy = yes
+			lowlands_coa_has_monarchy = yes
 		}
 	}
 	
@@ -28,10 +28,10 @@ FRI = {
 		priority = 3
 		trigger = {
 			OR = {
-				coa_has_absolute_monarchy = yes
-				coa_has_republican_dictatorship = yes
-				coa_has_military_junta = yes
-				coa_has_fascism = yes
+				lowlands_coa_has_absolute_monarchy = yes
+				lowlands_coa_has_republican_dictatorship = yes
+				lowlands_coa_has_military_junta = yes
+				lowlands_coa_has_fascism = yes
 			}
 		}
 	}

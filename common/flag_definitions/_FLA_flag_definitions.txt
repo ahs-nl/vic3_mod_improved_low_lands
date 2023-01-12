@@ -1,27 +1,27 @@
-﻿# Brabant
-BRB = {
+﻿# Flanders
+FLA = {
 	
 	# base
 	
 	flag_definition = {
-		coa = BRB_regular
-		subject_canton = BRB_regular
+		coa = FLA_regular
+		subject_canton = FLA_regular
 		allow_overlord_canton = yes
 		priority = 1
 	}
 	
 	flag_definition = {
-		coa = BRB_full_coa
-		subject_canton = BRB_full_coa
+		coa = FLA_full_coa
+		subject_canton = FLA_full_coa
 		allow_overlord_canton = yes
-		coa_with_overlord_canton = BRB_full_coa_subject
+		coa_with_overlord_canton = FLA_full_coa_subject
 		priority = 3
 		trigger = {
 			OR = {
-				coa_has_absolute_monarchy = yes
-				coa_has_republican_dictatorship = yes
-				coa_has_military_junta = yes
-				coa_has_fascism = yes
+				lowlands_coa_has_absolute_monarchy = yes
+				lowlands_coa_has_republican_dictatorship = yes
+				lowlands_coa_has_military_junta = yes
+				lowlands_coa_has_fascism = yes
 			}
 		}
 	}
@@ -29,16 +29,7 @@ BRB = {
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = BRB_subject_NET_orange_nassau_on_flag
-		allow_overlord_canton = no
-		priority = 4
-		trigger = {
-			coa_NET_overlord = yes
-		}
-	}
-	
-	flag_definition = {
-		coa = BRB_subject_NET_orange_nassau_on_flag
+		coa = FLA_subject_NET_orange_nassau_on_flag
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -48,7 +39,7 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_NET_dutch_republic_old
+		coa = FLA_subject_NET_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
@@ -60,7 +51,7 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_NET_dutch_republic_new
+		coa = FLA_subject_NET_dutch_republic_new
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
@@ -73,7 +64,7 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_FRI
+		coa = FLA_subject_FRI
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -88,7 +79,7 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_HLN
+		coa = FLA_subject_HLN
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -103,7 +94,22 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_LIM
+		coa = FLA_subject_BRB
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_BRB_overlord = yes
+			OR = {
+				coa_overlord_has_monarchy = yes
+				coa_overlord_has_republican_dictatorship = yes
+				coa_overlord_has_military_junta = yes
+				coa_overlord_has_fascism = yes
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = FLA_subject_LIM
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -118,22 +124,7 @@ BRB = {
 	}
 	
 	#flag_definition = {
-	#	coa = BRB_subject_BRB
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_BRB_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
-	#
-	#flag_definition = {
-	#	coa = BRB_subject_BEL
+	#	coa = FLA_subject_BEL
 	#	allow_overlord_canton = no
 	#	priority = 5
 	#	trigger = {
@@ -146,24 +137,24 @@ BRB = {
 	#		}
 	#	}
 	#}
-	
+	#
+	#flag_definition = {
+	#	coa = FLA_subject_FLA
+	#	allow_overlord_canton = no
+	#	priority = 5
+	#	trigger = {
+	#		coa_FLA_overlord = yes
+	#		OR = {
+	#			coa_overlord_has_monarchy = yes
+	#			coa_overlord_has_republican_dictatorship = yes
+	#			coa_overlord_has_military_junta = yes
+	#			coa_overlord_has_fascism = yes
+	#		}
+	#	}
+	#}
+		
 	flag_definition = {
-		coa = BRB_subject_FLA
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_FLA_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
-		}
-	}
-	
-	flag_definition = {
-		coa = BRB_subject_WLL
+		coa = FLA_subject_WLL
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
@@ -178,7 +169,7 @@ BRB = {
 	}
 	
 	flag_definition = {
-		coa = BRB_subject_LUX
+		coa = FLA_subject_LUX
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {

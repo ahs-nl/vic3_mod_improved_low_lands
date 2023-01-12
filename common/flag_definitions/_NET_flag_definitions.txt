@@ -23,7 +23,7 @@ NET = {
 		coa_with_overlord_canton = NET_regular
 		priority = 500
 		trigger = {
-			coa_has_monarchy = yes
+			lowlands_coa_has_monarchy = yes
 		}
 	}
 	
@@ -35,7 +35,7 @@ NET = {
 		coa_with_overlord_canton = NET_regular
 		priority = 550
 		trigger = {
-			coa_has_constitutional_monarchy = yes
+			lowlands_coa_has_constitutional_monarchy = yes
 		}
 	}
 	
@@ -47,7 +47,7 @@ NET = {
 		coa_with_overlord_canton = NET_prinsenvlag
 		priority = 600
 		trigger = {
-			coa_has_absolute_monarchy = yes
+			lowlands_coa_has_absolute_monarchy = yes
 		}
 	}
 	
@@ -60,7 +60,7 @@ NET = {
 		coa_with_overlord_canton = NET_regular
 		priority = 700
 		trigger = {
-			coa_has_oligarchy = yes
+			lowlands_coa_has_oligarchy = yes
 		}
 	}
 	
@@ -72,7 +72,7 @@ NET = {
 		coa_with_overlord_canton = NET_regular
 		priority = 500
 		trigger = {
-			coa_has_republic = yes
+			lowlands_coa_has_republic = yes
 		}
 	}
 	
@@ -84,7 +84,7 @@ NET = {
 		coa_with_overlord_canton = NET_statenvlag
 		priority = 550
 		trigger = {
-			coa_has_radical_republic = yes
+			lowlands_coa_has_radical_republic = yes
 		}
 	}
 	
@@ -96,7 +96,7 @@ NET = {
 		coa_with_overlord_canton = NET_statenvlag
 		priority = 600
 		trigger = {
-			coa_has_republican_dictatorship = yes
+			lowlands_coa_has_republican_dictatorship = yes
 		}
 	}
 	
@@ -108,7 +108,7 @@ NET = {
 		coa_with_overlord_canton = NET_prinsenvlag
 		priority = 800
 		trigger = {
-			coa_has_fascism = yes
+			lowlands_coa_has_fascism = yes
 		}
 	}
 	
@@ -119,7 +119,7 @@ NET = {
 		allow_overlord_canton = no
 		priority = 5000
 		trigger = {
-			coa_has_anarchy = yes
+			lowlands_coa_has_anarchy = yes
 		}
 	}
 	
@@ -130,7 +130,7 @@ NET = {
 		allow_overlord_canton = no
 		priority = 5000
 		trigger = {
-			coa_has_communism = yes
+			lowlands_coa_has_communism = yes
 		}
 	}
 	
@@ -141,7 +141,7 @@ NET = {
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
-			coa_has_theocracy = yes
+			lowlands_coa_has_theocracy = yes
 		}
 	}
 	
@@ -154,7 +154,7 @@ NET = {
 		coa_with_overlord_canton = NET_prinsenvlag
 		priority = 1500
 		trigger = {
-			coa_has_military_junta = yes
+			lowlands_coa_has_military_junta = yes
 		}
 	}
 	
@@ -166,7 +166,7 @@ NET = {
 		allow_overlord_canton = no
 		priority = 1500
 		trigger = {
-			coa_has_egalitarianism = yes
+			lowlands_coa_has_egalitarianism = yes
 		}
 	}
 	

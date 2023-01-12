@@ -1,0 +1,26 @@
+﻿SAF = { # South Africa
+	states = {
+		STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+		STATE_NATAL
+		STATE_ZULULAND
+		STATE_VRYSTAAT
+		STATE_TRANSVAAL
+	}
+	ai_will_do = { always = yes }
+}
+
+BOE = { # South Africa
+	states = {
+		STATE_TRANSVAAL
+        STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY 
+        STATE_VRYSTAAT
+		STATE_NATAL
+		STATE_ZULULAND
+	}
+	required_states_fraction = 0.8
+	ai_will_do = { always = yes }
+}

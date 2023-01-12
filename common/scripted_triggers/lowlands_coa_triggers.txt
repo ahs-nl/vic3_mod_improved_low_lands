@@ -5,23 +5,23 @@
 # forms of distribution of power: law_autocracy, law_oligarchy, law_elder_council, law_landed_voting, law_wealth_voting, law_census_voting, law_universal_suffrage, law_anarchy
 
 # monarchy
-coa_monarchy_trigger = {
+lowlands_coa_monarchy_trigger = {
 	OR = {
 		has_law = law_type:law_chiefdom
 		has_law = law_type:law_monarchy
 	}
 }
-coa_has_monarchy = {
+lowlands_coa_has_monarchy = {
 	exists = scope:actor
-	scope:actor = { coa_monarchy_trigger = yes }
+	scope:actor = { lowlands_coa_monarchy_trigger = yes }
 }
-coa_overlord_has_monarchy = {
+lowlands_coa_overlord_has_monarchy = {
 	exists = scope:overlord
-	scope:overlord = { coa_monarchy_trigger = yes }
+	scope:overlord = { lowlands_coa_monarchy_trigger = yes }
 }
 
 # constitutional monarchy
-coa_constitutional_monarchy_trigger = {
+lowlands_coa_constitutional_monarchy_trigger = {
 	OR = {
 		has_law = law_type:law_chiefdom
 		has_law = law_type:law_monarchy
@@ -35,17 +35,17 @@ coa_constitutional_monarchy_trigger = {
 		has_law = law_type:law_universal_suffrage
 	}
 }
-coa_has_constitutional_monarchy = {
+lowlands_coa_has_constitutional_monarchy = {
 	exists = scope:actor
-	scope:actor = { coa_constitutional_monarchy_trigger = yes }
+	scope:actor = { lowlands_coa_constitutional_monarchy_trigger = yes }
 }
-coa_overlord_has_constitutional_monarchy = {
+lowlands_coa_overlord_has_constitutional_monarchy = {
 	exists = scope:overlord
-	scope:overlord = { coa_constitutional_monarchy_trigger = yes }
+	scope:overlord = { lowlands_coa_constitutional_monarchy_trigger = yes }
 }
 
 # absolute monarchy
-coa_absolute_monarchy_trigger = {
+lowlands_coa_absolute_monarchy_trigger = {
 	OR = {
 		has_law = law_type:law_chiefdom
 		has_law = law_type:law_monarchy
@@ -55,17 +55,17 @@ coa_absolute_monarchy_trigger = {
 		has_law = law_type:law_autocracy
 	}
 }
-coa_has_absolute_monarchy = {
+lowlands_coa_has_absolute_monarchy = {
 	exists = scope:actor
-	scope:actor = { coa_absolute_monarchy_trigger = yes }
+	scope:actor = { lowlands_coa_absolute_monarchy_trigger = yes }
 }
-coa_overlord_has_absolute_monarchy = {
+lowlands_coa_overlord_has_absolute_monarchy = {
 	exists = scope:overlord
-	scope:overlord = { coa_absolute_monarchy_trigger = yes }
+	scope:overlord = { lowlands_coa_absolute_monarchy_trigger = yes }
 }
 
 # oligarchy
-coa_oligarchy_trigger = {
+lowlands_coa_oligarchy_trigger = {
 	OR = {
 		has_law = law_type:law_chiefdom
 		has_law = law_type:law_monarchy
@@ -81,33 +81,33 @@ coa_oligarchy_trigger = {
 		}
 	}
 }
-coa_has_oligarchy = {
+lowlands_coa_has_oligarchy = {
 	exists = scope:actor
-	scope:actor = { coa_oligarchy_trigger = yes }
+	scope:actor = { lowlands_coa_oligarchy_trigger = yes }
 }
-coa_overlord_has_oligarchy = {
+lowlands_coa_overlord_has_oligarchy = {
 	exists = scope:overlord
-	scope:overlord = { coa_oligarchy_trigger = yes }
+	scope:overlord = { lowlands_coa_oligarchy_trigger = yes }
 }
 
 # republic
-coa_republic_trigger = {
+lowlands_coa_republic_trigger = {
 	OR = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
 	}
 }
-coa_has_republic = {
+lowlands_coa_has_republic = {
 	exists = scope:actor
-	scope:actor = { coa_republic_trigger = yes }
+	scope:actor = { lowlands_coa_republic_trigger = yes }
 }
-coa_overlord_has_republic = {
+lowlands_coa_overlord_has_republic = {
 	exists = scope:overlord
-	scope:overlord = { coa_republic_trigger = yes }
+	scope:overlord = { lowlands_coa_republic_trigger = yes }
 }
 
 # radical republic
-coa_radical_republic_trigger = {
+lowlands_coa_radical_republic_trigger = {
 	OR = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
@@ -123,34 +123,34 @@ coa_radical_republic_trigger = {
 		has_law = law_type:law_universal_suffrage
 	}
 }
-coa_has_radical_republic = {
+lowlands_coa_has_radical_republic = {
 	exists = scope:actor
-	scope:actor = { coa_radical_republic_trigger = yes }
+	scope:actor = { lowlands_coa_radical_republic_trigger = yes }
 }
-coa_overlord_has_radical_republic = {
+lowlands_coa_overlord_has_radical_republic = {
 	exists = scope:overlord
-	scope:overlord = { coa_radical_republic_trigger = yes }
+	scope:overlord = { lowlands_coa_radical_republic_trigger = yes }
 }
 
 # republican dictatorship
-coa_republican_dictatorship_trigger = {
+lowlands_coa_republican_dictatorship_trigger = {
 	OR = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
 	}
 	has_law = law_type:law_autocracy
 }
-coa_has_republican_dictatorship = {
+lowlands_coa_has_republican_dictatorship = {
 	exists = scope:actor
-	scope:actor = { coa_republican_dictatorship_trigger = yes }
+	scope:actor = { lowlands_coa_republican_dictatorship_trigger = yes }
 }
-coa_overlord_has_republican_dictatorship = {
+lowlands_coa_overlord_has_republican_dictatorship = {
 	exists = scope:overlord
-	scope:overlord = { coa_republican_dictatorship_trigger = yes }
+	scope:overlord = { lowlands_coa_republican_dictatorship_trigger = yes }
 }
 
 # fascism
-coa_fascism_trigger = {
+lowlands_coa_fascism_trigger = {
 	OR = {
 		has_law = law_type:law_chiefdom
 		has_law = law_type:law_monarchy
@@ -167,89 +167,85 @@ coa_fascism_trigger = {
 		has_ideology = ideology_fascist
     }
 }
-coa_has_fascism = {
+lowlands_coa_has_fascism = {
 	exists = scope:actor
-	scope:actor = { coa_fascism_trigger = yes }
+	scope:actor = { lowlands_coa_fascism_trigger = yes }
 }
-coa_overlord_has_fascism = {
+lowlands_coa_overlord_has_fascism = {
 	exists = scope:overlord
-	scope:overlord = { coa_fascism_trigger = yes }
+	scope:overlord = { lowlands_coa_fascism_trigger = yes }
 }
 
 # anarchy
-coa_anarchy_trigger = {
+lowlands_coa_anarchy_trigger = {
 	has_law = law_type:law_anarchy
 }
-coa_has_anarchy = {
+lowlands_coa_has_anarchy = {
 	exists = scope:actor
-	scope:actor = { coa_anarchy_trigger = yes }
+	scope:actor = { lowlands_coa_anarchy_trigger = yes }
 }
-coa_overlord_has_anarchy = {
+lowlands_coa_overlord_has_anarchy = {
 	exists = scope:overlord
-	scope:overlord = { coa_anarchy_trigger = yes }
+	scope:overlord = { lowlands_coa_anarchy_trigger = yes }
 }
 
 # communism
-coa_communism_trigger = {
+lowlands_coa_communism_trigger = {
 	has_law = law_type:law_council_republic
 }
-coa_has_communism = {
+lowlands_coa_has_communism = {
 	exists = scope:actor
-	scope:actor = { coa_communism_trigger = yes }
+	scope:actor = { lowlands_coa_communism_trigger = yes }
 }
-coa_overlord_has_communism = {
+lowlands_coa_overlord_has_communism = {
 	exists = scope:overlord
-	scope:overlord = { coa_communism_trigger = yes }
+	scope:overlord = { lowlands_coa_communism_trigger = yes }
 }
 
 # theocracy
-coa_theocracy_trigger = {
+lowlands_coa_theocracy_trigger = {
 	has_law = law_type:law_theocracy
-	#OR = {
-	#	has_law = law_type:law_autocracy
-	#	has_law = law_type:law_elder_council
-	#}
 }
-coa_has_theocracy = {
+lowlands_coa_has_theocracy = {
 	exists = scope:actor
-	scope:actor = { coa_theocracy_trigger = yes }
+	scope:actor = { lowlands_coa_theocracy_trigger = yes }
 }
-coa_overlord_has_theocracy = {
+lowlands_coa_overlord_has_theocracy = {
 	exists = scope:overlord
-	scope:overlord = { coa_theocracy_trigger = yes }
+	scope:overlord = { lowlands_coa_theocracy_trigger = yes }
 }
 
 # military junta
-coa_military_junta_trigger = {
+lowlands_coa_military_junta_trigger = {
 	OR = {
 		has_government_type = gov_military_dictatorship
 		has_government_type = gov_junta
 	}
 }
-coa_has_military_junta = {
+lowlands_coa_has_military_junta = {
 	exists = scope:actor
-	scope:actor = { coa_military_junta_trigger = yes }
+	scope:actor = { lowlands_coa_military_junta_trigger = yes }
 }
-coa_overlord_has_military_junta = {
+lowlands_coa_overlord_has_military_junta = {
 	exists = scope:overlord
-	scope:overlord = { coa_military_junta_trigger = yes }
+	scope:overlord = { lowlands_coa_military_junta_trigger = yes }
 }
 
 # egalitarianism
-coa_egalitarianism_trigger = {
+lowlands_coa_egalitarianism_trigger = {
 	has_law = law_type:law_multicultural
 }
-coa_has_egalitarianism = {
+lowlands_coa_has_egalitarianism = {
 	exists = scope:actor
-	scope:actor = { coa_egalitarianism_trigger = yes }
+	scope:actor = { lowlands_coa_egalitarianism_trigger = yes }
 }
-coa_overlord_has_egalitarianism = {
+lowlands_coa_overlord_has_egalitarianism = {
 	exists = scope:overlord
-	scope:overlord = { coa_egalitarianism_trigger = yes }
+	scope:overlord = { lowlands_coa_egalitarianism_trigger = yes }
 }
 
 # check if a given scoped country equals this country's overlord
-coa_tempscope_is_overlord_trigger = {
+lowlands_coa_is_overlord_trigger = {
 	NOT = { has_game_rule = no_subject_flags }
 	exists = scope:overlord
 	scope:overlord = {
@@ -267,53 +263,53 @@ coa_tempscope_is_overlord_trigger = {
 coa_NET_overlord = { # Netherlands
 	exists = c:NET
 	c:NET = { save_temporary_scope_as = custom_overlord }
-	coa_tempscope_is_overlord_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_FRI_overlord = { # Frisia
 	exists = c:FRI
 	c:FRI = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_HLN_overlord = { # Holland
 	exists = c:HLN
 	c:HLN = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_BRB_overlord = { # Brabant
 	exists = c:BRB
 	c:BRB = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_LIM_overlord = { # Limburg
 	exists = c:LIM
 	c:LIM = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_BEL_overlord = { # Belgium
 	exists = c:BEL
 	c:BEL = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_FLA_overlord = { # Flanders
 	exists = c:FLA
 	c:FLA = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_WLL_overlord = { # Wallonia
 	exists = c:WLL
 	c:WLL = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }
 
 coa_LUX_overlord = { # Luxembourg
 	exists = c:LUX
 	c:LUX = { save_temporary_scope_as = custom_overlord }
-	coa_def_ensign_trigger = yes
+	lowlands_coa_is_overlord_trigger = yes
 }

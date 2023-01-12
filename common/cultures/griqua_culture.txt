@@ -6,123 +6,124 @@
 	traits = { beneluxian_culture_group dutchophone european_heritage african_settler }
 	
 	male_common_first_names = {
+		# https://www.geni.com/projects/South-Africa-The-Griquas-of-Philippolis-and-Kokstad/people/9656
 		Abraham
-		Adrianus
+		Adam
 		Andries
-		Charl
-		Christiaan
+		Barend
+		Benjamin
+		Cupido
 		Cornelis
-		Danie
-		Dirkie
-		Drikus
-		Eugene_2
-		Francois_2
-		Hendrik
-		Hermanus
-		Jacobus
+		Cornelius
+		Dam
+		Daniel
+		David
+		Dirk
+		Faro
+		Gert
+		Jacob
+		Jager
 		Jan
-		Johannes
-		Joachim
-		Joubert
+		Klaas
 		Koos
-		Louis
-		Martinus
+		Kort
+		Lucas
+		Nicolaas
+		Oude_Ram
 		Paul
-		Petrus
-		Piet
 		Pieter
-		Racheltjie 
-		Rudolf
-		Sarel
-		Siener
-		Simeon
-		Stephanus
+		Ruiter
+		Solomon
+		Titus
 		Willem
 	}
 	female_common_first_names = {
-		Adriana 
-		Anna
-		Belinda
-		Brenda
-		Cezanne
-		Charlise
-		Cornelia
-		Danelle
+		Alletta
+		Annie
+		Catherina
+		Donna
 		Elizabeth
-		Elmarie
-		Elsje
-		Evelyn
-		Gezina 
-		Heiletje 
-		Jacoba
-		Lizelle
+		Gertruida
+		Lena
+		Margaret
+		Margaretha
 		Maria
-		Norma
-		Rachel
-		Saartjie
-		Sarah
 		Sophia
-		Wilhelmina
-		Yolandi
+		Trudie
 	}	
 	noble_last_names = {
+		# https://www.familysearch.org/tree/pedigree/portrait/GNQ4-P6H
 		Afrikaner
-		Koorts
-		Witbooi
+		Barends
+		Bloem
+		Kok
+		Kruger
+		Marais
+		Pienaar
+		Potgieter
+		Venter
 		Waterboer
 	}
 	common_last_names = {
-		Bosman
-		Botha
-		Cilliers
-		Coetzee
-		Cronje
-		Duquesne
-		Erasmus
-		Joubert
-		Greeff
-		Jonker
-		Potgieter
-		Theron
-		Uys
-		de_Beer
-		de_Wet
-		de_la_Rey
-		van_Rensburg
-		Du_Plessis
-		du_Toit
-		du_Preez
-		de_Villiers
-		de_Bruyn
-		de_Kock
-		de_Klerk
-		Malan
-		Rossouw
-		Conradie
-		Schoeman
-		Jacobszoon
-		Burgers
-		Smit
-		Struben
-		Maritz
-		Steyn
-		Sauer
-		Swart
-		Pienaar
-		van_den_Berg
-		van_der_Westhuizen
-		van_Niekerk
-		van_Wyk
-		van_Zyl
-		Viljoen
-		Afrikaner
-		Koorts
+		# https://onomajournal.org/wp-content/uploads/2021/08/Onoma-55-1.12-Neethling-final-web-August.pdf
+		Abrahams
+		Adonis
+		Africa
+		April
+		Arendse
+		Arnot
+		Augustus
+		Baaitjies
+		Baartman
+		Bergenaar
+		Blommetjies
+		Booysens
+		Calverts
+		Draai
+		Februari
+		Ferris
+		Fillies
+		Fortuin
+		Fransman
+		Gelant
+		Goeda
+		Grootboom
+		Grootetjie
+		Gysman
+		Jafta
+		Jantjies
+		Januari
+		Julie
+		Kayster
+		Kiewiet
+		Le_Fleur
+		Leeuw
+		Maart
+		Moses
+		November
+		October
+		Olifant
+		Orlam
+		Papier
+		Petersen
+		Plaaitjies
+		Rondganger
+		Ruiters
+		September
+		Speelman
+		Stoffels
+		Stuurman
+		Swartbooi
+		Tiemie
+		Vaaltyn
+		Willems
+		Windvogel
 		Witbooi
 	}
 	
 	graphics = european
 	ethnicities = {
-		1 = african
+		1 = lowlandish_griqua
 	}
 	
 }

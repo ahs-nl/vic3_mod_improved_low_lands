@@ -1,0 +1,31 @@
+﻿# Netherlands
+NET = {
+	dynamic_country_name = {
+		name = dyn_c_united_netherlands
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				owns_entire_state_region = STATE_HOLLAND
+				owns_entire_state_region = STATE_FRIESLAND
+				owns_entire_state_region = STATE_GELRE
+				owns_entire_state_region = STATE_FLANDERS
+				owns_entire_state_region = STATE_WALLONIA
+			}
+		}
+	}
+}
+
+# Belgium
+BEL = {
+	dynamic_country_name = {
+		name = dyn_c_united_belgian_states
+		is_main_tag_only = yes
+		priority = 0
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+}

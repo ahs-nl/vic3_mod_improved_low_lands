@@ -97,6 +97,7 @@ lowlands_wears_uniform = {
 					lowlands_is_located_in_NET_trigger = yes
 					lowlands_is_located_in_BEL_trigger = yes
 					lowlands_is_located_in_DEI_trigger = yes
+					lowlands_has_boer_culture_trigger = yes
 				}
 				OR = {
 					lowlands_is_ig_armed_forces_char_trigger = yes
@@ -526,6 +527,53 @@ lowlands_uniform = {
 		}
 	}
 	
+	# boer base "uniform"
+	boer_base_uniform = {
+		dna_modifiers = {
+			
+			# boer shirts and coats
+			accessory = {
+				mode = add
+				gene = lowlands_coats
+				template = all_boer_coats
+				#value = 0.95
+				range = { 0 1 }
+			}
+			
+			# boer trousers
+			accessory = {
+				mode = add
+				gene = lowlands_trousers
+				template = boer_trousers
+				range = { 0 1 }
+			}
+			
+			accessory = {
+				mode = add
+				gene = props
+				template = gene_rifle_01
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_has_boer_culture_trigger = yes
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+		}
+	}
+	
 }
 
 lowlands_epaulettes = {
@@ -711,6 +759,10 @@ lowlands_epaulettes = {
 					lowlands_is_soldier_pop_trigger = yes
 				}
 				lowlands_is_soldier_pop_trigger = yes
+			}
+			modifier = {
+				add = 100
+				lowlands_has_boer_culture_trigger = yes
 			}
 		}
 	}
@@ -955,6 +1007,10 @@ lowlands_medals = {
 				}
 				lowlands_is_soldier_pop_trigger = yes
 			}
+			modifier = {
+				add = 1000
+				lowlands_has_boer_culture_trigger = yes
+			}
 		}
 	}
 	
@@ -1039,6 +1095,10 @@ lowlands_aiguillettes = { # nestel in het nederlands
 					lowlands_is_officer_pop_trigger = yes
 					lowlands_is_soldier_pop_trigger = yes
 				}
+			}
+			modifier = {
+				add = 100
+				lowlands_has_boer_culture_trigger = yes
 			}
 		}
 	}
@@ -1179,6 +1239,36 @@ lowlands_headgear = {
 		}
 	}
 	
+	# boer slouch hat
+	boer_headgear_slouch_hat = {
+		dna_modifiers = {
+			
+			accessory = {
+				mode = add
+				gene = lowlands_headgear
+				template = boer_slouch_hat
+				range = { 0 1 }
+			}
+			
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				lowlands_has_boer_culture_trigger = yes
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
+			}
+		}
+	}
+	
 	# no headgear
 	lowlands_headgear_none = {
 		dna_modifiers = {
@@ -1207,6 +1297,19 @@ lowlands_headgear = {
 			modifier = {
 				factor = 0.5
 				lowlands_is_admiral_char_trigger = yes
+			}
+			modifier = {
+				add = 50
+				lowlands_has_boer_culture_trigger = yes
+				OR = {
+					lowlands_is_ig_armed_forces_char_trigger = yes
+					lowlands_is_monarch_char_trigger = yes
+					lowlands_is_monarch_heir_char_trigger = yes
+					lowlands_is_general_char_trigger = yes
+					lowlands_is_admiral_char_trigger = yes
+					lowlands_is_officer_pop_trigger = yes
+					lowlands_is_soldier_pop_trigger = yes
+				}
 			}
 		}
 	}

@@ -1,0 +1,87 @@
+﻿NET = { # Netherlands
+	#color = hsv360{ 20 80 80 }
+	color = { 204 95 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dutch frisian }
+	religion = protestant
+	capital = STATE_HOLLAND
+}
+
+FRI = { # Frisia
+	color = { 29 109 247 }
+	country_type = recognized
+	tier = principality
+	cultures = { frisian }
+	religion = protestant
+	capital = STATE_FRIESLAND
+	is_named_from_capital = yes
+}
+
+HLN = { # Holland
+	color = { 255 25 10 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_HOLLAND
+	is_named_from_capital = yes
+}
+
+BRB = { # Brabant
+	color = { 168 123 33 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch flemish }
+	religion = catholic
+	capital = STATE_FLANDERS
+	is_named_from_capital = yes
+}
+
+LIM = { # Limburg
+	color = { 130 125 175 }
+	country_type = recognized
+	tier = principality
+	cultures = { dutch flemish }
+	religion = catholic
+	capital = STATE_GELRE
+	is_named_from_capital = yes
+}
+
+BEL = { # Belgium
+	color = { 235 200 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { flemish wallonian }
+	religion = catholic
+	capital = STATE_FLANDERS
+}
+
+FLA = { # Flanders
+	color = { 247 181 49 }
+	country_type = recognized
+	tier = principality
+	cultures = { flemish }
+	religion = catholic
+	capital = STATE_FLANDERS
+	is_named_from_capital = yes
+}
+
+WLL = { # Wallonia
+	color = { 131 141 142 }
+	country_type = recognized
+	tier = principality
+	cultures = { wallonian }
+	religion = catholic
+	capital = STATE_WALLONIA
+	is_named_from_capital = yes
+}
+
+LUX = { # Luxembourg
+	color = { 50 160 225 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { wallonian north_german }
+	religion = catholic
+	capital = STATE_WALLONIA
+}

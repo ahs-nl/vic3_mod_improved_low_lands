@@ -58,7 +58,7 @@ SUR = {
 		allow_overlord_canton = no
 		priority = 60
 		trigger = {
-			coa_has_absolute_monarchy = yes
+			lowlands_coa_has_absolute_monarchy = yes
 		}
 	}
 	
@@ -69,7 +69,7 @@ SUR = {
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
-			coa_has_anarchy = yes
+			lowlands_coa_has_anarchy = yes
 		}
 	}
 	
@@ -80,7 +80,7 @@ SUR = {
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
-			coa_has_communism = yes
+			lowlands_coa_has_communism = yes
 		}
 	}
 	
@@ -91,7 +91,7 @@ SUR = {
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
-			coa_has_fascism = yes
+			lowlands_coa_has_fascism = yes
 		}
 	}
 	
@@ -102,7 +102,7 @@ SUR = {
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
-			coa_has_egalitarianism = yes
+			lowlands_coa_has_egalitarianism = yes
 		}
 	}
 	

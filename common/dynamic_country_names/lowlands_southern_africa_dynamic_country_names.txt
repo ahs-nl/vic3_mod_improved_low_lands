@@ -1,0 +1,60 @@
+﻿# South Africa
+SAF = {
+	dynamic_country_name = {
+		name = dyn_c_south_africa
+		adjective = dyn_c_south_africa_adj
+		is_main_tag_only = no
+		priority = 0
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:SAF
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+}
+
+# Oranje
+ORA = {
+	dynamic_country_name = {
+		name = dyn_c_orange_river_sovereignty
+		adjective = dyn_c_orange_river_sovereignty_adj
+		is_main_tag_only = no
+		priority = 0
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+}
+
+# Transvaal
+TRN = {
+	dynamic_country_name = {
+		name = dyn_c_transvaal_colony
+		is_main_tag_only = no
+		priority = 0
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_transvaal_non_republic
+		is_main_tag_only = no
+		priority = 0
+		trigger = {
+			lowlands_coa_has_republic = no
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_transvaal_republic
+		is_main_tag_only = no
+		priority = 0
+		trigger = {
+			lowlands_coa_has_republic = yes
+		}
+	}
+}

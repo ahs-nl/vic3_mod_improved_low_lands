@@ -1,0 +1,8 @@
+﻿DEI = { # Dutch East Indies
+	color = { 255 173 193 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_WEST_JAVA
+}

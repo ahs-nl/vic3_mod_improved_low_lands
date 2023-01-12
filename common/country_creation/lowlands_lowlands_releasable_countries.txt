@@ -1,0 +1,109 @@
+﻿NET = { # Netherlands
+	states = {
+		STATE_HOLLAND
+		STATE_FRIESLAND
+		STATE_GELRE
+		STATE_FLANDERS
+		STATE_WALLONIA
+	}
+	required_num_states = 3
+	ai_will_do = { always = no }
+}
+
+FRI = { # Frisia
+	provinces = {
+		x41C021
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+HLN = { # Holland
+	states = {
+		STATE_HOLLAND
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+BRB = { # Brabant
+	provinces = { # across two states
+		#x800061 (error: non-existent)
+		x4C4894
+		x800060
+		x018061
+		x93FB2E
+	}
+	required_num_states = 1
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+LIM = { # Limburg
+	provinces = { # across two states
+		x0000DF
+		x808061
+	}
+	required_num_states = 1
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+BEL = { # Belgium
+	provinces = { # across two states
+		x93FB2E
+		x018061
+		x0141A0
+		x8041A0
+		x800060
+		x808061
+		xB0A0C0
+		x916574
+		x2D32D7
+		x8080A0
+		xEF2040
+		x3A5FB9
+		xD001A0
+	}
+	#required_num_states = 1
+	ai_will_do = { always = no }
+}
+
+FLA = { # Flanders
+	use_culture_states = yes
+	#states = {
+	#	STATE_FLANDERS
+	#}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+WLL = { # Wallonia
+	use_culture_states = yes
+	#states = {
+	#	STATE_WALLONIA
+	#}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+LUX = { # Luxembourg
+	provinces = { # across two states
+		x5180A0
+		xD001A0
+	}
+	required_num_states = 1
+	ai_will_do = { always = no }
+}

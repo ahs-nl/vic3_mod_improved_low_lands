@@ -96,7 +96,7 @@
 	
 	graphics = european
 	ethnicities = {
-		1 = lowlandish
+		1 = lowlandish_frisian
 	}
 	
 }

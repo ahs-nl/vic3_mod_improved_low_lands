@@ -130,8 +130,11 @@
 			all_boer_coats = {
 				index = 8
 				male = {
-					1 = male_boer_coat_01
-					1 = male_boer_coat_02
+					6 = male_boer_coat_01
+					3 = male_boer_coat_02
+					1 = male_outfit_south_american_01_low
+					1 = male_shirt_european_01
+					1 = male_shirt_working_class_01
 					#1 = male_civilian_coat_european_01
 					#1 = male_waistcoat_european_03
 					#1 = male_outfit_polynesian_01_high

@@ -22,6 +22,30 @@ lowlands_has_beneluxian_culture_trigger = {
 	}
 }
 
+# Tests if this character/pop is of boer/voortrekker/trekboer/grikua culture group
+lowlands_has_boer_culture_trigger = {
+	OR = {
+		AND = {
+			exists = scope:character
+			scope:character = {
+				culture = {
+					has_discrimination_trait = beneluxian_culture_group
+					has_discrimination_trait = african_settler
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				culture = {
+					has_discrimination_trait = beneluxian_culture_group
+					has_discrimination_trait = african_settler
+				}
+			}
+		}
+	}
+}
+
 # Tests if this character/pop is living in NET/BEL/DEI or a subject thereof
 lowlands_is_located_in_NET_trigger = {
 	OR = {
@@ -261,7 +285,7 @@ lowlands_is_other_political_trigger = {
 	}
 }
 
-# Tests if character/pop lives in an earl/mid/late stage in the game
+# Tests if character/pop lives in an early/mid/late stage in the game
 lowlands_is_early_game_trigger = {
 	OR = {
 		AND = {

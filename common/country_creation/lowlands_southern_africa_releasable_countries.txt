@@ -1,0 +1,128 @@
+﻿SAF = { # South Africa
+	states = {
+		STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+		STATE_ZULULAND
+		STATE_VRYSTAAT
+		STATE_TRANSVAAL
+	}
+	required_num_states = 4
+	ai_will_do = { always = no }
+}
+
+BOE = { # South Africa
+	states = {
+		STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+		STATE_ZULULAND
+		STATE_VRYSTAAT
+		STATE_TRANSVAAL
+	}
+	required_num_states = 4
+	ai_will_do = { always = no }
+}
+
+CAP = { # Cape Province
+	states = {
+		STATE_NORTHERN_CAPE
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+}
+
+NAL = { # Natal
+	states = {
+		STATE_ZULULAND
+	}
+	ai_will_do = { always = no }
+}
+
+KLE = { # Klein Vrijstaat
+	states = {
+		STATE_NATAL
+	}
+	ai_will_do = { always = no }
+}
+
+ORA = { # Orange Free State
+	states = {
+		STATE_VRYSTAAT
+	}
+	ai_will_do = { always = no }
+}
+
+TRN = { # Transvaal
+	states = {
+		STATE_TRANSVAAL
+	}
+	ai_will_do = { always = no }
+}
+
+WBL = { # Griqualand
+	provinces = { # across one state
+		x20F4FE
+		xD76CB9
+		x20CAA7
+		xD65167
+		xD0AEA4
+		xA494F8
+		x4AFDFD
+		x4D517F
+		xCFE774
+		xE4925E
+		x8E325C
+		x8491F7
+		x6CF2A2
+		x642DA4
+	}
+	ai_will_do = { always = no }
+}
+
+STL = { # Stellaland
+	provinces = { # across one state
+		x20F4FE
+		xD76CB9
+		x20CAA7
+		xD65167
+		xD0AEA4
+		xA494F8
+		x4AFDFD
+		x4D517F
+		xCFE774
+		xE4925E
+		x8E325C
+		x8491F7
+		x6CF2A2
+		x642DA4
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+LYD = { # Lijdensrust
+	states = {
+		STATE_NAMAQUALAND
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+NMB = { # Dutch Namibia
+	states = {
+		STATE_HEREROLAND
+		STATE_NAMAQUALAND
+	}
+	required_num_states = 2
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}

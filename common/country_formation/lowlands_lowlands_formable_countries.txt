@@ -15,15 +15,3 @@ BEL = { # Belgium
 	}
 	ai_will_do = { always = no }
 }
-
-SAF = { # South Africa
-	states = {
-		STATE_NORTHERN_CAPE
-		STATE_EASTERN_CAPE
-		STATE_CAPE_COLONY
-		STATE_ZULULAND
-		STATE_VRYSTAAT
-		STATE_TRANSVAAL
-	}
-	ai_will_do = { always = yes }
-}

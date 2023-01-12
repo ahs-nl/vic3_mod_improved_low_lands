@@ -1,0 +1,12 @@
+﻿# WIN = { # Dutch West Indies
+# }
+
+SUR = { # Suriname
+	states = {
+		STATE_GUAYANA
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}

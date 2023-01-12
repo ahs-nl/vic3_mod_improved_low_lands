@@ -1,0 +1,11 @@
+﻿# WIN = { # Dutch West Indies
+# }
+
+SUR = { # Suriname
+	color = { 240 170 75 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch } #afro_caribbean amazonian }
+	religion = protestant
+	capital = STATE_GUAYANA
+}

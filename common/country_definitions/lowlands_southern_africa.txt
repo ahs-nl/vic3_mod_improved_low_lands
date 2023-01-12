@@ -1,0 +1,118 @@
+﻿SAF = { # South Africa
+	color = { 180 158 127 }
+	country_type = colonial
+	tier = kingdom
+	cultures = { british boer }
+	religion = protestant
+	capital = STATE_CAPE_COLONY
+}
+
+BOE = { # South Africa
+	color = { 224 139 47 }
+	country_type = colonial
+	tier = empire
+	cultures = { boer british }
+	religion = protestant
+	capital = STATE_CAPE_COLONY
+}
+
+CAP = { # Cape Province
+	color = { 220 188 67 }
+	country_type = colonial
+	tier = principality
+	cultures = { british boer }
+	religion = protestant
+	capital = STATE_CAPE_COLONY
+}
+
+NAL = { # Natal
+	color = { 120 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_NATAL
+}
+
+KLE = { # Klein Vrijstaat
+	color = { 224 109 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_ZULULAND
+	is_named_from_capital = yes
+}
+
+ORA = { # Orange Free State
+	color = { 224 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_VRYSTAAT
+	is_named_from_capital = yes
+}
+
+TRN = { # Transvaal
+	color = { 170 139 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+WBL = { # Griqualand
+	color = { 176 206 177 } # { 0 86 22 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { griqua }
+	capital = STATE_NORTHERN_CAPE
+}
+
+STE = { # Stellaland
+	color = { 156 178 46 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_NORTHERN_CAPE
+	is_named_from_capital = yes
+}
+
+LYD = { # Lijdensrust
+	color = { 120 99 47 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	religion = protestant
+	capital = STATE_NAMAQUALAND
+	is_named_from_capital = yes
+}
+
+ZOU = { # Zoutpansberg
+	color = { 140 183 154 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+
+WIB = { # Winburg
+	color = { 140 183 154 }
+	country_type = colonial
+	tier = principality
+	cultures = { boer }
+	capital = STATE_VRYSTAAT
+}
+
+NMB = { # Dutch Namibia
+	color = { 237 207 123 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch boer }
+	religion = protestant
+	capital = STATE_NAMAQUALAND
+}

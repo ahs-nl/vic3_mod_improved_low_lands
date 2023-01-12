@@ -1,0 +1,19 @@
+# Zoutpansberg
+
+# base flags
+
+ZOU_regular = {
+	
+	# Republic of Zoutpansberg: https://af.wikipedia.org/wiki/Republiek_van_Zoutpansberg
+	# Using the Zoutpansberg / Burgers' flag instead of the Winburg / Voortrekker flag to make in-game distinction
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_crossed.png"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_argent
+	}	
+	
+}

@@ -1,6 +1,8 @@
 ﻿l_english:
- # Low Lands
+ 
+ # Lowlands
  NET:0 "Netherlands"
+ dyn_c_united_netherlands:0 "United Netherlands"
  NET_ADJ:0 "Dutch"
  FRI:0 "Frisia"
  FRI_ADJ:0 "Frisian"
@@ -11,6 +13,7 @@
  LIM:0 "Limburg"
  LIM_ADJ:0 "Limburgish"
  BEL:0 "Belgium"
+ dyn_c_united_belgian_states:0 "United Belgian States"
  BEL_ADJ:0 "Belgian"
  FLA:0 "Flanders"
  FLA_ADJ:0 "Flemish"
@@ -18,37 +21,62 @@
  WLL_ADJ:0 "Wallonian"
  LUX:0 "Luxembourg"
  LUX_ADJ:0 "Luxembourgian"
- # Americas
+ 
+ # Rest of America
  #WIN:0 "West Indies"
  #WIN_ADJ:0 "West Indian"
  SUR:0 "Suriname"
  SUR_ADJ:0 "Surinamer"
- # Western Africa
+ 
+ # Rest of Africa
  GLC:0 "Gold Coast"
  GLC_ADJ:0 "Goldcoastish"
  IVC:0 "Ivory Coast"
  IVC_ADJ:0 "Ivorian"
+ 
  # Southern Africa
- NMB:0 "Namibia"
- NMB_ADJ:0 "Namibian"
  SAF:0 "South Africa"
  SAF_ADJ:0 "South African"
+ BOE:0 "South Africa"
+ BOE_ADJ:0 "South African"
  CAP:0 "Cape Province"
  CAP_ADJ:0 "Capish"
+ dyn_c_south_africa:0 "Cape Colony"
+ dyn_c_south_africa_adj:0 "Cape Colonies"
  NAL:0 "Natal"
  NAL_ADJ:0 "Natalian"
+ KLE:0 "Klein Vrystaat"
+ KLE_ADJ:0 "Kleinvrystaater"
  ORA:0 "Oranje"
  ORA_ADJ:0 "Oranjean"
+ dyn_c_orange_river_sovereignty:0 "Orange River Sovereignty"
+ dyn_c_orange_river_sovereignty_adj:0 "Orange River"
  TRN:0 "Transvaal"
  TRN_ADJ:0 "Transvaali"
+ dyn_c_transvaal_non_republic:0 "Transvaal"
+ dyn_c_transvaal_republic:0 "South African Republic"
+ dyn_c_transvaal_colony:0 "Transvaal Colony"
  WBL:0 "Griqualand"
  WBL_ADJ:0 "Griqua"
- STL:0 "Stellaland"
- STL_ADJ:0 "Stellalandish"
+ STE:0 "Stellaland"
+ STE_ADJ:0 "Stellalandish"
  LYD:0 "Lijdensrust"
  LYD_ADJ:0 "Lijdensrustian"
+ ZOU:0 "Zoutpansberg"
+ ZOU_ADJ:0 "Zoutpansberger"
+ WIB:0 "Winburg"
+ WIB_ADJ:0 "Winburger"
+ NMB:0 "Namibia"
+ NMB_ADJ:0 "Namibian"
+ 
  # Indies
  DEI:0 "East Indies"
  DEI_ADJ:0 "Eastindian"
+ 
+ # Rest of Asia
  NHL:0 "New Holland"
  NHL_ADJ:0 "New Hollander"
+ #CEY:0 "Ceylon"
+ #CEY_ADJ:0 "Ceylonder"
+ #FRS:0 "Formosa"
+ #FRS_ADJ:0 "Formosan"

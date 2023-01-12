@@ -18,7 +18,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_regular
 		priority = 500
 		trigger = {
-			coa_has_monarchy = yes
+			lowlands_coa_has_monarchy = yes
 		}
 	}
 	
@@ -30,7 +30,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_regular
 		priority = 550
 		trigger = {
-			coa_has_constitutional_monarchy = yes
+			lowlands_coa_has_constitutional_monarchy = yes
 		}
 	}
 	
@@ -42,7 +42,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_regular
 		priority = 600
 		trigger = {
-			coa_has_absolute_monarchy = yes
+			lowlands_coa_has_absolute_monarchy = yes
 		}
 	}
 	
@@ -54,7 +54,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_regular
 		priority = 700
 		trigger = {
-			coa_has_oligarchy = yes
+			lowlands_coa_has_oligarchy = yes
 		}
 	}
 	
@@ -66,7 +66,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_regular
 		priority = 500
 		trigger = {
-			coa_has_republic = yes
+			lowlands_coa_has_republic = yes
 		}
 	}
 	
@@ -78,7 +78,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_revolution
 		priority = 550
 		trigger = {
-			coa_has_radical_republic = yes
+			lowlands_coa_has_radical_republic = yes
 		}
 	}
 	
@@ -90,7 +90,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_brabant_revolution
 		priority = 600
 		trigger = {
-			coa_has_republican_dictatorship = yes
+			lowlands_coa_has_republican_dictatorship = yes
 		}
 	}
 	
@@ -102,7 +102,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_fascist
 		priority = 800
 		trigger = {
-			coa_has_fascism = yes
+			lowlands_coa_has_fascism = yes
 		}
 	}
 	
@@ -113,7 +113,7 @@ BEL = {
 		allow_overlord_canton = no
 		priority = 5000
 		trigger = {
-			coa_has_anarchy = yes
+			lowlands_coa_has_anarchy = yes
 		}
 	}
 	
@@ -124,7 +124,7 @@ BEL = {
 		allow_overlord_canton = no
 		priority = 5000
 		trigger = {
-			coa_has_communism = yes
+			lowlands_coa_has_communism = yes
 		}
 	}
 	
@@ -136,7 +136,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_austrian_netherlands
 		priority = 1000
 		trigger = {
-			coa_has_theocracy = yes
+			lowlands_coa_has_theocracy = yes
 		}
 	}
 	
@@ -148,7 +148,7 @@ BEL = {
 		coa_with_overlord_canton = BEL_brabant_revolution
 		priority = 1500
 		trigger = {
-			coa_has_military_junta = yes
+			lowlands_coa_has_military_junta = yes
 		}
 	}
 	
@@ -159,7 +159,7 @@ BEL = {
 		allow_overlord_canton = no
 		priority = 1500
 		trigger = {
-			coa_has_egalitarianism = yes
+			lowlands_coa_has_egalitarianism = yes
 		}
 	}
 	

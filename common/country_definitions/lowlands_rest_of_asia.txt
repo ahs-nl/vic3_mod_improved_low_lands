@@ -1,0 +1,14 @@
+﻿NHL = { # New Holland (Dutch Australia)
+	color = { 255 80 0 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	religion = protestant
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+# CEY = { # Dutch Ceylon
+# }
+
+# FRS = { # Dutch Formosa
+# }

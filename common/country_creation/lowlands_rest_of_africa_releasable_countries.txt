@@ -1,0 +1,23 @@
+﻿GLC = { # Dutch Gold Coast / Ghana
+	states = {
+		STATE_GHANA
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+IVC = { # Dutch Ivory Coast / Windward Coast
+	states = {
+		STATE_IVORY_COAST
+		STATE_WINDWARD_COAST
+	}
+	required_num_states = 1
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+# Belgian Congo -- special case: congo free state dynamic state
