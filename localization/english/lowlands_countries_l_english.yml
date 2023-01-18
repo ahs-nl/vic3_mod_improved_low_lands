@@ -37,8 +37,8 @@
  # Southern Africa
  SAF:0 "South Africa"
  SAF_ADJ:0 "South African"
- BOE:0 "South Africa"
- BOE_ADJ:0 "South African"
+ BOE:0 "Volkstaat South Africa"
+ BOE_ADJ:0 "Boer"
  CAP:0 "Cape Province"
  CAP_ADJ:0 "Capish"
  dyn_c_south_africa:0 "Cape Colony"

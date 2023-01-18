@@ -55,11 +55,7 @@ lowlands_is_located_in_NET_trigger = {
 				exists = c:NET
 				owner = {
 					OR = {
-						AND = {
-							c:NET = this
-							is_subject = no
-						}
-						is_subject_of = c:NET
+						AND = { c:NET = this is_subject = no }
 					}
 				}
 			}
@@ -70,11 +66,95 @@ lowlands_is_located_in_NET_trigger = {
 				exists = c:NET
 				owner = {
 					OR = {
-						AND = {
-							c:NET = this
-							is_subject = no
-						}
-						is_subject_of = c:NET
+						AND = { c:NET = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:FRI
+				owner = {
+					OR = {
+						AND = { c:FRI = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:FRI
+				owner = {
+					OR = {
+						AND = { c:FRI = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:HLN
+				owner = {
+					OR = {
+						AND = { c:HLN = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:HLN
+				owner = {
+					OR = {
+						AND = { c:HLN = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:BRB
+				owner = {
+					OR = {
+						AND = { c:BRB = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:BRB
+				owner = {
+					OR = {
+						AND = { c:BRB = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:LIM
+				owner = {
+					OR = {
+						AND = { c:LIM = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:LIM
+				owner = {
+					OR = {
+						AND = { c:LIM = this is_subject = no }
 					}
 				}
 			}
@@ -94,7 +174,6 @@ lowlands_is_located_in_DEI_trigger = {
 							is_subject = yes
 							is_subject_of = c:NET
 						}
-						is_subject_of = c:DEI
 					}
 				}
 			}
@@ -110,7 +189,6 @@ lowlands_is_located_in_DEI_trigger = {
 							is_subject = yes
 							is_subject_of = c:NET
 						}
-						is_subject_of = c:DEI
 					}
 				}
 			}
@@ -125,11 +203,7 @@ lowlands_is_located_in_BEL_trigger = {
 				exists = c:BEL
 				owner = {
 					OR = {
-						AND = {
-							c:BEL = this
-							is_subject = no
-						}
-						is_subject_of = c:BEL
+						AND = { c:BEL = this is_subject = no }
 					}
 				}
 			}
@@ -140,11 +214,51 @@ lowlands_is_located_in_BEL_trigger = {
 				exists = c:BEL
 				owner = {
 					OR = {
-						AND = {
-							c:BEL = this
-							is_subject = no
-						}
-						is_subject_of = c:BEL
+						AND = { c:BEL = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:FLA
+				owner = {
+					OR = {
+						AND = { c:FLA = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:FLA
+				owner = {
+					OR = {
+						AND = { c:FLA = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character = {
+				exists = c:WLL
+				owner = {
+					OR = {
+						AND = { c:WLL = this is_subject = no }
+					}
+				}
+			}
+		}
+		AND = {
+			exists = scope:pop
+			scope:pop = {
+				exists = c:WLL
+				owner = {
+					OR = {
+						AND = { c:WLL = this is_subject = no }
 					}
 				}
 			}

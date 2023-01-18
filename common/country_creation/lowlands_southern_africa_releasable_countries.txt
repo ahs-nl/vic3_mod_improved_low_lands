@@ -1,26 +1,19 @@
 ﻿SAF = { # South Africa
 	states = {
+		STATE_CAPE_COLONY
 		STATE_NORTHERN_CAPE
 		STATE_EASTERN_CAPE
-		STATE_CAPE_COLONY
-		STATE_ZULULAND
-		STATE_VRYSTAAT
 		STATE_TRANSVAAL
+		STATE_VRYSTAAT
+		STATE_ZULULAND
+		STATE_NATAL
 	}
-	required_num_states = 4
+	required_num_states = 6
 	ai_will_do = { always = no }
 }
 
-BOE = { # South Africa
-	states = {
-		STATE_NORTHERN_CAPE
-		STATE_EASTERN_CAPE
-		STATE_CAPE_COLONY
-		STATE_ZULULAND
-		STATE_VRYSTAAT
-		STATE_TRANSVAAL
-	}
-	required_num_states = 4
+BOE = { # Boer homeland
+	use_culture_states = yes
 	ai_will_do = { always = no }
 }
 
@@ -37,13 +30,18 @@ CAP = { # Cape Province
 NAL = { # Natal
 	states = {
 		STATE_ZULULAND
+		STATE_NATAL
 	}
+	required_num_states = 1
 	ai_will_do = { always = no }
 }
 
 KLE = { # Klein Vrijstaat
 	states = {
 		STATE_NATAL
+	}
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
 	}
 	ai_will_do = { always = no }
 }
@@ -82,22 +80,17 @@ WBL = { # Griqualand
 	ai_will_do = { always = no }
 }
 
-STL = { # Stellaland
-	provinces = { # across one state
-		x20F4FE
-		xD76CB9
+STE = { # Stellaland
+	provinces = { # across two states
+		xA494F8
+		x4AFDFD
 		x20CAA7
 		xD65167
 		xD0AEA4
-		xA494F8
-		x4AFDFD
-		x4D517F
-		xCFE774
-		xE4925E
-		x8E325C
-		x8491F7
-		x6CF2A2
-		x642DA4
+		x1109D2
+		x71C0D0
+		x5A7E71
+		xC0E1AD
 	}
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
@@ -121,8 +114,5 @@ NMB = { # Dutch Namibia
 		STATE_NAMAQUALAND
 	}
 	required_num_states = 2
-	possible = {
-		NOT = { has_game_rule = plausible_releasable_nations }
-	}
 	ai_will_do = { always = no }
 }

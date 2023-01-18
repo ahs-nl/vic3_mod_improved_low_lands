@@ -3,17 +3,15 @@
 	country_type = colonial
 	tier = kingdom
 	cultures = { british boer }
-	religion = protestant
 	capital = STATE_CAPE_COLONY
 }
 
-BOE = { # South Africa
+BOE = { # Boer homeland
 	color = { 224 139 47 }
 	country_type = colonial
-	tier = empire
-	cultures = { boer british }
-	religion = protestant
-	capital = STATE_CAPE_COLONY
+	tier = kingdom
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
 }
 
 CAP = { # Cape Province
@@ -21,7 +19,6 @@ CAP = { # Cape Province
 	country_type = colonial
 	tier = principality
 	cultures = { british boer }
-	religion = protestant
 	capital = STATE_CAPE_COLONY
 }
 
@@ -30,7 +27,6 @@ NAL = { # Natal
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_NATAL
 }
 
@@ -39,7 +35,6 @@ KLE = { # Klein Vrijstaat
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_ZULULAND
 	is_named_from_capital = yes
 }
@@ -49,7 +44,6 @@ ORA = { # Orange Free State
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_VRYSTAAT
 	is_named_from_capital = yes
 }
@@ -59,7 +53,6 @@ TRN = { # Transvaal
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_TRANSVAAL
 	is_named_from_capital = yes
 }
@@ -77,7 +70,6 @@ STE = { # Stellaland
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_NORTHERN_CAPE
 	is_named_from_capital = yes
 }
@@ -87,7 +79,6 @@ LYD = { # Lijdensrust
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
-	religion = protestant
 	capital = STATE_NAMAQUALAND
 	is_named_from_capital = yes
 }
@@ -108,11 +99,10 @@ WIB = { # Winburg
 	capital = STATE_VRYSTAAT
 }
 
-NMB = { # Dutch Namibia
+NMB = { # Namibia
 	color = { 237 207 123 }
 	country_type = colonial
-	tier = principality
+	tier = kingdom
 	cultures = { dutch boer }
-	religion = protestant
 	capital = STATE_NAMAQUALAND
 }

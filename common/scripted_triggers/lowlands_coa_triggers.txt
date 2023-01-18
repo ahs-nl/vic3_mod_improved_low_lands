@@ -313,3 +313,10 @@ coa_LUX_overlord = { # Luxembourg
 	c:LUX = { save_temporary_scope_as = custom_overlord }
 	lowlands_coa_is_overlord_trigger = yes
 }
+
+coa_GER_overlord = { # Germany
+	exists = c:GER
+	c:GER = { save_temporary_scope_as = custom_overlord }
+	lowlands_coa_is_overlord_trigger = yes
+}
+

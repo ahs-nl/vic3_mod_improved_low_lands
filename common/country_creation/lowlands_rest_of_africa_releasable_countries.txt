@@ -3,7 +3,10 @@
 		STATE_GHANA
 	}
 	possible = {
-		NOT = { has_game_rule = plausible_releasable_nations }
+		custom_tooltip = {
+			text = lowlands_tooltip_has_beneluxian_culture_trigger
+			lowlands_has_beneluxian_culture_trigger = yes
+		}
 	}
 	ai_will_do = { always = no }
 }
@@ -15,7 +18,10 @@ IVC = { # Dutch Ivory Coast / Windward Coast
 	}
 	required_num_states = 1
 	possible = {
-		NOT = { has_game_rule = plausible_releasable_nations }
+		custom_tooltip = {
+			text = lowlands_tooltip_has_beneluxian_culture_trigger
+			lowlands_has_beneluxian_culture_trigger = yes
+		}
 	}
 	ai_will_do = { always = no }
 }

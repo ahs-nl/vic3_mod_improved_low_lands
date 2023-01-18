@@ -7,8 +7,6 @@ SAF = {
 		coa = SAF_regular
 		subject_canton = SAF_regular
 		allow_overlord_canton = yes
- 		#overlord_canton_scale = { 0.75 0.75 }
- 		#overlord_canton_offset = { 0.00 0.00 }
 		coa_with_overlord_canton = SAF_subject
 		priority = 1
 	}
@@ -16,33 +14,47 @@ SAF = {
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = SAF_overlord_NET
-		coa_with_overlord_canton = SAF_overlord_NET
+		coa = SAF_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = SAF_subject_NET_regular
 		allow_overlord_canton = no
-		priority = 55
+		priority = 50
 		trigger = {
 			coa_NET_overlord = yes
 		}
 	}
 	
-	flag_definition = {
-		coa = SAF_ensign
-		coa_with_overlord_canton = SAF_ensign
-		allow_overlord_canton = yes
-		priority = 50
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = SAF_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
 		trigger = {
-			coa_def_lesser_subject_trigger = yes
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
 		}
 	}
 	
-	# absolute_monarchy
-	
-	flag_definition = {
-		coa = SAF_coa
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = SAF_subject_NET_prinsenvlag
 		allow_overlord_canton = no
-		priority = 60
+		priority = 51
 		trigger = {
-			lowlands_coa_has_absolute_monarchy = yes
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
 		}
 	}
 	
@@ -71,8 +83,7 @@ SAF = {
 	# fascism
 	
 	flag_definition = {
-		coa = SAF_fascist
-		subject_canton = SAF_fascist
+		coa = SAF_fascism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -93,9 +104,89 @@ SAF = {
 	
 }
 
-# South Africa
-#BOE = {
-#}
+# Volkstaat South Africa (fictional Boer homeland state)
+BOE = {
+	
+	# base
+	
+	flag_definition = {
+		coa = BOE_regular
+		subject_canton = BOE_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = BOE_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = BOE_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = BOE_subject_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = BOE_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = BOE_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = BOE_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = BOE_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_communism = yes
+		}
+	}
+	
+}
 
 # Cape Province
 CAP = {
@@ -190,8 +281,6 @@ NAL = {
 		coa = NAL_regular
 		subject_canton = NAL_regular
 		allow_overlord_canton = yes
- 		overlord_canton_scale = { 0.15 0.15 }
- 		overlord_canton_offset = { 0.43 0.425 }
 		coa_with_overlord_canton = NAL_subject
 		priority = 1
 	}
@@ -207,21 +296,46 @@ NAL = {
 		}
 	}
 	
-	# absolute monarchy
-	
-	flag_definition = {
-		coa = NAL_coa
+	flag_definition = { # NET_statenvlag is normally used
+		coa = NAL_subject_NET_regular
 		allow_overlord_canton = no
-		priority = 60
+		priority = 50
 		trigger = {
-			lowlands_coa_has_absolute_monarchy = yes
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = NAL_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = NAL_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
 		}
 	}
 	
 	# anarchy
 	
 	flag_definition = {
-		coa = NAL_anarchy
+		coa = NAL_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -242,9 +356,89 @@ NAL = {
 	
 }
 
-# Klein Vrijstaat
-#KLE = {
-#}
+# Klein Vrijstaat / Nieuwe Republiek
+KLE = {
+	
+	# base
+	
+	flag_definition = {
+		coa = KLE_regular
+		subject_canton = KLE_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = KLE_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = KLE_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = KLE_subject_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = KLE_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = KLE_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = KLE_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = KLE_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_communism = yes
+		}
+	}
+	
+}
 
 # Orange Free State
 ORA = {
@@ -428,60 +622,20 @@ TRN = {
 }
 
 # Griqualand
-#WBL = {
-#	
-#	# base
-#	
-#	flag_definition = {
-#		coa = WBL_regular
-#		subject_canton = WBL_regular
-#		allow_overlord_canton = yes
-#		coa_with_overlord_canton = WBL_subject
-#		priority = 1
-#	}
-#	
-#}
-
-# Stellaland
-STE = {
+WBL = {
 	
 	# base
 	
 	flag_definition = {
-		coa = STL_regular
-		subject_canton = STL_regular
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = STL_subject
+		coa = WBL_regular
+		allow_overlord_canton = no
 		priority = 1
-	}
-	
-	# dictatorship
-	
-	flag_definition = {
-		coa = STL_alternative
-		subject_canton = STL_alternative
-		allow_overlord_canton = yes
-		priority = 50
-		trigger = {
-			lowlands_coa_has_republican_dictatorship = yes
-		}
-	}
-	
-	# absolute monarchy
-	
-	flag_definition = {
-		coa = STL_coa
-		allow_overlord_canton = yes
-		priority = 60
-		trigger = {
-			lowlands_coa_has_absolute_monarchy = yes
-		}
 	}
 	
 	# anarchy
 	
 	flag_definition = {
-		coa = STL_anarchy
+		coa = WBL_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -492,7 +646,7 @@ STE = {
 	# communism
 	
 	flag_definition = {
-		coa = STL_communism
+		coa = WBL_communism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -502,25 +656,117 @@ STE = {
 	
 }
 
-# Lijdensrust
+# Stellaland
+STE = {
+	
+	# base
+	
+	flag_definition = {
+		coa = STE_regular
+		subject_canton = STE_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = STE_subject
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = STE_alternative
+		subject_canton = STE_alternative
+		allow_overlord_canton = no
+		priority = 25
+		trigger = {
+			OR = {
+				lowlands_coa_has_military_junta = yes
+				lowlands_coa_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = STE_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = STE_subject_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = STE_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = STE_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = STE_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = STE_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_communism = yes
+		}
+	}
+}
+
+# Lijdensrust / Upingtonia
 LYD = {
 	
 	# base
 	
 	flag_definition = {
 		coa = LYD_regular
-		subject_canton = LYD_regular
-		allow_overlord_canton = yes
- 		overlord_canton_scale = { 0.15 0.15 }
- 		overlord_canton_offset = { 0.28335 0.425 }
-		coa_with_overlord_canton = LYD_subject
+		allow_overlord_canton = no
 		priority = 1
 	}
 	
 	# anarchy
 	
 	flag_definition = {
-		coa = LYD_anarchy
+		coa = LYD_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -543,22 +789,120 @@ LYD = {
 
 # Zoutpansberg
 ZOU = {
+	
+	# base
+	
 	flag_definition = {
 		coa = ZOU_regular
 		allow_overlord_canton = no
 		priority = 1
 	}
+	
 }
 
 # Winburg
 WIB = {
+	
+	# base
+	
 	flag_definition = {
 		coa = WIB_regular
 		allow_overlord_canton = no
 		priority = 1
 	}
+	
 }
 
 # Namibia
-#NMB = {
-#}
+NMB = {
+	
+	# base
+	
+	flag_definition = {
+		coa = NMB_regular
+		subject_canton = NMB_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = NMB_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = {
+		coa = NMB_subject_GBR
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_def_british_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = NMB_subject_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = NMB_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = NMB_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
+		}
+	}
+	
+	flag_definition = {
+		coa = NMB_subject_GER
+		allow_overlord_canton = yes
+		priority = 50
+		trigger = {
+			coa_GER_overlord = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = NMB_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = NMB_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_communism = yes
+		}
+	}
+	
+	
+}
