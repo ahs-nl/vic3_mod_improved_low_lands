@@ -6,10 +6,8 @@ SUR = { # Suriname
 		STATE_GUAYANA
 	}
 	possible = {
-		custom_tooltip = {
-			text = lowlands_tooltip_has_beneluxian_culture_trigger
-			lowlands_has_beneluxian_culture_trigger = yes
-		}
+		exists = c:NET
+		this = c:NET
 		NOT = { has_game_rule = plausible_releasable_nations }
 	}
 	ai_will_do = { always = no }

@@ -1,21 +1,20 @@
-﻿# Suriname
-SUR = {
+﻿# Dutch East Indies
+DEI = {
 	
 	# base
 	
 	flag_definition = {
-		coa = SUR_regular
-		subject_canton = SUR_regular
-		allow_overlord_canton = yes	
-		coa_with_overlord_canton = SUR_subject
+		coa = DEI_regular
+		subject_canton = DEI_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = DEI_subject
 		priority = 1
 	}
 	
 	# custom overlord cantons
 	
-	flag_definition = {
-		coa = SUR_overlord_NET_regular
-		subject_canton = NET_regular
+	flag_definition = { # NET_statenvlag is normally used
+		coa = DEI_subject_NET_regular
 		allow_overlord_canton = no
 		priority = 50
 		trigger = {
@@ -23,30 +22,29 @@ SUR = {
 		}
 	}
 	
-	flag_definition = {
-		coa = SUR_overlord_NET_prinsenvlag
-		subject_canton = NET_prinsenvlag
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = DEI_subject_NET_statenvlag
 		allow_overlord_canton = no
-		priority = 55
+		priority = 51
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_absolute_monarchy = yes
-				coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
 			}
 		}
 	}
 	
-	flag_definition = {
-		coa = SUR_overlord_NET_statenvlag
-		subject_canton = NET_statenvlag
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = DEI_subject_NET_prinsenvlag
 		allow_overlord_canton = no
-		priority = 55
+		priority = 51
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
 			}
 		}
 	}
@@ -54,7 +52,7 @@ SUR = {
 	# absolute_monarchy
 	
 	flag_definition = {
-		coa = SUR_coa
+		coa = DEI_coa
 		allow_overlord_canton = no
 		priority = 60
 		trigger = {
@@ -65,7 +63,7 @@ SUR = {
 	# anarchy
 	
 	flag_definition = {
-		coa = SUR_anarchism
+		coa = DEI_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -76,7 +74,7 @@ SUR = {
 	# communism
 	
 	flag_definition = {
-		coa = SUR_communism
+		coa = DEI_communism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -87,7 +85,7 @@ SUR = {
 	# fascism
 	
 	flag_definition = {
-		coa = SUR_fascism
+		coa = DEI_fascism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -98,7 +96,7 @@ SUR = {
 	# multiculturalism
 	
 	flag_definition = {
-		coa = SUR_modern
+		coa = DEI_multiculturalism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {

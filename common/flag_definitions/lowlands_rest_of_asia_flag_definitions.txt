@@ -1,0 +1,86 @@
+﻿# New Holland (Dutch Australia)
+NHL = {
+	
+	# base
+	
+	flag_definition = {
+		coa = NHL_regular
+		subject_canton = NHL_regular
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = NHL_subject
+		priority = 1
+	}
+	
+	# custom overlord cantons
+	
+	flag_definition = { # NET_statenvlag is normally used
+		coa = NHL_subject_NET_regular
+		allow_overlord_canton = no
+		priority = 50
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
+		coa = NHL_subject_NET_statenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
+		}
+	}
+	
+	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
+		coa = NHL_subject_NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 51
+		trigger = {
+			coa_NET_overlord = yes
+			OR = {
+				lowlands_coa_overlord_has_absolute_monarchy = yes
+				lowlands_coa_overlord_has_fascism = yes
+				lowlands_coa_overlord_has_military_junta = yes
+			}
+		}
+	}
+	
+	# absolute_monarchy
+	
+	flag_definition = {
+		coa = NHL_coa_regular
+		allow_overlord_canton = no
+		priority = 60
+		trigger = {
+			lowlands_coa_has_absolute_monarchy = yes
+		}
+	}
+	
+	# anarchy
+	
+	flag_definition = {
+		coa = NHL_anarchism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_anarchy = yes
+		}
+	}
+	
+	# communism
+	
+	flag_definition = {
+		coa = NHL_communism
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_communism = yes
+		}
+	}
+	
+}
+

@@ -1,17 +1,31 @@
-﻿GLC = { # Dutch Gold Coast / Ghana
+﻿DPC = { # Dutch Grain (Pepper) Coast / Liberia-SierraLeone
 	color = { 255 207 74 }
 	country_type = colonial
 	tier = principality
 	cultures = { dutch }
-	religion = protestant
-	capital = STATE_GHANA
+	capital = STATE_LIBERIA
 }
 
-IVC = { # Dutch Ivory Coast / Windward Coast
-	color = { 237 207 103 }
+DIC = { # Dutch Ivory Coast / WindwardCoast-IvoryCoast
+	color = { 225 187 160 }
 	country_type = colonial
 	tier = principality
 	cultures = { dutch }
-	religion = protestant
 	capital = STATE_IVORY_COAST
+}
+
+DGC = { # Dutch Gold Coast / Ghana-Togo
+	color = { 185 167 64 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	capital = STATE_GHANA
+}
+
+DSC = { # Dutch Slave Coast / Dahomey-YorubaStates-Benin-NigerDelta
+	color = { 185 137 75 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch }
+	capital = STATE_NIGER_DELTA
 }

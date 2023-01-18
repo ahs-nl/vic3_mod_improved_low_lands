@@ -36,7 +36,7 @@ DEI_subject = {
 	
 }
 
-DEI_overlord_NET_regular = {
+DEI_subject_NET_regular = {
 	
 	parent = "NET_regular"
 	
@@ -47,18 +47,7 @@ DEI_overlord_NET_regular = {
 	
 }
 
-DEI_overlord_NET_prinsenvlag = {
-	
-	parent = "NET_prinsenvlag"
-	
-	sub = {
-		parent = "sub_DEI_coa"
-		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
-	}
-	
-}
-
-DEI_overlord_NET_statenvlag = {
+DEI_subject_NET_statenvlag = {
 	
 	parent = "NET_statenvlag"
 	
@@ -69,7 +58,18 @@ DEI_overlord_NET_statenvlag = {
 	
 }
 
-DEI_voc = { # VOC east-india company flag
+DEI_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DEI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+DEI_company_voc = { # VOC east-india company flag
 	
 	parent = "NET_regular"
 	

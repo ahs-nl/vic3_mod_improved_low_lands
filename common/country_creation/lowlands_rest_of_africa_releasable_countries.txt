@@ -1,29 +1,57 @@
-﻿GLC = { # Dutch Gold Coast / Ghana
+﻿DPC = { # Dutch Grain (Pepper) Coast / Liberia-SierraLeone
 	states = {
-		STATE_GHANA
+		STATE_LIBERIA
+		STATE_SIERRA_LEONE
 	}
+	required_num_states = 1
 	possible = {
-		custom_tooltip = {
-			text = lowlands_tooltip_has_beneluxian_culture_trigger
-			lowlands_has_beneluxian_culture_trigger = yes
-		}
+		exists = c:NET
+		this = c:NET
+		NOT = { has_game_rule = plausible_releasable_nations }
 	}
 	ai_will_do = { always = no }
 }
 
-IVC = { # Dutch Ivory Coast / Windward Coast
+DIC = { # Dutch Ivory Coast / WindwardCoast-IvoryCoast
 	states = {
 		STATE_IVORY_COAST
 		STATE_WINDWARD_COAST
 	}
 	required_num_states = 1
 	possible = {
-		custom_tooltip = {
-			text = lowlands_tooltip_has_beneluxian_culture_trigger
-			lowlands_has_beneluxian_culture_trigger = yes
-		}
+		exists = c:NET
+		this = c:NET
+		NOT = { has_game_rule = plausible_releasable_nations }
 	}
 	ai_will_do = { always = no }
 }
 
-# Belgian Congo -- special case: congo free state dynamic state
+DGC = { # Dutch Gold Coast / Ghana-Togo
+	states = {
+		STATE_GHANA
+		STATE_TOGO
+	}
+	required_num_states = 1
+	possible = {
+		exists = c:NET
+		this = c:NET
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}
+
+DSC = { # Dutch Slave Coast / Dahomey-YorubaStates-Benin-NigerDelta
+	states = {
+		STATE_DAHOMEY
+		STATE_YORUBA_STATES
+		STATE_BENIN
+		STATE_NIGER_DELTA
+	}
+	required_num_states = 1
+	possible = {
+		exists = c:NET
+		this = c:NET
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+	ai_will_do = { always = no }
+}

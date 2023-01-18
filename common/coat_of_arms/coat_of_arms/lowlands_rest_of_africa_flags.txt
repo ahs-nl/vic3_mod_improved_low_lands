@@ -1,0 +1,827 @@
+﻿#######################
+# DPC
+# Dutch Grain (Pepper) Coast / Liberia-SierraLeone
+#######################
+
+# base flags
+
+DPC_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_brunatre
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.90 0.90 } offset = { 0.05 0.05 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.80 0.80 } offset = { 0.10 0.10 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.40 0.40 } offset = { 0.30 0.30 } }
+	}
+	
+}
+
+# subject
+
+DPC_subject_GBR = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+DPC_subject_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DPC_subject_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DPC_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DPC_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DPC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DPC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_DPC_helper_circle = {
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}
+}
+
+sub_DPC_coa_holders = {
+	
+	# crest
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
+	}
+	
+	# two antilopes as supporters with different colours, substituted by default deer image
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
+	}
+	
+	# ribbon with text "ex unitate vires" (text omitted)
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
+	}
+		
+}
+
+sub_DPC_coa_minimal = {
+	
+	# shield
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_brunatre
+		instance = { scale = { 0.96 0.96 } position = { 0.50 0.50 } }			
+	}
+	
+	# quarters
+	colored_emblem = {
+		texture = "ce_ship_manchester.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_argent
+		color3 = wappenwiki_or
+		instance = { scale = { 0.60 0.70 } position = { 0.50 0.45 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+#######################
+# DIC
+# Dutch Ivory Coast / WindwardCoast-IvoryCoast
+#######################
+
+# base flags
+
+DIC_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_cendree
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.90 0.90 } offset = { 0.05 0.05 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.80 0.80 } offset = { 0.10 0.10 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.40 0.40 } offset = { 0.30 0.30 } }
+	}
+	
+}
+
+# subject
+
+DIC_subject_GBR = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+DIC_subject_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DIC_subject_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DIC_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DIC_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DIC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DIC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_DIC_helper_circle = {
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}
+}
+
+sub_DIC_coa_holders = {
+	
+	# crest
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
+	}
+	
+	# two antilopes as supporters with different colours, substituted by default deer image
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
+	}
+	
+	# ribbon with text "ex unitate vires" (text omitted)
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
+	}
+		
+}
+
+sub_DIC_coa_minimal = {
+	
+	# shield
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_cendree
+		instance = { scale = { 0.96 0.96 } position = { 0.50 0.50 } }			
+	}
+	
+	# quarters
+	colored_emblem = {
+		texture = "ce_elephant_african.dds"
+		color1 = wappenwiki_keel
+		color2 = wappenwiki_or
+		instance = { scale = { 0.60 0.70 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+#######################
+# DGC
+# Dutch Gold Coast / Ghana-Togo
+#######################
+
+# base flags
+
+DGC_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.90 0.90 } offset = { 0.05 0.05 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.80 0.80 } offset = { 0.10 0.10 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.40 0.40 } offset = { 0.30 0.30 } }
+	}
+	
+}
+
+# subject
+
+DGC_subject_GBR = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+DGC_subject_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DGC_subject_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DGC_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DGC_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DGC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DGC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_DGC_helper_circle = {
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}
+}
+
+sub_DGC_coa_holders = {
+	
+	# crest
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
+	}
+	
+	# two antilopes as supporters with different colours, substituted by default deer image
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
+	}
+	
+	# ribbon with text "ex unitate vires" (text omitted)
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
+	}
+		
+}
+
+sub_DGC_coa_minimal = {
+	
+	# shield
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.96 0.96 } position = { 0.50 0.50 } }			
+	}
+	
+	# quarters
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_sinopel
+		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+#######################
+# DSC
+# Dutch Slave Coast / Dahomey-YorubaStates-Benin-NigerDelta
+#######################
+
+# base flags
+
+DSC_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.90 0.90 } offset = { 0.05 0.05 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.80 0.80 } offset = { 0.10 0.10 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.40 0.40 } offset = { 0.30 0.30 } }
+	}
+	
+}
+
+# subject
+
+DSC_subject_GBR = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+DSC_subject_NET_regular = {
+	
+	parent = "NET_regular"
+	
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DSC_subject_NET_statenvlag = {
+	
+	parent = "NET_statenvlag"
+	
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DSC_subject_NET_prinsenvlag = {
+	
+	parent = "NET_prinsenvlag"
+	
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.225 0.225 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.175 0.21 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.325 0.36 } }
+	}
+	
+}
+
+DSC_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	sub = {
+		parent = "sub_DSC_helper_circle"
+		instance = { scale = { 0.55 0.55 } offset = { 0.475 0.225 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_holders"
+		instance = { scale = { 0.65 0.65 } offset = { 0.475 0.21 } }
+	}
+	sub = {
+		parent = "sub_DSC_coa_minimal"
+		instance = { scale = { 0.35 0.35 } offset = { 0.575 0.36 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_DSC_helper_circle = {
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}
+}
+
+sub_DSC_coa_holders = {
+	
+	# crest
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
+	}
+	
+	# two antilopes as supporters with different colours, substituted by default deer image
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_deer_supporter.dds"
+		color1 = wappenwiki_brunatre
+		color2 = wappenwiki_or
+		color3 = wappenwiki_azuur
+		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
+	}
+	
+	# ribbon with text "ex unitate vires" (text omitted)
+	colored_emblem = {
+		texture = "coa_ribbon_2.png"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
+	}
+		
+}
+
+sub_DSC_coa_minimal = {
+	
+	# shield
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
+	}
+	colored_emblem = {
+		texture = "ce_shield_heater.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.96 0.96 } position = { 0.50 0.50 } }			
+	}
+	
+	# quarters
+	colored_emblem = {
+		texture = "ce_hand.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { -0.60 0.60 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags

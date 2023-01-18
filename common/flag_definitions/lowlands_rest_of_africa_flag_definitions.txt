@@ -1,0 +1,51 @@
+﻿# Dutch Grain (Pepper) Coast / Liberia-SierraLeone
+DPC = {
+	
+	# base
+	
+	flag_definition = {
+		coa = DPC_regular
+		allow_overlord_canton = no
+		priority = 1
+	}
+	
+}
+
+# Dutch Ivory Coast / WindwardCoast-IvoryCoast
+DIC = {
+	
+	# base
+	
+	flag_definition = {
+		coa = DIC_regular
+		allow_overlord_canton = no
+		priority = 1
+	}
+	
+}
+
+# Dutch Gold Coast / Ghana-Togo
+DGC = {
+	
+	# base
+	
+	flag_definition = {
+		coa = DGC_regular
+		allow_overlord_canton = no
+		priority = 1
+	}
+	
+}
+
+# Dutch Slave Coast / Dahomey-YorubaStates-Benin-NigerDelta
+DSC = {
+	
+	# base
+	
+	flag_definition = {
+		coa = DSC_regular
+		allow_overlord_canton = no
+		priority = 1
+	}
+	
+}

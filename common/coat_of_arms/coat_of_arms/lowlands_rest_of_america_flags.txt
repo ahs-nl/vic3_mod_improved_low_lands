@@ -101,7 +101,7 @@ SUR_subject = {
 	
 }
 
-SUR_overlord_NET_regular = {
+SUR_subject_NET_regular = {
 	
 	parent = "NET_regular"
 	
@@ -112,9 +112,9 @@ SUR_overlord_NET_regular = {
 	
 }
 
-SUR_overlord_NET_prinsenvlag = {
+SUR_subject_NET_statenvlag = {
 	
-	parent = "NET_prinsenvlag"
+	parent = "NET_statenvlag"
 	
 	sub = {
 		parent = "sub_SUR_coa"
@@ -123,9 +123,9 @@ SUR_overlord_NET_prinsenvlag = {
 	
 }
 
-SUR_overlord_NET_statenvlag = {
+SUR_subject_NET_prinsenvlag = {
 	
-	parent = "NET_statenvlag"
+	parent = "NET_prinsenvlag"
 	
 	sub = {
 		parent = "sub_SUR_coa"

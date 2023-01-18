@@ -23,16 +23,20 @@
  LUX_ADJ:0 "Luxembourgian"
  
  # Rest of America
- #WIN:0 "West Indies"
- #WIN_ADJ:0 "West Indian"
+ DWI:0 "West Indies"
+ DWI_ADJ:0 "West Indian"
  SUR:0 "Suriname"
  SUR_ADJ:0 "Surinamer"
  
  # Rest of Africa
- GLC:0 "Gold Coast"
- GLC_ADJ:0 "Goldcoastish"
- IVC:0 "Ivory Coast"
- IVC_ADJ:0 "Ivorian"
+ DPC:0 "Dutch Grain Coast"
+ DPC_ADJ:0 "Graincoastish"
+ DIC:0 "Dutch Ivory Coast"
+ DIC_ADJ:0 "Ivorian"
+ DGC:0 "Dutch Gold Coast"
+ DGC_ADJ:0 "Goldcoastish"
+ DSC:0 "Dutch Slave Coast"
+ DSC_ADJ:0 "Slavecoastish"
  
  # Southern Africa
  SAF:0 "South Africa"
@@ -76,7 +80,3 @@
  # Rest of Asia
  NHL:0 "New Holland"
  NHL_ADJ:0 "New Hollander"
- #CEY:0 "Ceylon"
- #CEY_ADJ:0 "Ceylonder"
- #FRS:0 "Formosa"
- #FRS_ADJ:0 "Formosan"
