@@ -1,1 +1,2386 @@
-﻿
+﻿#######################
+# NET
+# Netherlands
+#######################
+
+# base flags
+
+NET_regular = {
+	
+	# https://nl.wikipedia.org/wiki/Vlag_van_Nederland
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_azuur
+	}
+	
+}
+
+NET_statenvlag = {
+	
+	# https://nl.wikipedia.org/wiki/Statenvlag
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_bleuceleste
+	}
+	
+}
+
+NET_prinsenvlag = {
+	
+	# https://nl.wikipedia.org/wiki/Prinsenvlag
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_orange
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_azuur
+	}
+	
+}
+
+# subject
+
+NET_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.15 0.15 } position = { 0.75 0.285 } }
+		instance = { scale = { 0.13 0.13 } position = { 0.71 0.285 } }
+		instance = { scale = { 0.13 0.13 } position = { 0.79 0.285 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_azuur
+		color3 = wappenwiki_argent
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.275 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_orange
+		instance = { scale = { 0.52 0.54 } position = { 0.75 0.515 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
+	}
+	sub = {
+		parent = "sub_NET_bare_coa_dutch_republic_new"
+		instance = { scale = { 0.47 0.47 } offset = { 0.51 0.29 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+NET_naval_jack_geusje = {
+	
+	# https://nl.wikipedia.org/wiki/Geus_(vlag)
+	
+	pattern = "pattern_gironny_8_alt_tricolor.png"
+	color1 = wappenwiki_keel
+	color2 = wappenwiki_azuur
+	color3 = wappenwiki_argent
+	
+}
+
+NET_naval_jack_prinsengeus = {
+	
+	# https://nl.wikipedia.org/wiki/Geus_(vlag)
+	
+	pattern = "pattern_gironny_12_tricolor.png"
+	color1 = wappenwiki_keel
+	color2 = wappenwiki_azuur
+	color3 = wappenwiki_argent
+	
+}
+
+NET_naval_jack_prinsengeus_variant = {
+	
+	# https://nl.wikipedia.org/wiki/Geus_(vlag)
+	
+	pattern = "pattern_gironny_12_tricolor.png"
+	color1 = wappenwiki_orange
+	color2 = wappenwiki_azuur
+	color3 = wappenwiki_argent
+	
+}
+
+# specific flags
+
+NET_anarchism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = "black"
+		color2 = "red"
+	}
+	
+}
+
+NET_communism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_lowersixths_horizontal.png"
+		color1 = "white"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_star_05_hollow.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { scale = { 0.60 0.60 } position = { 0.50 0.35 } }
+	}
+	
+}
+
+NET_fascism = {
+	
+	# early NSB flag: https://www.fotw.info/flags/nl%7Dnsb.html
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_orange
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_wolfsangel_nsb.dds"
+		color1 = wappenwiki_azuur
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+NET_dictatorship = {
+	
+	# Inspired by a naval flag with arms of the republic in center
+	
+	pattern = "pattern_gironny_12_tricolor.dds"
+	color1 = wappenwiki_orange
+	color2 = wappenwiki_azuur
+	color3 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "green"
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
+	}		
+	sub = {
+		parent = "sub_NET_bare_coa_dutch_republic_new" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
+	}
+	
+}
+
+NET_theocracy = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_upperlowersixths_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_azuur
+	}
+	colored_emblem = {
+		texture = "protestant_cross.png"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.55 0.55 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+sub_NET_helper_circle = {
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}
+}
+
+sub_NET_coa_supporters_dutch_republic_old = {
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_or									# or
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "lion_supporter.png"
+		color1 = wappenwiki_keel								# leeuw keel
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_or									# gekroond or
+		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
+		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
+	}
+	colored_emblem = {
+		texture = "coa_ribbon.png"
+		color1 = wappenwiki_argent								# "Concordia Res Parvae Crescunt" omitted
+		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_NET_coa_supporters_dutch_republic_new = {
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_keel								# keel
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "lion_supporter.png"
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_or									# gekroond or
+		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
+		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
+	}
+	colored_emblem = {
+		texture = "coa_ribbon.png"
+		color1 = wappenwiki_argent								# "Concordia Res Parvae Crescunt" omitted
+		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_NET_coa_supporters_orange_nassau = {
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_azuur								# azuur
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "lion_supporter.png"
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color3 = wappenwiki_or									# gekroond or
+		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
+		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
+	}
+	colored_emblem = {
+		texture = "coa_ribbon.png"
+		color1 = wappenwiki_argent								# "Je Maintiendrai" omitted
+		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_bleuceleste							# georneerd bleu celeste
+		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_NET_coa_minimal_dutch_republic_old = {
+	
+	colored_emblem = {
+		texture = "coa_nederlandse_republiek_voor_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	
+}
+
+sub_NET_coa_minimal_dutch_republic_new = {
+	
+	colored_emblem = {
+		texture = "coa_nederlandse_republiek_na_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	
+}
+
+sub_NET_coa_minimal_orange_nassau = {
+	
+	colored_emblem = {
+		texture = "coa_nassau.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	colored_emblem = {
+		texture = "coa_nassau_blokje.png"
+		color1 = wappenwiki_or
+		instance = { position = { 0.34 0.17 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.68 0.15 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.26 0.28 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.72 0.45 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.30 0.39 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.28 0.55 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.70 0.61 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.32 0.70 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.66 0.74 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.65 0.86 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.72 0.81 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.46 0.83 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.39 0.86 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.28 0.83 } scale = { 0.13 0.13 } }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+NET_coa_dutch_republic_old = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
+	colored_emblem = {
+		texture = "coa_nederlandse_republiek_voor_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	
+}
+
+NET_coa_dutch_republic_new = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "coa_nederlandse_republiek_na_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	
+}
+
+NET_coa_orange_nassau = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "coa_nassau.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
+	}
+	colored_emblem = {
+		texture = "coa_nassau_blokje.png"
+		color1 = wappenwiki_or
+		instance = { position = { 0.12 0.09 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.09 0.26 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.24 0.12 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.38 0.15 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.55 0.06 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.12 0.56 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.19 0.38 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.10 0.86 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.76 0.12 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.92 0.15 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.23 0.72 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.84 0.35 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.33 0.90 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.47 0.85 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.62 0.78 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.92 0.52 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.76 0.62 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.73 0.92 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.84 0.75 } scale = { 0.13 0.13 } }
+		instance = { position = { 0.95 0.90 } scale = { 0.13 0.13 } }
+	}
+	
+}
+
+#######################
+# FRI
+# Frisia / Friesland
+#######################
+
+# base flags
+
+FRI_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "ce_bicolor_3_stripes_diagonal.png"
+		color1 = wappenwiki_azuur
+	}
+	
+	colored_emblem = {
+		texture = "pompebled.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.20 0.20 } position = { 0.14 0.66 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.34 0.86 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.25 0.25 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.50 0.50 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.75 0.75 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.66 0.14 } rotation = 35 }
+		instance = { scale = { 0.20 0.20 } position = { 0.86 0.34 } rotation = 35 }
+	}
+	
+}
+
+# subject
+
+FRI_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FRI_coa_subject = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.15 0.075 } offset = { 0.35 0.35 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_FRI_coa_supporters = {
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_azuur								# azuur
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "lion_supporter.png"
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color3 = wappenwiki_or									# gekroond or
+		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
+		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_FRI_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant.dds"				# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or (passant, eigenlijk aanziend maar dat is niet beschikbaar -- nu is het van West-Friesland)
+		color2 = wappenwiki_or									# getongd en geklauwd or
+		color3 = wappenwiki_sabel								# ogen sabel
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.33 } }
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.67 } }
+	}
+	colored_emblem = {
+		texture = "coa_nassau_blokje.png"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.14 0.18 } position = { 0.25 0.20 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.75 0.20 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.25 0.50 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.75 0.50 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.35 0.85 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.50 0.90 } rotation = 90 }
+		instance = { scale = { 0.14 0.18 } position = { 0.65 0.85 } rotation = 90 }
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+FRI_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_lion_passant_guardant_long.dds"			# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or (passant, eigenlijk aanziend maar dat is niet beschikbaar -- nu is het van West-Friesland)
+		color2 = wappenwiki_or									# getongd en geklauwd or
+		color3 = wappenwiki_sabel								# ogen sabel
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.33 } }
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.67 } }
+	}
+	colored_emblem = {
+		texture = "coa_nassau_blokje.png"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.15 0.20 } position = { 0.20 0.15 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.80 0.15 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.20 0.50 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.80 0.50 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.30 0.87 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.50 0.92 } rotation = 90 }
+		instance = { scale = { 0.15 0.20 } position = { 0.70 0.87 } rotation = 90 }
+	}
+	
+}
+
+#######################
+# HLN
+# Holland
+#######################
+
+# base flags
+
+HLN_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
+	sub = {
+		parent = "sub_HLN_coa_minimal"
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
+	}
+	
+}
+
+# subject
+
+HLN_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+HLN_coa_subject = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.75 0.75 } offset = { 0.25 0.00 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_HLN_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+HLN_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel
+		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+	}
+	
+}
+
+#######################
+# BRB
+# Brabant
+#######################
+
+# base flag
+
+BRB_regular = {
+	
+	pattern = "pattern_checkered_24_fields.png"
+	color1 = wappenwiki_keel
+	color2 = wappenwiki_argent
+	
+}
+
+# subject
+
+BRB_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+BRB_coa_subject = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.75 0.75 } offset = { 0.25 0.00 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_BRB_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+BRB_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sabel
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+	}
+	
+}
+
+#######################
+# LIM
+# Limburg
+#######################
+
+# base flags
+
+LIM_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "ce_tricolor_middlefifths_horizontal.png"
+		color1 = wappenwiki_azuur
+		color2 = wappenwiki_or
+	}
+	
+}
+
+# subject
+
+LIM_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LIM_coa_subject = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.15 0.075 } offset = { 0.35 0.35 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_LIM_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel
+		color2 = wappenwiki_or									# getongd en geklauwd or
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+LIM_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel
+		color2 = wappenwiki_or									# getongd en geklauwd or
+	}
+	
+}
+
+#######################
+# BEL
+# Belgium
+#######################
+
+# base flags
+
+BEL_regular = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Belgium
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sabel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+	}
+	
+}
+
+# subject
+
+BEL_subject = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_azuur
+		color3 = wappenwiki_argent
+		instance = { scale = { 0.35 0.35 } position = { 0.75 0.27 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.52 0.54 } position = { 0.75 0.515 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
+	}
+	sub = {
+		parent = "sub_BEL_coa_minimal"
+		instance = { scale = { 0.41 0.40 } offset = { 0.54 0.32 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+BEL_brabant_revolution = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Belgium
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = wappenwiki_sabel
+		color2 = wappenwiki_or
+	}
+	
+}
+
+BEL_revolution = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Belgium
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_sabel
+	}
+	
+}
+
+BEL_austrian_netherlands = {
+	
+	# https://en.wikipedia.org/wiki/List_of_Belgian_flags
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_or
+	}
+	
+}
+
+# specific flags
+
+BEL_anarchism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
+	color4 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { @[1/30] 0.5 } scale = { @[1/15] 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.1 0.5 } scale = { @[1/15] 1.0 } }
+	}	
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.29 0.25 } scale = { 0.4 0.4 } } 
+	}
+	
+}
+
+BEL_communism = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
+	color4 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { @[1/30] 0.5 } scale = { @[1/15] 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.1 0.5 } scale = { @[1/15] 1.0 } }
+	}	
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.29 0.25 } scale = { 0.4 0.4 } } 
+	}
+	
+}
+
+BEL_fascism = {		
+	
+	# VNV Flag (RWB version)
+	# https://en.wikipedia.org/wiki/List_of_Belgian_flags
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_delta.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}	
+}
+
+BEL_dictatorship = {
+	
+	# Loosely based on a naval flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated_02.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		color3 = wappenwiki_sabel
+	}		
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = wappenwiki_sabel
+		color2 = wappenwiki_sabel
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }		
+	}		
+	colored_emblem = {
+		texture = "coa_brabant.png"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+		instance = { scale = { 0.70 0.70 } position = { 0.50 0.52 } }
+	}	
+}
+
+BEL_theocracy = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sabel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = wappenwiki_or
+		color2 = wappenwiki_keel
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 0.55 1.00 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "protestant_cross.png"
+		color1 = wappenwiki_keel
+		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "protestant_cross.png"
+		color1 = wappenwiki_sabel
+		instance = { scale = { 0.70 0.70 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+# base + coat-of-arms near center
+
+sub_BEL_coa_supporters = {
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_sabel
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_sabel								# kroon or
+		color2 = wappenwiki_sabel								# gepareld keel
+		color3 = wappenwiki_sabel
+		instance = { position = { 0.50 0.17 } scale = { 0.53 0.53 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_sabel
+		instance = { position = { 0.50 0.17 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_BEL_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_belgium.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+BEL_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_sabel
+	
+	colored_emblem = {
+		texture = "coa_belgium.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_or									# leeuw or
+		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+	}
+	
+}
+
+#######################
+# FLA
+# Flanders
+#######################
+
+# base flags
+
+FLA_regular = {
+	
+	pattern = "pattern_gironny_12.png"
+	color1 = wappenwiki_or
+	color2 = wappenwiki_azuur
+	
+	colored_emblem = {
+		texture = "ce_shield_iberian.dds"
+		color1 = wappenwiki_keel
+		instance = { position = { 0.50 0.50 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+# subject
+
+FLA_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+FLA_coa_subject = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.75 0.75 } offset = { 0.25 0.50 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_FLA_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_sabel								# leeuw sabel
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+FLA_coa = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_sabel								# leeuw sabel
+		color2 = wappenwiki_keel								# getongd en geklauwd keel
+	}
+	
+}
+
+#######################
+# WLL
+# Wallonia
+#######################
+
+# base flags
+
+WLL_regular = {
+	
+	# Flag of Hainaut (not using the rooster flag as that is only from 1913)
+	# https://en.wikipedia.org/wiki/Flag_of_Wallonia
+	# https://en.wikipedia.org/wiki/Hainaut_Province
+	
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+# subject
+
+WLL_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_NET_orange_nassau_on_flag = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject_LUX = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+	}
+	
+}
+
+WLL_subject = {
+	
+	sub = {
+		parent = "FLA_coa" 
+		instance = { scale = { 0.375 0.375 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.375 0.375 } offset = { 0.375 0.375 } }
+	}
+	sub = {
+		parent = "HLN_coa" 
+		instance = { scale = { 0.375 0.375 } offset = { 0.00 0.375 } }
+		instance = { scale = { 0.375 0.375 } offset = { 0.375 0.00 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+WLL_republic = {
+	
+	# Republic / Prince-Bishopric of Liège and from liegois volunteers during Belgian Revolution
+	# https://en.wikipedia.org/wiki/Flag_of_Wallonia
+	
+	pattern = "pattern_bicolor_vertical.png"
+	color1 = wappenwiki_keel
+	color2 = wappenwiki_or
+	
+}
+
+# base + coat-of-arms near center
+
+# coat-of-arms turned full flags
+
+#######################
+# LUX
+# Luxemburg / Luxembourg
+#######################
+
+# base flags
+
+LUX_regular = {
+	
+	# Indentical to dutch Statenvlag (NET_statenvlag)
+	# https://en.wikipedia.org/wiki/Flag_of_Luxembourg
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_keel
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.png"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_bleuceleste
+	}
+	
+}
+
+LUX_civil_flag = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Luxembourg
+	
+	sub = {
+		parent = "LUX_coa"
+	}
+	
+}
+
+LUX_regular_with_coa = {
+	
+	# https://en.wikipedia.org/wiki/Flag_of_Luxembourg
+	
+	sub = {
+		parent = "LUX_regular"
+	}
+	sub = {
+		parent = "sub_LUX_coa_supporters"
+		instance = { scale = { 1.00 1.00 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "sub_LUX_coa_minimal"
+		instance = { scale = { 1.00 1.00 } offset = { 0.50 0.50 } }
+	}
+	
+}
+
+# subject
+
+LUX_coa_subject_NET_dutch_republic_old = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_old"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_NET_dutch_republic_new = {
+	
+	sub = {
+		parent = "NET_coa_dutch_republic_new"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_NET_orange_nassau = {
+	
+	sub = {
+		parent = "NET_coa_orange_nassau"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_FRI = {
+	
+	sub = {
+		parent = "FRI_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_HLN = {
+	
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_BRB = {
+	
+	sub = {
+		parent = "BRB_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_LIM = {
+	
+	sub = {
+		parent = "LIM_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_BEL = {
+	
+	sub = {
+		parent = "BEL_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_FLA = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject_WLL = {
+	
+	sub = {
+		parent = "FLA_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.00 } }
+	}
+	sub = {
+		parent = "HLN_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.50 } }
+	}
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.50 0.50 } offset = { 0.50 0.00 } }
+		instance = { scale = { 0.50 0.50 } offset = { 0.00 0.50 } }
+	}
+	
+}
+
+LUX_coa_subject = {
+	
+	sub = {
+		parent = "LUX_coa"
+		instance = { scale = { 0.15 0.075 } offset = { 0.35 0.35 } }
+	}
+	
+}
+
+# historically-inspired flags
+
+# specific flags
+
+# base + coat-of-arms near center
+
+sub_LUX_coa_supporters = {
+	
+	colored_emblem = {
+		texture = "ce_shield_accolade.png"
+		color1 = wappenwiki_sabel								# sabel
+		instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
+	}
+	colored_emblem = {
+		texture = "ce_shield_accolade_5_horizontal_stripes.png"
+		color1 = wappenwiki_argent								# argent
+		color2 = wappenwiki_bleuceleste							# bleu celeste
+		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_keel								# gepareld keel
+		color3 = wappenwiki_azuur								# georneerd azuur
+		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+	}
+	
+}
+
+sub_LUX_coa_minimal = {
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_or									# getongd en geklauwd or
+	}
+	
+}
+
+# coat-of-arms turned full flags
+
+LUX_coa = {
+	
+	pattern = "pattern_5_horizontal_stripes.png"
+	color1 = wappenwiki_argent									# argent
+	color2 = wappenwiki_bleuceleste								# bleu celeste
+	
+	colored_emblem = {
+		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_or									# getongd en geklauwd or
+	}
+	
+}
