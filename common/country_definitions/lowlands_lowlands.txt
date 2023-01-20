@@ -4,7 +4,7 @@
 	country_type = recognized
 	tier = kingdom
 	cultures = { dutch frisian }
-	religion = protestant
+	religion = reformed
 	capital = STATE_HOLLAND
 }
 
@@ -13,7 +13,7 @@ FRI = { # Frisia
 	country_type = recognized
 	tier = principality
 	cultures = { frisian }
-	religion = protestant
+	religion = reformed
 	capital = STATE_FRIESLAND
 	is_named_from_capital = yes
 }
@@ -23,7 +23,7 @@ HLN = { # Holland
 	country_type = recognized
 	tier = principality
 	cultures = { dutch }
-	religion = protestant
+	religion = reformed
 	capital = STATE_HOLLAND
 	is_named_from_capital = yes
 }

@@ -1,4 +1,4 @@
-# Suriname
+﻿# Suriname
 
 # base flags
 
@@ -13,7 +13,7 @@ SUR_regular = {
 	
 	colored_emblem = {
 		texture = "ce_circle.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 1.50 0.75 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
@@ -24,7 +24,7 @@ SUR_regular = {
 	
 	colored_emblem = {
 		texture = "ce_star_05.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.30 0.30 } position = { 0.50 0.30 } }
 		instance = { scale = { 0.30 0.30 } position = { 0.75 0.40 } }
 		instance = { scale = { 0.30 0.30 } position = { 0.65 0.65 } }
@@ -33,7 +33,7 @@ SUR_regular = {
 	}
 	colored_emblem = {
 		texture = "ce_star_05.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.28 0.28 } position = { 0.50 0.30 } }
 	}
 	colored_emblem = {
@@ -48,7 +48,7 @@ SUR_regular = {
 	}
 	colored_emblem = {
 		texture = "ce_star_05.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.28 0.28 } position = { 0.35 0.65 } }
 	}
 	colored_emblem = {
@@ -65,16 +65,16 @@ SUR_modern = {
 	# https://nl.wikipedia.org/wiki/Suriname
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sinopel
+	color1 = wappenwiki_vert
 	
 	colored_emblem = {
-		texture = "ce_solid.png"
+		texture = "ce_solid.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 1.00 0.60 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.png"
-		color1 = wappenwiki_keel
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 1.00 0.40 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
@@ -184,14 +184,14 @@ sub_SUR_coa = {
 	
 	# https://nl.wikipedia.org/wiki/Wapen_van_Suriname
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
-		color1 = wappenwiki_keel
+		texture = "coa_ribbon_2.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.70 0.55 } position = { 0.50 0.72 } }
 	}
 	colored_emblem = {
-		texture = "native_shieldholder.png"
+		texture = "native_shieldholder.dds"
 		color1 = hsv360 { 29 42 65 }
-		color2 = wappenwiki_keel
+		color2 = wappenwiki_gules
 		color3 = wappenwiki_argent
 		instance = { scale = { 0.55 0.55 } position = { 0.34 0.50 } }
 		instance = { scale = { -0.55 0.55 } position = { 0.66 0.50 } }
@@ -199,23 +199,23 @@ sub_SUR_coa = {
 	
 	colored_emblem = { # shield outline
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
 	}
 	colored_emblem = { # shield
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_azuur
+		color1 = wappenwiki_azure
 		instance = { scale = { 0.44 0.44 } position = { 0.50 0.52 } }
 	}
 	colored_emblem = {
-		texture = "tradeship.png"
+		texture = "tradeship.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_keel
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_gules
 		instance = { scale = { 0.35 0.35 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
+		texture = "coa_ribbon_2.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.15 0.25 } position = { 0.50 0.65 } }
 		instance = { scale = { 0.10 0.20 } position = { 0.50 0.69 } }
@@ -227,17 +227,17 @@ sub_SUR_letters_WIC = {
 	
 	colored_emblem = {
 		texture = "ce_letter_w_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
 		texture = "ce_letter_g_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.44 0.43 } position = { 0.37 0.48 } }
 	}
 	colored_emblem = {
 		texture = "ce_letter_c_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.40 0.44 } position = { 0.68 0.46 } }
 	}
 	

@@ -10,12 +10,12 @@ NET_regular = {
 	# https://nl.wikipedia.org/wiki/Vlag_van_Nederland
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = wappenwiki_argent
-		color2 = wappenwiki_azuur
+		color2 = wappenwiki_azure
 	}
 	
 }
@@ -25,10 +25,10 @@ NET_statenvlag = {
 	# https://nl.wikipedia.org/wiki/Statenvlag
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = wappenwiki_argent
 		color2 = wappenwiki_bleuceleste
 	}
@@ -43,9 +43,9 @@ NET_prinsenvlag = {
 	color1 = wappenwiki_orange
 	
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = wappenwiki_argent
-		color2 = wappenwiki_azuur
+		color2 = wappenwiki_azure
 	}
 	
 }
@@ -59,7 +59,7 @@ NET_subject = {
 	
 	colored_emblem = {
 		texture = "ce_circle.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.15 0.15 } position = { 0.75 0.285 } }
 		instance = { scale = { 0.13 0.13 } position = { 0.71 0.285 } }
 		instance = { scale = { 0.13 0.13 } position = { 0.79 0.285 } }
@@ -67,7 +67,7 @@ NET_subject = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_azuur
+		color2 = wappenwiki_azure
 		color3 = wappenwiki_argent
 		instance = { scale = { 0.35 0.35 } position = { 0.75 0.275 } }
 	}
@@ -78,7 +78,7 @@ NET_subject = {
 	}	
 	colored_emblem = {
 		texture = "ce_shield_accolade.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
 	}
 	sub = {
@@ -94,9 +94,9 @@ NET_naval_jack_geusje = {
 	
 	# https://nl.wikipedia.org/wiki/Geus_(vlag)
 	
-	pattern = "pattern_gironny_8_alt_tricolor.png"
-	color1 = wappenwiki_keel
-	color2 = wappenwiki_azuur
+	pattern = "pattern_gironny_8_alt_tricolor.dds"
+	color1 = wappenwiki_gules
+	color2 = wappenwiki_azure
 	color3 = wappenwiki_argent
 	
 }
@@ -105,9 +105,9 @@ NET_naval_jack_prinsengeus = {
 	
 	# https://nl.wikipedia.org/wiki/Geus_(vlag)
 	
-	pattern = "pattern_gironny_12_tricolor.png"
-	color1 = wappenwiki_keel
-	color2 = wappenwiki_azuur
+	pattern = "pattern_gironny_12_tricolor.dds"
+	color1 = wappenwiki_gules
+	color2 = wappenwiki_azure
 	color3 = wappenwiki_argent
 	
 }
@@ -116,9 +116,9 @@ NET_naval_jack_prinsengeus_variant = {
 	
 	# https://nl.wikipedia.org/wiki/Geus_(vlag)
 	
-	pattern = "pattern_gironny_12_tricolor.png"
+	pattern = "pattern_gironny_12_tricolor.dds"
 	color1 = wappenwiki_orange
-	color2 = wappenwiki_azuur
+	color2 = wappenwiki_azure
 	color3 = wappenwiki_argent
 	
 }
@@ -131,7 +131,7 @@ NET_anarchism = {
 	color1 = "red"
 	
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = "black"
 		color2 = "red"
 	}
@@ -144,7 +144,7 @@ NET_communism = {
 	color1 = "red"
 	
 	colored_emblem = {
-		texture = "ce_tricolor_lowersixths_horizontal.png"
+		texture = "ce_tricolor_lowersixths_horizontal.dds"
 		color1 = "white"
 		color2 = "blue"
 	}
@@ -171,7 +171,7 @@ NET_fascism = {
 	}
 	colored_emblem = {
 		texture = "ce_wolfsangel_nsb.dds"
-		color1 = wappenwiki_azuur
+		color1 = wappenwiki_azure
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
 	}
 	
@@ -183,7 +183,7 @@ NET_dictatorship = {
 	
 	pattern = "pattern_gironny_12_tricolor.dds"
 	color1 = wappenwiki_orange
-	color2 = wappenwiki_azuur
+	color2 = wappenwiki_azure
 	color3 = wappenwiki_argent
 	
 	colored_emblem = {
@@ -192,8 +192,8 @@ NET_dictatorship = {
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
 	}	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_keel
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
 	}		
 	sub = {
@@ -206,16 +206,16 @@ NET_dictatorship = {
 NET_theocracy = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_upperlowersixths_horizontal.png"
+		texture = "ce_tricolor_upperlowersixths_horizontal.dds"
 		color1 = wappenwiki_argent
-		color2 = wappenwiki_azuur
+		color2 = wappenwiki_azure
 	}
 	colored_emblem = {
-		texture = "protestant_cross.png"
-		color1 = wappenwiki_sabel
+		texture = "protestant_cross.dds"
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.55 0.55 } position = { 0.50 0.50 } }
 	}
 	
@@ -234,28 +234,28 @@ sub_NET_helper_circle = {
 sub_NET_coa_supporters_dutch_republic_old = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
+		texture = "ce_shield_accolade.dds"
 		color1 = wappenwiki_or									# or
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
 	colored_emblem = {
-		texture = "lion_supporter.png"
-		color1 = wappenwiki_keel								# leeuw keel
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		texture = "lion_supporter.dds"
+		color1 = wappenwiki_gules								# leeuw keel
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_or									# gekroond or
 		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
 		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
 	}
 	colored_emblem = {
-		texture = "coa_ribbon.png"
+		texture = "coa_ribbon.dds"
 		color1 = wappenwiki_argent								# "Concordia Res Parvae Crescunt" omitted
 		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
 	}
 	
@@ -264,28 +264,28 @@ sub_NET_coa_supporters_dutch_republic_old = {
 sub_NET_coa_supporters_dutch_republic_new = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_keel								# keel
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_gules								# keel
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
 	colored_emblem = {
-		texture = "lion_supporter.png"
+		texture = "lion_supporter.dds"
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_or									# gekroond or
 		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
 		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
 	}
 	colored_emblem = {
-		texture = "coa_ribbon.png"
+		texture = "coa_ribbon.dds"
 		color1 = wappenwiki_argent								# "Concordia Res Parvae Crescunt" omitted
 		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
 	}
 	
@@ -294,27 +294,27 @@ sub_NET_coa_supporters_dutch_republic_new = {
 sub_NET_coa_supporters_orange_nassau = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_azuur								# azuur
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_azure								# azuur
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
 	colored_emblem = {
-		texture = "lion_supporter.png"
+		texture = "lion_supporter.dds"
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 		color3 = wappenwiki_or									# gekroond or
 		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
 		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
 	}
 	colored_emblem = {
-		texture = "coa_ribbon.png"
+		texture = "coa_ribbon.dds"
 		color1 = wappenwiki_argent								# "Je Maintiendrai" omitted
 		instance = { position = { 0.50 0.88 } scale = { 0.95 0.65 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
+		color2 = wappenwiki_gules								# gepareld keel
 		color3 = wappenwiki_bleuceleste							# georneerd bleu celeste
 		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
 	}
@@ -324,9 +324,9 @@ sub_NET_coa_supporters_orange_nassau = {
 sub_NET_coa_minimal_dutch_republic_old = {
 	
 	colored_emblem = {
-		texture = "coa_nederlandse_republiek_voor_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		texture = "coa_nederlandse_republiek_voor_1665.dds"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	
@@ -335,9 +335,9 @@ sub_NET_coa_minimal_dutch_republic_old = {
 sub_NET_coa_minimal_dutch_republic_new = {
 	
 	colored_emblem = {
-		texture = "coa_nederlandse_republiek_na_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_nederlandse_republiek_na_1665.dds"		# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	
@@ -346,13 +346,13 @@ sub_NET_coa_minimal_dutch_republic_new = {
 sub_NET_coa_minimal_orange_nassau = {
 	
 	colored_emblem = {
-		texture = "coa_nassau.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_nassau.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	colored_emblem = {
-		texture = "coa_nassau_blokje.png"
+		texture = "coa_nassau_blokje.dds"
 		color1 = wappenwiki_or
 		instance = { position = { 0.34 0.17 } scale = { 0.13 0.13 } }
 		instance = { position = { 0.68 0.15 } scale = { 0.13 0.13 } }
@@ -380,9 +380,9 @@ NET_coa_dutch_republic_old = {
 	color1 = wappenwiki_or
 	
 	colored_emblem = {
-		texture = "coa_nederlandse_republiek_voor_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		texture = "coa_nederlandse_republiek_voor_1665.dds"		# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	
@@ -391,12 +391,12 @@ NET_coa_dutch_republic_old = {
 NET_coa_dutch_republic_new = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "coa_nederlandse_republiek_na_1665.png"		# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_nederlandse_republiek_na_1665.dds"		# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	
@@ -405,16 +405,16 @@ NET_coa_dutch_republic_new = {
 NET_coa_orange_nassau = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_azuur
+	color1 = wappenwiki_azure
 	
 	colored_emblem = {
-		texture = "coa_nassau.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_nassau.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or, kroon zwaardheft en pijlenpunten or
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 		color3 = wappenwiki_argent								# pijlenbundel en zwaard argent
 	}
 	colored_emblem = {
-		texture = "coa_nassau_blokje.png"
+		texture = "coa_nassau_blokje.dds"
 		color1 = wappenwiki_or
 		instance = { position = { 0.12 0.09 } scale = { 0.13 0.13 } }
 		instance = { position = { 0.09 0.26 } scale = { 0.13 0.13 } }
@@ -453,13 +453,13 @@ FRI_regular = {
 	color1 = wappenwiki_argent
 	
 	colored_emblem = {
-		texture = "ce_bicolor_3_stripes_diagonal.png"
-		color1 = wappenwiki_azuur
+		texture = "ce_bicolor_3_stripes_diagonal.dds"
+		color1 = wappenwiki_azure
 	}
 	
 	colored_emblem = {
-		texture = "pompebled.png"
-		color1 = wappenwiki_keel
+		texture = "pompebled.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.20 0.20 } position = { 0.14 0.66 } rotation = 35 }
 		instance = { scale = { 0.20 0.20 } position = { 0.34 0.86 } rotation = 35 }
 		instance = { scale = { 0.20 0.20 } position = { 0.25 0.25 } rotation = 35 }
@@ -649,14 +649,14 @@ sub_FRI_coa_supporters = {
 		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_azuur								# azuur
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_azure								# azuur
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
 	colored_emblem = {
-		texture = "lion_supporter.png"
+		texture = "lion_supporter.dds"
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 		color3 = wappenwiki_or									# gekroond or
 		instance = { position = { 0.25 0.50 } scale = { 0.90 0.90 } }
 		instance = { position = { 0.75 0.50 } scale = { -0.90 0.90 } }
@@ -664,8 +664,8 @@ sub_FRI_coa_supporters = {
 	colored_emblem = {
 		texture = "ce_crown_ducal.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
 	}
 	
@@ -677,12 +677,12 @@ sub_FRI_coa_minimal = {
 		texture = "ce_lion_passant_guardant.dds"				# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or (passant, eigenlijk aanziend maar dat is niet beschikbaar -- nu is het van West-Friesland)
 		color2 = wappenwiki_or									# getongd en geklauwd or
-		color3 = wappenwiki_sabel								# ogen sabel
+		color3 = wappenwiki_sable								# ogen sabel
 		instance = { scale = { 0.75 0.75 } position = { 0.50 0.33 } }
 		instance = { scale = { 0.75 0.75 } position = { 0.50 0.67 } }
 	}
 	colored_emblem = {
-		texture = "coa_nassau_blokje.png"
+		texture = "coa_nassau_blokje.dds"
 		color1 = wappenwiki_or
 		instance = { scale = { 0.14 0.18 } position = { 0.25 0.20 } rotation = 90 }
 		instance = { scale = { 0.14 0.18 } position = { 0.75 0.20 } rotation = 90 }
@@ -700,18 +700,18 @@ sub_FRI_coa_minimal = {
 FRI_coa = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_azuur
+	color1 = wappenwiki_azure
 	
 	colored_emblem = {
 		texture = "ce_lion_passant_guardant_long.dds"			# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or (passant, eigenlijk aanziend maar dat is niet beschikbaar -- nu is het van West-Friesland)
 		color2 = wappenwiki_or									# getongd en geklauwd or
-		color3 = wappenwiki_sabel								# ogen sabel
+		color3 = wappenwiki_sable								# ogen sabel
 		instance = { scale = { 0.75 0.75 } position = { 0.50 0.33 } }
 		instance = { scale = { 0.75 0.75 } position = { 0.50 0.67 } }
 	}
 	colored_emblem = {
-		texture = "coa_nassau_blokje.png"
+		texture = "coa_nassau_blokje.dds"
 		color1 = wappenwiki_or
 		instance = { scale = { 0.15 0.20 } position = { 0.20 0.15 } rotation = 90 }
 		instance = { scale = { 0.15 0.20 } position = { 0.80 0.15 } rotation = 90 }
@@ -916,9 +916,9 @@ HLN_coa_subject = {
 sub_HLN_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 	}
 	
 }
@@ -931,9 +931,9 @@ HLN_coa = {
 	color1 = wappenwiki_or
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel
-		color2 = wappenwiki_azuur								# getongd en geklauwd azuur
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel
+		color2 = wappenwiki_azure								# getongd en geklauwd azuur
 	}
 	
 }
@@ -947,8 +947,8 @@ HLN_coa = {
 
 BRB_regular = {
 	
-	pattern = "pattern_checkered_24_fields.png"
-	color1 = wappenwiki_keel
+	pattern = "pattern_checkered_24_fields.dds"
+	color1 = wappenwiki_gules
 	color2 = wappenwiki_argent
 	
 }
@@ -1126,9 +1126,9 @@ BRB_coa_subject = {
 sub_BRB_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+		color2 = wappenwiki_gules								# getongd en geklauwd azuur
 	}
 	
 }
@@ -1138,12 +1138,12 @@ sub_BRB_coa_minimal = {
 BRB_coa = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sabel
+	color1 = wappenwiki_sable
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+		color2 = wappenwiki_gules								# getongd en geklauwd azuur
 	}
 	
 }
@@ -1161,8 +1161,8 @@ LIM_regular = {
 	color1 = wappenwiki_argent
 	
 	colored_emblem = {
-		texture = "ce_tricolor_middlefifths_horizontal.png"
-		color1 = wappenwiki_azuur
+		texture = "ce_tricolor_middlefifths_horizontal.dds"
+		color1 = wappenwiki_azure
 		color2 = wappenwiki_or
 	}
 	
@@ -1341,8 +1341,8 @@ LIM_coa_subject = {
 sub_LIM_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel
 		color2 = wappenwiki_or									# getongd en geklauwd or
 	}
 	
@@ -1356,8 +1356,8 @@ LIM_coa = {
 	color1 = wappenwiki_argent
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel
 		color2 = wappenwiki_or									# getongd en geklauwd or
 	}
 	
@@ -1375,12 +1375,12 @@ BEL_regular = {
 	# https://en.wikipedia.org/wiki/Flag_of_Belgium
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sabel
+	color1 = wappenwiki_sable
 	
 	colored_emblem = {
 		texture = "ce_tricolor_vertical.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
+		color2 = wappenwiki_gules
 	}
 	
 }
@@ -1395,7 +1395,7 @@ BEL_subject = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_azuur
+		color2 = wappenwiki_azure
 		color3 = wappenwiki_argent
 		instance = { scale = { 0.35 0.35 } position = { 0.75 0.27 } }
 	}
@@ -1406,7 +1406,7 @@ BEL_subject = {
 	}	
 	colored_emblem = {
 		texture = "ce_shield_accolade.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
 	}
 	sub = {
@@ -1423,11 +1423,11 @@ BEL_brabant_revolution = {
 	# https://en.wikipedia.org/wiki/Flag_of_Belgium
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
 		texture = "ce_tricolor_vertical.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		color2 = wappenwiki_or
 	}
 	
@@ -1438,12 +1438,12 @@ BEL_revolution = {
 	# https://en.wikipedia.org/wiki/Flag_of_Belgium
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
 		texture = "ce_tricolor_vertical.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_sabel
+		color2 = wappenwiki_sable
 	}
 	
 }
@@ -1453,7 +1453,7 @@ BEL_austrian_netherlands = {
 	# https://en.wikipedia.org/wiki/List_of_Belgian_flags
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
 		texture = "ce_tricolor_vertical.dds"
@@ -1467,29 +1467,48 @@ BEL_austrian_netherlands = {
 
 BEL_anarchism = {
 	
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	color2 = "yellow"
-	color3 = "black"
-	color4 = "yellow"
+	# inspired by logo of Union communiste libertaire
+	# https://en.wikipedia.org/wiki/Anarchism_in_Belgium
+	
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "black"
+	color2 = "red"
 	
 	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = color3
-		color2 = color3
-		instance = { position = { @[1/30] 0.5 } scale = { @[1/15] 1.0 } }
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.86 0.86 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
-		color1 = color2
-		color2 = color2
-		instance = { position = { 0.1 0.5 } scale = { @[1/15] 1.0 } }
-	}	
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.86 0.86 } position = { 0.50 0.50 } }
+	}
 	colored_emblem = {
-		texture = "ce_hammer_and_sickle.dds"
-		color1 = color2
-		color2 = color2
-		instance = { position = { 0.29 0.25 } scale = { 0.4 0.4 } } 
+		texture = "ce_frame_circle.dds"
+		color1 = "black"
+		instance = { scale = { 0.84 0.84 } position = { 0.50 0.50 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		instance = { scale = { 0.84 0.84 } position = { 0.50 0.50 } }
+		mask = { 2 }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle_outline.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_bird_paradise.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { -0.75 0.75 } position = { 0.50 0.50 } }
 	}
 	
 }
@@ -1561,19 +1580,19 @@ BEL_dictatorship = {
 	colored_emblem = {
 		texture = "ce_saltire_fimbriated_02.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_sabel
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_sable
 	}		
 	colored_emblem = {
 		texture = "ce_shield_accolade_02.dds"
-		color1 = wappenwiki_sabel
-		color2 = wappenwiki_sabel
+		color1 = wappenwiki_sable
+		color2 = wappenwiki_sable
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }		
 	}		
 	colored_emblem = {
-		texture = "coa_brabant.png"
+		texture = "coa_brabant.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
+		color2 = wappenwiki_gules
 		instance = { scale = { 0.70 0.70 } position = { 0.50 0.52 } }
 	}	
 }
@@ -1581,12 +1600,12 @@ BEL_dictatorship = {
 BEL_theocracy = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sabel
+	color1 = wappenwiki_sable
 	
 	colored_emblem = {
 		texture = "ce_tricolor_vertical.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
+		color2 = wappenwiki_gules
 	}
 	colored_emblem = {
 		texture = "ce_solid.dds"
@@ -1594,13 +1613,13 @@ BEL_theocracy = {
 		instance = { scale = { 0.55 1.00 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "protestant_cross.png"
-		color1 = wappenwiki_keel
+		texture = "protestant_cross.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "protestant_cross.png"
-		color1 = wappenwiki_sabel
+		texture = "protestant_cross.dds"
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.70 0.70 } position = { 0.50 0.50 } }
 	}
 	
@@ -1611,22 +1630,22 @@ BEL_theocracy = {
 sub_BEL_coa_supporters = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_sabel
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_sable
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
-		color1 = wappenwiki_sabel								# kroon or
-		color2 = wappenwiki_sabel								# gepareld keel
-		color3 = wappenwiki_sabel
+		color1 = wappenwiki_sable								# kroon or
+		color2 = wappenwiki_sable								# gepareld keel
+		color3 = wappenwiki_sable
 		instance = { position = { 0.50 0.17 } scale = { 0.53 0.53 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_sabel
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_sable
 		instance = { position = { 0.50 0.17 } scale = { 0.50 0.50 } }
 	}
 	
@@ -1635,9 +1654,9 @@ sub_BEL_coa_supporters = {
 sub_BEL_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_belgium.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_belgium.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+		color2 = wappenwiki_gules								# getongd en geklauwd azuur
 	}
 	
 }
@@ -1647,12 +1666,12 @@ sub_BEL_coa_minimal = {
 BEL_coa = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sabel
+	color1 = wappenwiki_sable
 	
 	colored_emblem = {
-		texture = "coa_belgium.png"								# color1 = darkblue, color2 = green, color3 = pink
+		texture = "coa_belgium.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_or									# leeuw or
-		color2 = wappenwiki_keel								# getongd en geklauwd azuur
+		color2 = wappenwiki_gules								# getongd en geklauwd azuur
 	}
 	
 }
@@ -1666,13 +1685,13 @@ BEL_coa = {
 
 FLA_regular = {
 	
-	pattern = "pattern_gironny_12.png"
+	pattern = "pattern_gironny_12.dds"
 	color1 = wappenwiki_or
-	color2 = wappenwiki_azuur
+	color2 = wappenwiki_azure
 	
 	colored_emblem = {
 		texture = "ce_shield_iberian.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		instance = { position = { 0.50 0.50 } scale = { 0.50 0.50 } }
 	}
 	
@@ -1851,9 +1870,9 @@ FLA_coa_subject = {
 sub_FLA_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_sabel								# leeuw sabel
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_sable								# leeuw sabel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 	}
 	
 }
@@ -1866,9 +1885,9 @@ FLA_coa = {
 	color1 = wappenwiki_or
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_sabel								# leeuw sabel
-		color2 = wappenwiki_keel								# getongd en geklauwd keel
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_sable								# leeuw sabel
+		color2 = wappenwiki_gules								# getongd en geklauwd keel
 	}
 	
 }
@@ -2105,8 +2124,8 @@ WLL_republic = {
 	# Republic / Prince-Bishopric of Liège and from liegois volunteers during Belgian Revolution
 	# https://en.wikipedia.org/wiki/Flag_of_Wallonia
 	
-	pattern = "pattern_bicolor_vertical.png"
-	color1 = wappenwiki_keel
+	pattern = "pattern_bicolor_vertical.dds"
+	color1 = wappenwiki_gules
 	color2 = wappenwiki_or
 	
 }
@@ -2128,10 +2147,10 @@ LUX_regular = {
 	# https://en.wikipedia.org/wiki/Flag_of_Luxembourg
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_horizontal.png"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = wappenwiki_argent
 		color2 = wappenwiki_bleuceleste
 	}
@@ -2339,12 +2358,12 @@ LUX_coa_subject = {
 sub_LUX_coa_supporters = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.png"
-		color1 = wappenwiki_sabel								# sabel
+		texture = "ce_shield_accolade.dds"
+		color1 = wappenwiki_sable								# sabel
 		instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade_5_horizontal_stripes.png"
+		texture = "ce_shield_accolade_5_horizontal_stripes.dds"
 		color1 = wappenwiki_argent								# argent
 		color2 = wappenwiki_bleuceleste							# bleu celeste
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
@@ -2352,8 +2371,8 @@ sub_LUX_coa_supporters = {
 	colored_emblem = {
 		texture = "ce_crown_ducal.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
 	}
 	
@@ -2362,8 +2381,8 @@ sub_LUX_coa_supporters = {
 sub_LUX_coa_minimal = {
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel, kroon zwaardheft en pijlenpunten or
 		color2 = wappenwiki_or									# getongd en geklauwd or
 	}
 	
@@ -2373,13 +2392,13 @@ sub_LUX_coa_minimal = {
 
 LUX_coa = {
 	
-	pattern = "pattern_5_horizontal_stripes.png"
+	pattern = "pattern_5_horizontal_stripes.dds"
 	color1 = wappenwiki_argent									# argent
 	color2 = wappenwiki_bleuceleste								# bleu celeste
 	
 	colored_emblem = {
-		texture = "coa_brabant.png"								# color1 = darkblue, color2 = green, color3 = pink
-		color1 = wappenwiki_keel								# leeuw keel, kroon zwaardheft en pijlenpunten or
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_gules								# leeuw keel, kroon zwaardheft en pijlenpunten or
 		color2 = wappenwiki_or									# getongd en geklauwd or
 	}
 	

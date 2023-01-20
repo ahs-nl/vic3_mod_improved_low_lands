@@ -6,6 +6,6 @@ SUR = { # Suriname
 	country_type = colonial
 	tier = principality
 	cultures = { dutch } #afro_caribbean amazonian }
-	religion = protestant
+	religion = reformed
 	capital = STATE_GUAYANA
 }

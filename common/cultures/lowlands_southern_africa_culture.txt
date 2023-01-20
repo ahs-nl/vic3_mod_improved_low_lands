@@ -2,7 +2,7 @@
 	
 	color = hsv{ 0.05 0.80 0.86 }
 	
-	religion = protestant # reformed
+	religion = reformed
 	traits = { beneluxian_culture_group dutchophone european_heritage african_settler }
 	
 	male_common_first_names = {
@@ -129,7 +129,7 @@ griqua = {
 	
 	color = rgb{ 219 66 0 }
 	
-	religion = protestant # reformed
+	religion = reformed
 	traits = { beneluxian_culture_group dutchophone european_heritage african_settler }
 	
 	male_common_first_names = {

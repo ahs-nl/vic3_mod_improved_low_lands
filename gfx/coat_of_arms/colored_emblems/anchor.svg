@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="768mm"
-   height="512mm"
-   viewBox="0 0 768 512"
+   width="768"
+   height="512"
+   viewBox="0 0 203.2 135.46667"
    version="1.1"
    id="SVGRoot"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -27,7 +27,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1467.1429"
+     inkscape:cx="1444.2857"
      inkscape:cy="971.42857"
      inkscape:document-units="mm"
      inkscape:current-layer="SVGRoot"
@@ -54,12 +54,9 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="g14294"
-     transform="matrix(2.0235235,0,0,2.0235235,106.45207,-72.188813)" />
-  <g
      id="Group_246"
      inkscape:label="anker"
-     transform="matrix(1.4628399,0,0,1.266324,117.39742,-23.778409)">
+     transform="matrix(0.30709882,0,0,0.26584359,45.631239,8.9985257)">
     <g
        id="Graphic_272"
        style="display:inline;stroke:none"

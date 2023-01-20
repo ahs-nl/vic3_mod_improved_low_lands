@@ -2,7 +2,7 @@
 	
 	color = hsv{ 0.05 0.65 0.93 }
 	
-	religion = protestant # reformed
+	religion = reformed
 	traits = { beneluxian_culture_group dutchophone european_heritage }
 	
 	male_common_first_names = {
@@ -257,7 +257,7 @@ frisian = {
 	
 	color = hsv{ 0.02 0.65 0.80 }
 	
-	religion = protestant # reformed
+	religion = reformed
 	traits = { beneluxian_culture_group frisophone european_heritage }
 	
 	male_common_first_names = {

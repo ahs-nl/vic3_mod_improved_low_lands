@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="768mm"
-   height="512mm"
-   viewBox="0 0 768 512"
+   width="768"
+   height="512"
+   viewBox="0 0 203.2 135.46667"
    version="1.1"
    id="SVGRoot"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1444.2857"
+     inkscape:cx="1418.5714"
      inkscape:cy="971.42857"
      inkscape:document-units="mm"
      inkscape:current-layer="SVGRoot"
@@ -102,10 +102,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient5567"
        id="linearGradient5569"
-       x1="339.31472"
-       y1="478.62206"
-       x2="372.074"
-       y2="497.53563"
+       x1="339.31473"
+       y1="478.62207"
+       x2="372.07401"
+       y2="497.53564"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
@@ -121,7 +121,8 @@
   </metadata>
   <g
      id="g1205"
-     transform="matrix(5.2645114,0,0,5.2645114,-1491.7049,-2333.3212)">
+     transform="matrix(1.5568809,0,0,1.5568809,-453.1047,-698.01005)"
+     inkscape:label="boerewagen">
     <g
        id="g1207">
       <path
@@ -243,7 +244,7 @@
        stroke="#000000"
        stroke-width="0.5"
        stroke-miterlimit="2.6131"
-       points="311.886,505.83 334.095,517.764 337.068,516.573 315.325,504.811 "
+       points="334.095,517.764 337.068,516.573 315.325,504.811 311.886,505.83 "
        style="fill:#0000b2;fill-opacity:1;stroke:#00004d;stroke-opacity:1" />
     <path
        id="path1243"
@@ -285,7 +286,7 @@
        stroke="#000000"
        stroke-width="0.5"
        stroke-miterlimit="2.6131"
-       points="337.086,494.399 338.362,493.894 329.698,490.071 323.286,492.237 333.224,495.933 "
+       points="329.698,490.071 323.286,492.237 333.224,495.933 337.086,494.399 338.362,493.894 "
        style="fill:#00004d;fill-opacity:1;stroke:#00004d;stroke-opacity:1" />
     <line
        id="line1255"
@@ -426,7 +427,7 @@
        stroke="#000000"
        stroke-width="0.5"
        stroke-miterlimit="2.6131"
-       points="369.919,489.364 371.824,488.839 371.824,482.811 354.753,478.479 354.753,479.708 369.935,484.167 "
+       points="369.935,484.167 369.919,489.364 371.824,488.839 371.824,482.811 354.753,478.479 354.753,479.708 "
        style="display:inline;fill:#00004d;fill-opacity:1;stroke:#00001a;stroke-opacity:1" />
     <path
        id="path1285"
@@ -702,7 +703,7 @@
        stroke="#000000"
        stroke-width="0.5"
        stroke-miterlimit="2.6131"
-       points="352.396,502.403 360.421,500.238 363.352,502.149 362.161,502.574 355.409,504.442 "
+       points="363.352,502.149 362.161,502.574 355.409,504.442 352.396,502.403 360.421,500.238 "
        style="fill:#00004d;fill-opacity:1;stroke:#00001a;stroke-opacity:1" />
     <line
        id="line1349"

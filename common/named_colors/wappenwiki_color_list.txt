@@ -1,15 +1,15 @@
 colors = {
 	
 	# metals
-	wappenwiki_argent		= hsv360 { 0 0 96 }			# argent/silver
-	wappenwiki_or			= hsv360 { 40 67 95 }		# or/goud
+	wappenwiki_argent		= hsv360 { 0 0 96 }			# argent/silver - argent/silver
+	wappenwiki_or			= hsv360 { 40 67 95 }		# or/gold - or/goud
 	
 	# regular tinctures
-	wappenwiki_azuur		= hsv360 { 200 91 58 }		# azuur/blauw
-	wappenwiki_keel			= hsv360 { 0 76 74 }		# keel/rood
-	wappenwiki_sinopel		= hsv360 { 120 58 58 }		# sinopel/groen
-	wappenwiki_sabel		= hsv360 { 0 0 20 }			# sabel/zwart
-	wappenwiki_purper		= hsv360 { 327 60 57 }		# purper/paars
+	wappenwiki_azure		= hsv360 { 200 91 58 }		# azure/blue - azuur/blauw
+	wappenwiki_gules		= hsv360 { 0 76 74 }		# gules/red - keel/rood
+	wappenwiki_vert			= hsv360 { 120 58 58 }		# vert/green - sinopel/groen
+	wappenwiki_sable		= hsv360 { 0 0 20 }			# sable/black - sabel/zwart
+	wappenwiki_purpure		= hsv360 { 327 60 57 }		# purpure/purple - purper/paars
 	
 	# irregular tinctures
 	wappenwiki_bisque		= hsv360 { 40 33 96 }		# bisque

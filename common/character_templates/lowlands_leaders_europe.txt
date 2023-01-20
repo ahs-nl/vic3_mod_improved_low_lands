@@ -6,7 +6,7 @@ NET_thorbecke_character_template = {
 	
 	dna = dna_thorbecke
 	culture = cu:dutch
-	religion = protestant
+	religion = reformed
 	female = no
 	birth_date = 1798.1.14
 	

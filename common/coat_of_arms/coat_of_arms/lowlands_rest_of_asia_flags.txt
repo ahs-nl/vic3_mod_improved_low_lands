@@ -23,18 +23,18 @@ NHL_regular = {
 	color1 = "blue"
 	
 	colored_emblem = {
-		texture = "ce_solid.png"
-		color1 = wappenwiki_keel
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.0625 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.png"
+		texture = "ce_solid.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.1875 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.png"
-		color1 = wappenwiki_azuur
+		texture = "ce_solid.dds"
+		color1 = wappenwiki_azure
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.3125 } }
 	}
 	
@@ -149,7 +149,7 @@ NHL_coa_regular = {
 	
 	colored_emblem = {
 		texture = "ce_southern_cross_australia.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.85 0.85 } position = { 0.70 0.50 } }
 	}
 	
@@ -179,17 +179,17 @@ NHL_full_coa_regular = {
 sub_NHL_coa = {
 	
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
-		color1 = wappenwiki_keel
+		texture = "coa_ribbon_2.dds"
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.70 0.75 } position = { 0.50 0.75 } }
 	}
 	colored_emblem = {
-		texture = "kangaroo.png"
+		texture = "kangaroo.dds"
 		color1 = wappenwiki_brunatre
 		instance = { scale = { 0.70 0.70 } position = { 0.32 0.50 } }
 	}
 	colored_emblem = {
-		texture = "emu.png"
+		texture = "emu.dds"
 		color1 = "grey"
 		color2 = wappenwiki_or
 		color3 = wappenwiki_argent
@@ -199,22 +199,22 @@ sub_NHL_coa = {
 	# dutch crown
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
-		color1 = wappenwiki_sabel
-		color2 = wappenwiki_sabel
-		color3 = wappenwiki_sabel
+		color1 = wappenwiki_sable
+		color2 = wappenwiki_sable
+		color3 = wappenwiki_sable
 		instance = { scale = { 0.42 0.42 } position = { 0.50 0.27 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { scale = { 0.40 0.40 } position = { 0.50 0.27 } }
 	}
 	
 	colored_emblem = { # shield outline
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
 	}
 	colored_emblem = { # shield
@@ -236,7 +236,7 @@ sub_NHL_southern_cross = {
 	
 	colored_emblem = {
 		texture = "ce_southern_cross_australia.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.85 0.85 } position = { 0.50 0.50 } }
 	}
 	

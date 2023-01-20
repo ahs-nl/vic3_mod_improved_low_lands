@@ -18,7 +18,7 @@ DEI_majapahit = {
 	color1 = "red"
 	
 	colored_emblem = {
-		texture = "ce_solid.png"
+		texture = "ce_solid.dds"
 		color1 = "white"
 		instance = { scale = { 1.00 0.111 } position = { 0.50 0.166 } }
 		instance = { scale = { 1.00 0.111 } position = { 0.50 0.388 } }
@@ -125,14 +125,14 @@ DEI_full_coa_regular = {
 sub_DEI_coa = {
 	
 	colored_emblem = {
-		texture = "coa_ribbon.png"
-		color1 = wappenwiki_azuur
+		texture = "coa_ribbon.dds"
+		color1 = wappenwiki_azure
 		instance = { scale = { 0.70 0.50 } position = { 0.50 0.78 } }
 	}
 	colored_emblem = {
-		texture = "lion_supporter.png"
+		texture = "lion_supporter.dds"
 		color1 = wappenwiki_or									# leeuw
-		color2 = wappenwiki_keel								# getongd en geklauwd
+		color2 = wappenwiki_gules								# getongd en geklauwd
 		color3 = wappenwiki_or									# gekroond
 		instance = { scale = { 0.70 0.70 } position = { 0.32 0.52 } }
 		instance = { scale = { -0.70 0.70 } position = { 0.68 0.52 } }
@@ -141,16 +141,16 @@ sub_DEI_coa = {
 	# regular CoA of Batavia is crowned with a wall, but here we'll use a regular dutch crown
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
-		color1 = wappenwiki_sabel
-		color2 = wappenwiki_sabel
-		color3 = wappenwiki_sabel
+		color1 = wappenwiki_sable
+		color2 = wappenwiki_sable
+		color3 = wappenwiki_sable
 		instance = { scale = { 0.42 0.42 } position = { 0.50 0.28 } }
 	}
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_keel								# gepareld keel
-		color3 = wappenwiki_azuur								# georneerd azuur
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
 		instance = { scale = { 0.40 0.40 } position = { 0.50 0.28 } }
 	}
 	
@@ -158,7 +158,7 @@ sub_DEI_coa = {
 	# https://nl.wikipedia.org/wiki/Wapen_van_Batavia
 	colored_emblem = { # shield outline
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.46 0.46 } position = { 0.50 0.52 } }
 	}
 	colored_emblem = { # orange shield
@@ -167,17 +167,17 @@ sub_DEI_coa = {
 		instance = { scale = { 0.44 0.44 } position = { 0.50 0.52 } }
 	}
 	colored_emblem = { # aan weerszijden wapperende linten van zilver
-		texture = "coa_ribbon.png"
+		texture = "coa_ribbon.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.16 0.32 } position = { 0.50 0.61 } }
 	}
 	colored_emblem = { # omkranst door twee lauwertakken van natuurlijke kleur, gekruist en tezamen gebonden
 		texture = "ce_wreath.dds"
-		color1 = wappenwiki_sinopel
+		color1 = wappenwiki_vert
 		instance = { scale = { 0.32 0.16 } position = { 0.50 0.48 } }
 	}
 	colored_emblem = { # sword outline
-		texture = "ce_sword_simple.png"
+		texture = "ce_sword_simple.dds"
 		color1 = hsv360 { 40 67 100 }
 		color2 = hsv360 { 0 0 70 }
 		instance = { scale = { 0.50 0.40 } position = { 0.50 0.53 } }
@@ -189,17 +189,17 @@ sub_DEI_letters_VOC = {
 	
 	colored_emblem = {
 		texture = "ce_letter_v_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
 		texture = "ce_letter_o_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.44 0.43 } position = { 0.43 0.48 } }
 	}
 	colored_emblem = {
 		texture = "ce_letter_c_serif.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.40 0.44 } position = { 0.59 0.46 } }
 	}
 	

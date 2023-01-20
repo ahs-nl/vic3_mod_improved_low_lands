@@ -85,7 +85,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat.dds"
 	}
 }
 
@@ -116,7 +116,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat_navy.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_coat_navy.dds"
 	}
 }
 
@@ -147,7 +147,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_coat_chasseurs.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_coat_chasseurs.dds"
 	}
 }
 
@@ -178,7 +178,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat.dds"
 	}
 }
 
@@ -209,7 +209,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat_navy.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_coat_navy.dds"
 	}
 }
 
@@ -240,7 +240,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat.dds"
 	}
 }
 
@@ -271,7 +271,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat_inversed.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_uniform_coat_inversed.dds"
 	}
 }
 
@@ -304,7 +304,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers.dds"
 	}
 }
 
@@ -335,7 +335,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers_navy.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_trousers_navy.dds"
 	}
 }
 
@@ -366,7 +366,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_trousers_chasseurs.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/lowlands_uniform_trousers_chasseurs.dds"
 	}
 }
 
@@ -397,7 +397,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers.dds"
 	}
 }
 
@@ -428,7 +428,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers_navy.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_uniform_trousers_navy.dds"
 	}
 }
 
@@ -459,7 +459,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_trousers.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_trousers.dds"
 	}
 }
 
@@ -488,7 +488,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_headgear.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_uniform_headgear.dds"
 	}
 }
 
@@ -515,7 +515,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_slouch_hat.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/boer_slouch_hat.dds"
 	}
 }
 
@@ -544,7 +544,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange.dds"
 	}
 }
 
@@ -571,7 +571,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_accented.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_accented.dds"
 	}
 }
 
@@ -598,7 +598,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_blue.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_blue.dds"
 	}
 }
 
@@ -625,7 +625,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_white_blue.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_orange_white_blue.dds"
 	}
 }
 
@@ -652,7 +652,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_lightblue.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/dutch_sash_red_white_lightblue.dds"
 	}
 }
 
@@ -679,7 +679,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_red.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_red.dds"
 	}
 }
 
@@ -706,7 +706,7 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_purple.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_purple.dds"
 	}
 }
 
@@ -733,6 +733,6 @@ variation = {
 	}
 	color_palette = {
 		weight = 1
-		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_black_yellow_red.png"
+		texture = "gfx/portraits/accessory_variations/textures/color_palettes/belgian_sash_black_yellow_red.dds"
 	}
 }

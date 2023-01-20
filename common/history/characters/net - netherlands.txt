@@ -15,7 +15,7 @@
 			#age = 64
 			dna = dna_king_william_01
 			culture = cu:dutch
-			religion = protestant
+			religion = reformed
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = { romantic }
@@ -31,7 +31,7 @@
 			#age = 44
 			dna = dna_king_william_02
 			culture = cu:dutch
-			religion = protestant
+			religion = reformed
 			interest_group = ig_intelligentsia
 			ideology = ideology_reformer
 			traits = { persistent }
@@ -47,7 +47,7 @@
 			#age = 19
 			dna = dna_king_william_03
 			culture = cu:dutch
-			religion = protestant
+			religion = reformed
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = { romantic }
@@ -64,7 +64,7 @@
 			#age = 71
 			dna = dna_general_chasse
 			culture = cu:dutch
-			religion = protestant
+			religion = reformed
 			is_general = yes
 			#is_admiral = yes
 			#hq = region_england
@@ -85,7 +85,7 @@
 		#	birth_date = 1785.5.30
 		#	#age = 51
 		#	culture = cu:dutch
-		#	religion = protestant
+		#	religion = reformed
 		#	is_admiral = yes
 		#	traits = {
 		#		experienced_naval_commander
@@ -101,7 +101,7 @@
 		#	birth_date = 1791.10.5
 		#	#age = 45
 		#	culture = cu:dutch
-		#	religion = protestant
+		#	religion = reformed
 		#	is_general = yes
 		#	traits = {
 		#		bigoted
@@ -118,7 +118,7 @@
 		#	birth_date = 1792.5.30
 		#	#age = 44
 		#	culture = cu:north_german
-		#	religion = protestant
+		#	religion = reformed
 		#	traits = {
 		#		#smart_trait
 		#		#uncommonly_young
@@ -135,7 +135,7 @@
 		#	birth_date = 1792.9.6
 		#	#age = 44
 		#	culture = cu:dutch
-		#	religion = protestant
+		#	religion = reformed
 		#	traits = {
 		#		#mediocre
 		#	   	#military_family

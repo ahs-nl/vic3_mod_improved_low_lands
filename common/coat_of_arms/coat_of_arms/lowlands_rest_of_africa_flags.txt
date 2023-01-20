@@ -12,7 +12,7 @@ DPC_regular = {
 	
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
 	}
 	sub = {
@@ -149,30 +149,30 @@ sub_DPC_coa_holders = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_azuur
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
 	}
 	
 	# two antilopes as supporters with different colours, substituted by default deer image
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
 	}
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
 	}
 	
 	# ribbon with text "ex unitate vires" (text omitted)
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
+		texture = "coa_ribbon_2.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
 	}
@@ -184,7 +184,7 @@ sub_DPC_coa_minimal = {
 	# shield
 	colored_emblem = {
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
 	}
 	colored_emblem = {
@@ -220,7 +220,7 @@ DIC_regular = {
 	
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
 	}
 	sub = {
@@ -357,30 +357,30 @@ sub_DIC_coa_holders = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_azuur
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
 	}
 	
 	# two antilopes as supporters with different colours, substituted by default deer image
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
 	}
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
 	}
 	
 	# ribbon with text "ex unitate vires" (text omitted)
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
+		texture = "coa_ribbon_2.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
 	}
@@ -392,7 +392,7 @@ sub_DIC_coa_minimal = {
 	# shield
 	colored_emblem = {
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
 	}
 	colored_emblem = {
@@ -404,7 +404,7 @@ sub_DIC_coa_minimal = {
 	# quarters
 	colored_emblem = {
 		texture = "ce_elephant_african.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		color2 = wappenwiki_or
 		instance = { scale = { 0.60 0.70 } position = { 0.50 0.50 } }
 	}
@@ -427,7 +427,7 @@ DGC_regular = {
 	
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
 	}
 	sub = {
@@ -564,8 +564,8 @@ sub_DGC_coa_holders = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_azuur
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
 	}
 	
@@ -574,20 +574,20 @@ sub_DGC_coa_holders = {
 		texture = "ce_deer_supporter.dds"
 		color1 = wappenwiki_brunatre
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
 	}
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
 		color1 = wappenwiki_brunatre
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
 	}
 	
 	# ribbon with text "ex unitate vires" (text omitted)
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
+		texture = "coa_ribbon_2.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
 	}
@@ -599,7 +599,7 @@ sub_DGC_coa_minimal = {
 	# shield
 	colored_emblem = {
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
 	}
 	colored_emblem = {
@@ -612,7 +612,7 @@ sub_DGC_coa_minimal = {
 	colored_emblem = {
 		texture = "ce_palm_tree.dds"
 		color1 = wappenwiki_brunatre
-		color2 = wappenwiki_sinopel
+		color2 = wappenwiki_vert
 		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
 	}
 	
@@ -630,11 +630,11 @@ sub_DGC_coa_minimal = {
 DSC_regular = {
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_keel
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
 		texture = "ce_frame_circle.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 0.94 0.94 } position = { 0.50 0.50 } }
 	}
 	sub = {
@@ -771,8 +771,8 @@ sub_DSC_coa_holders = {
 	colored_emblem = {
 		texture = "ce_crown_simple.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_keel
-		color3 = wappenwiki_azuur
+		color2 = wappenwiki_gules
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.35 0.45 } position = { 0.50 0.23 } }
 	}
 	
@@ -781,20 +781,20 @@ sub_DSC_coa_holders = {
 		texture = "ce_deer_supporter.dds"
 		color1 = wappenwiki_brunatre
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { -0.70 0.60 } position = { 0.32 0.45 } }
 	}
 	colored_emblem = {
 		texture = "ce_deer_supporter.dds"
 		color1 = wappenwiki_brunatre
 		color2 = wappenwiki_or
-		color3 = wappenwiki_azuur
+		color3 = wappenwiki_azure
 		instance = { scale = { 0.70 0.60 } position = { 0.68 0.45 } }
 	}
 	
 	# ribbon with text "ex unitate vires" (text omitted)
 	colored_emblem = {
-		texture = "coa_ribbon_2.png"
+		texture = "coa_ribbon_2.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.50 0.70 } position = { 0.50 0.75 } }
 	}
@@ -806,12 +806,12 @@ sub_DSC_coa_minimal = {
 	# shield
 	colored_emblem = {
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_sabel
+		color1 = wappenwiki_sable
 		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }			
 	}
 	colored_emblem = {
 		texture = "ce_shield_heater.dds"
-		color1 = wappenwiki_keel
+		color1 = wappenwiki_gules
 		instance = { scale = { 0.96 0.96 } position = { 0.50 0.50 } }			
 	}
 	

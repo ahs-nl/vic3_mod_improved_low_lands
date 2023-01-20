@@ -3,7 +3,7 @@
 	country_type = colonial
 	tier = principality
 	cultures = { dutch }
-	religion = protestant
+	religion = reformed
 	capital = STATE_NEW_SOUTH_WALES
 }
 
