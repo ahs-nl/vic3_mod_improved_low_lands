@@ -18,7 +18,7 @@ DEI_majapahit = {
 	color1 = "red"
 	
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = "white"
 		instance = { scale = { 1.00 0.111 } position = { 0.50 0.166 } }
 		instance = { scale = { 1.00 0.111 } position = { 0.50 0.388 } }

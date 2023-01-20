@@ -23,17 +23,17 @@ NHL_regular = {
 	color1 = "blue"
 	
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_gules
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.0625 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.1875 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_azure
 		instance = { scale = { 0.40 0.125 } position = { 0.20 0.3125 } }
 	}

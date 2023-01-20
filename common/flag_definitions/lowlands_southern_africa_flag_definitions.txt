@@ -105,22 +105,22 @@ SAF = {
 }
 
 # Volkstaat South Africa (fictional Boer homeland state)
-BOE = {
+VSA = {
 	
 	# base
 	
 	flag_definition = {
-		coa = BOE_regular
-		subject_canton = BOE_regular
+		coa = VSA_regular
+		subject_canton = VSA_regular
 		allow_overlord_canton = yes
-		coa_with_overlord_canton = BOE_subject
+		coa_with_overlord_canton = VSA_subject
 		priority = 1
 	}
 	
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = BOE_subject_GBR
+		coa = VSA_subject_GBR
 		allow_overlord_canton = yes
 		priority = 50
 		trigger = {
@@ -129,7 +129,7 @@ BOE = {
 	}
 	
 	flag_definition = { # NET_statenvlag is normally used
-		coa = BOE_subject_NET_regular
+		coa = VSA_subject_NET_regular
 		allow_overlord_canton = no
 		priority = 50
 		trigger = {
@@ -138,7 +138,7 @@ BOE = {
 	}
 	
 	flag_definition = { # NET_statenvlag is used when NET is [ radical republic, republican dictatorship ]
-		coa = BOE_subject_NET_statenvlag
+		coa = VSA_subject_NET_statenvlag
 		allow_overlord_canton = no
 		priority = 51
 		trigger = {
@@ -151,7 +151,7 @@ BOE = {
 	}
 	
 	flag_definition = { # NET_prinsenvlag is used when NET is [ absolute monarchy, fascism, military junta ]
-		coa = BOE_subject_NET_prinsenvlag
+		coa = VSA_subject_NET_prinsenvlag
 		allow_overlord_canton = no
 		priority = 51
 		trigger = {
@@ -167,7 +167,7 @@ BOE = {
 	# anarchy
 	
 	flag_definition = {
-		coa = BOE_anarchism
+		coa = VSA_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -178,7 +178,7 @@ BOE = {
 	# communism
 	
 	flag_definition = {
-		coa = BOE_communism
+		coa = VSA_communism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -753,12 +753,12 @@ STE = {
 }
 
 # Lijdensrust / Upingtonia
-LYD = {
+LYR = {
 	
 	# base
 	
 	flag_definition = {
-		coa = LYD_regular
+		coa = LYR_regular
 		allow_overlord_canton = no
 		priority = 1
 	}
@@ -766,7 +766,7 @@ LYD = {
 	# anarchy
 	
 	flag_definition = {
-		coa = LYD_anarchism
+		coa = LYR_anarchism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
@@ -777,7 +777,7 @@ LYD = {
 	# communism
 	
 	flag_definition = {
-		coa = LYD_communism
+		coa = LYR_communism
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {

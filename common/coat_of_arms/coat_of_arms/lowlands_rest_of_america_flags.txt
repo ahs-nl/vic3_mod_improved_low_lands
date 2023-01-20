@@ -68,12 +68,12 @@ SUR_modern = {
 	color1 = wappenwiki_vert
 	
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_argent
 		instance = { scale = { 1.00 0.60 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_gules
 		instance = { scale = { 1.00 0.40 } position = { 0.50 0.50 } }
 	}

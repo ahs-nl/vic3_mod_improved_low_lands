@@ -72,12 +72,12 @@ NET_subject = {
 		instance = { scale = { 0.35 0.35 } position = { 0.75 0.275 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_orange
 		instance = { scale = { 0.52 0.54 } position = { 0.75 0.515 } }
 	}	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_gules
 		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
 	}
@@ -192,7 +192,7 @@ NET_dictatorship = {
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
 	}	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_gules
 		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
 	}		
@@ -234,7 +234,7 @@ sub_NET_helper_circle = {
 sub_NET_coa_supporters_dutch_republic_old = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_or									# or
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
@@ -264,7 +264,7 @@ sub_NET_coa_supporters_dutch_republic_old = {
 sub_NET_coa_supporters_dutch_republic_new = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_gules								# keel
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
@@ -294,7 +294,7 @@ sub_NET_coa_supporters_dutch_republic_new = {
 sub_NET_coa_supporters_orange_nassau = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_azure								# azuur
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
@@ -649,7 +649,7 @@ sub_FRI_coa_supporters = {
 		instance = { scale = { 0.90 0.90 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_azure								# azuur
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
@@ -1400,12 +1400,12 @@ BEL_subject = {
 		instance = { scale = { 0.35 0.35 } position = { 0.75 0.27 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_or
 		instance = { scale = { 0.52 0.54 } position = { 0.75 0.515 } }
 	}	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_sable
 		instance = { scale = { 0.47 0.50 } position = { 0.75 0.515 } }
 	}
@@ -1522,13 +1522,13 @@ BEL_communism = {
 	color4 = "yellow"
 	
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { @[1/30] 0.5 } scale = { @[1/15] 1.0 } }
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = color2
 		color2 = color2
 		instance = { position = { 0.1 0.5 } scale = { @[1/15] 1.0 } }
@@ -1608,7 +1608,7 @@ BEL_theocracy = {
 		color2 = wappenwiki_gules
 	}
 	colored_emblem = {
-		texture = "ce_solid.dds"
+		texture = "ce_solid_rectangular.dds"
 		color1 = wappenwiki_or
 		instance = { scale = { 0.55 1.00 } position = { 0.50 0.50 } }
 	}
@@ -1630,7 +1630,7 @@ BEL_theocracy = {
 sub_BEL_coa_supporters = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_sable
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
 	}
@@ -2358,12 +2358,12 @@ LUX_coa_subject = {
 sub_LUX_coa_supporters = {
 	
 	colored_emblem = {
-		texture = "ce_shield_accolade.dds"
+		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_sable								# sabel
 		instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
 	}
 	colored_emblem = {
-		texture = "ce_shield_accolade_5_horizontal_stripes.dds"
+		texture = "ce_shield_accolade_straight_5_horizontal_stripes.dds"
 		color1 = wappenwiki_argent								# argent
 		color2 = wappenwiki_bleuceleste							# bleu celeste
 		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }

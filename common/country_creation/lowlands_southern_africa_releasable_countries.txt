@@ -12,7 +12,7 @@
 	ai_will_do = { always = no }
 }
 
-BOE = { # Boer homeland
+VSA = { # Volkstaat South Africa (fictional Boer homeland state)
 	use_culture_states = yes
 	ai_will_do = { always = no }
 }
@@ -98,7 +98,7 @@ STE = { # Stellaland
 	ai_will_do = { always = no }
 }
 
-LYD = { # Lijdensrust
+LYR = { # Lijdensrust
 	states = {
 		STATE_NAMAQUALAND
 	}
