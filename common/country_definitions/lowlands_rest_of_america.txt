@@ -1,11 +1,15 @@
-﻿# WIN = { # Dutch West Indies
-# }
+﻿DWI = { # Dutch West Indies
+	color = { 243 224 146 }
+	country_type = colonial
+	tier = principality
+	cultures = { dutch } #afro_caribbean amazonian }
+	capital = STATE_ZULIA
+}
 
 SUR = { # Suriname
 	color = { 240 170 75 }
 	country_type = colonial
 	tier = principality
 	cultures = { dutch } #afro_caribbean amazonian }
-	religion = reformed
 	capital = STATE_GUAYANA
 }

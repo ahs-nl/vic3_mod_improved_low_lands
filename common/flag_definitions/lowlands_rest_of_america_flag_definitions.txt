@@ -1,11 +1,23 @@
-﻿# Suriname
+﻿# Dutch West Indies
+DWI = {
+	
+	# base
+	
+	flag_definition = {
+		coa = DWI_regular
+		allow_overlord_canton = no
+		priority = 1
+	}
+	
+}
+
+# Suriname
 SUR = {
 	
 	# base
 	
 	flag_definition = {
 		coa = SUR_regular
-		subject_canton = SUR_regular
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = SUR_subject
 		priority = 1

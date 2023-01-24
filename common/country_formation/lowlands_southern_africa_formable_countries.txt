@@ -10,3 +10,8 @@
 	}
 	ai_will_do = { always = yes }
 }
+
+VSA = { # Volkstaat South Africa (fictional Boer homeland state)
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}

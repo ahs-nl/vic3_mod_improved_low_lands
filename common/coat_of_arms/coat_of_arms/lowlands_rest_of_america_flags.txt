@@ -1,4 +1,37 @@
-﻿# Suriname
+﻿#######################
+# DWI
+# Dutch West Indies
+#######################
+
+# base flags
+
+DWI_regular = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_argent
+	
+	colored_emblem = {
+		texture = "ce_solid_rectangular.dds"
+		color1 = wappenwiki_gules
+		instance = { scale = { 0.25 1.00 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid_rectangular.dds"
+		color1 = wappenwiki_azure
+		instance = { scale = { 1.00 0.30 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_stars_circle_06.dds"
+		color1 = wappenwiki_argent
+		instance = { scale = { 0.30 0.30 } position = { 0.50 0.50 } }
+	}
+	
+}
+
+#######################
+# SUR
+# Suriname
+#######################
 
 # base flags
 

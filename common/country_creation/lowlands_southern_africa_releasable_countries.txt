@@ -38,7 +38,7 @@ NAL = { # Natal
 
 KLE = { # Klein Vrijstaat
 	states = {
-		STATE_NATAL
+		STATE_ZULULAND
 	}
 	possible = {
 		NOT = { has_game_rule = plausible_releasable_nations }
