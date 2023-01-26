@@ -123,6 +123,21 @@ NET_naval_jack_prinsengeus_variant = {
 	
 }
 
+NET_nederland_in_nood = {
+	
+	# https://nl.wikipedia.org/wiki/Geus_(vlag)
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_azure
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = wappenwiki_argent
+		color2 = wappenwiki_gules
+	}
+	
+}
+
 # specific flags
 
 NET_anarchism = {
@@ -179,7 +194,7 @@ NET_fascism = {
 
 NET_dictatorship = {
 	
-	# Inspired by a naval flag with arms of the republic in center
+	# Inspired by the naval flag (NET_naval_jack_prinsengeus_variant) with wreathed arms of the republic in center
 	
 	pattern = "pattern_gironny_12_tricolor.dds"
 	color1 = wappenwiki_orange
@@ -197,7 +212,7 @@ NET_dictatorship = {
 		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
 	}		
 	sub = {
-		parent = "sub_NET_bare_coa_dutch_republic_new" 
+		parent = "sub_NET_coa_minimal_dutch_republic_new" 
 		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
 	}
 	
@@ -1456,7 +1471,7 @@ BEL_austrian_netherlands = {
 	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_vertical.dds"
+		texture = "ce_tricolor_horizontal.dds"
 		color1 = wappenwiki_argent
 		color2 = wappenwiki_or
 	}
@@ -1593,7 +1608,7 @@ BEL_dictatorship = {
 		texture = "coa_brabant.dds"
 		color1 = wappenwiki_or
 		color2 = wappenwiki_gules
-		instance = { scale = { 0.70 0.70 } position = { 0.50 0.52 } }
+		instance = { scale = { 0.65 0.65 } position = { 0.50 0.52 } }
 	}	
 }
 
@@ -2176,11 +2191,11 @@ LUX_regular_with_coa = {
 	}
 	sub = {
 		parent = "sub_LUX_coa_supporters"
-		instance = { scale = { 1.00 1.00 } offset = { 0.50 0.50 } }
+		instance = { scale = { 1.00 1.00 } offset = { 0.00 0.00 } }
 	}
 	sub = {
 		parent = "sub_LUX_coa_minimal"
-		instance = { scale = { 1.00 1.00 } offset = { 0.50 0.50 } }
+		instance = { scale = { 0.75 0.75 } offset = { 0.125 0.20 } }
 	}
 	
 }
@@ -2358,22 +2373,22 @@ LUX_coa_subject = {
 sub_LUX_coa_supporters = {
 	
 	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = wappenwiki_or									# kroon or
+		color2 = wappenwiki_gules								# gepareld keel
+		color3 = wappenwiki_azure								# georneerd azuur
+		instance = { scale = { 0.60 0.60 } position = { 0.50 0.19 } }
+	}
+	colored_emblem = {
 		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_sable								# sabel
-		instance = { position = { 0.50 0.50 } scale = { 0.66 0.66 } }
+		instance = { scale = { 0.75 0.80 } position = { 0.50 0.55 } }
 	}
 	colored_emblem = {
 		texture = "ce_shield_accolade_straight_5_horizontal_stripes.dds"
 		color1 = wappenwiki_argent								# argent
 		color2 = wappenwiki_bleuceleste							# bleu celeste
-		instance = { position = { 0.50 0.50 } scale = { 0.65 0.65 } }
-	}
-	colored_emblem = {
-		texture = "ce_crown_ducal.dds"
-		color1 = wappenwiki_or									# kroon or
-		color2 = wappenwiki_gules								# gepareld keel
-		color3 = wappenwiki_azure								# georneerd azuur
-		instance = { position = { 0.50 0.18 } scale = { 0.50 0.50 } }
+		instance = { scale = { 0.73 0.78 } position = { 0.50 0.55 } }
 	}
 	
 }
@@ -2382,8 +2397,14 @@ sub_LUX_coa_minimal = {
 	
 	colored_emblem = {
 		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
+		color1 = wappenwiki_sable
+		color2 = wappenwiki_sable
+	}
+	colored_emblem = {
+		texture = "coa_brabant.dds"								# color1 = darkblue, color2 = green, color3 = pink
 		color1 = wappenwiki_gules								# leeuw keel, kroon zwaardheft en pijlenpunten or
 		color2 = wappenwiki_or									# getongd en geklauwd or
+		instance = { scale = { 0.98 0.98 } position = { 0.50 0.50 } }
 	}
 	
 }

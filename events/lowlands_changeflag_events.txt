@@ -1,0 +1,120 @@
+﻿namespace = lowlands_changeflag
+
+lowlands_changeflag.1 = {
+	
+	type = country_event
+	placement = ROOT
+	
+	title = lowlands_changeflag.1.title
+	desc = lowlands_changeflag.1.desc
+	flavor = lowlands_changeflag.1.flavor
+	event_image = { video = "gfx/event_pictures/unspecific_signed_contract.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	duration = 3
+	
+	minor_left_icon = ROOT
+	minor_right_icon = ROOT
+	
+	immediate = {
+		if = {
+			limit = {
+				exists = c:NET
+				c:NET = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 15 }
+		}
+		else_if = {
+			limit = {
+				exists = c:BEL
+				c:BEL = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 10 }
+		}
+		else_if = {
+			limit = {
+				exists = c:LUX
+				c:LUX = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 3 }
+		}
+		else_if = {
+			limit = {
+				exists = c:SAF
+				c:SAF = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 7 }
+		}
+		else_if = {
+			limit = {
+				exists = c:ORA
+				c:ORA = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 6 }
+		}
+		else_if = {
+			limit = {
+				exists = c:TRN
+				c:TRN = { is_player = yes }
+			}
+			save_scope_value_as = { name = max_flag_definitions value = 6 }
+		}
+		else = {
+			save_scope_value_as = { name = max_flag_definitions value = 1 }
+		}
+	}
+	
+	option = {
+		name = lowlands_changeflag.1.opt.1
+		remove_variable = lowlands_flagchanged
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = lowlands_changeflag.1.opt.2
+		if = {
+			# if variable is not yet set, set it and start at 1
+			limit = { NOT = { has_variable = lowlands_flagchanged } }
+			set_variable = { name = lowlands_flagchanged value = 1 }
+		}
+		else_if = {
+			# we have N overriding flag_defitinions set as max, so we loop back to 1 after reaching N
+			# N is country-specific and defined in scope:max_flag_definitions in the 'immediate' section
+			limit = { var:lowlands_flagchanged >= scope:max_flag_definitions }
+			set_variable = { name = lowlands_flagchanged value = 1 }
+		}
+		else = {
+			# if variable is set and not yet reached the max, just add one to our variable
+			change_variable = { name = lowlands_flagchanged add = 1 }
+		}
+		trigger_event = { id = lowlands_changeflag.1 days = 0 popup = yes }
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = lowlands_changeflag.1.opt.3
+		if = {
+			# if variable is not yet set, set it and start at N
+			# N is country-specific and defined in scope:max_flag_definitions in the 'immediate' section
+			limit = { NOT = { has_variable = lowlands_flagchanged } }
+			set_variable = { name = lowlands_flagchanged value = scope:max_flag_definitions }
+		}
+		else_if = {
+			# we have N overriding flag_defitinions set as max, so we loop back to N after reaching 1
+			# N is country-specific and defined in scope:max_flag_definitions in the 'immediate' section
+			limit = { var:lowlands_flagchanged <= 1 }
+			set_variable = { name = lowlands_flagchanged value = scope:max_flag_definitions }
+		}
+		else = {
+			# if variable is set and not yet reached the max, just subtract one from our variable
+			change_variable = { name = lowlands_flagchanged add = -1 }
+		}
+		trigger_event = { id = lowlands_changeflag.1 days = 0 popup = yes }
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = lowlands_changeflag.1.opt.4
+		default_option = yes
+	}
+	
+}

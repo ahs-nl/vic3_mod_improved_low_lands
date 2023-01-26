@@ -102,6 +102,51 @@ SAF = {
 		}
 	}
 	
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = SAF_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = SAF_modern
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = SAF_anarchism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
+	flag_definition = {
+		coa = SAF_communism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 4 } }
+	}
+	flag_definition = {
+		coa = SAF_fascism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 5 } }
+	}
+	flag_definition = {
+		coa = SAF_coa
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 6 } }
+	}
+	flag_definition = {
+		coa = VSA_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 7 } }
+	}
+	
 }
 
 # Volkstaat South Africa (fictional Boer homeland state)
@@ -522,6 +567,45 @@ ORA = {
 		}
 	}
 	
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = ORA_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = ORA_burgersvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = ORA_voortrekkersvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
+	flag_definition = {
+		coa = ORA_anarchism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 4 } }
+	}
+	flag_definition = {
+		coa = ORA_communism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 5 } }
+	}
+	flag_definition = {
+		coa = sub_ORA_coa_full
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 6 } }
+	}
+	
 }
 
 # Transvaal
@@ -617,6 +701,45 @@ TRN = {
 		trigger = {
 			lowlands_coa_has_communism = yes
 		}
+	}
+	
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = TRN_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = TRN_burgersvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = TRN_voortrekkersvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
+	flag_definition = {
+		coa = TRN_anarchism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 4 } }
+	}
+	flag_definition = {
+		coa = TRN_communism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 5 } }
+	}
+	flag_definition = {
+		coa = sub_TRN_coa_full
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 6 } }
 	}
 	
 }

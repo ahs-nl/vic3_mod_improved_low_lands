@@ -1,0 +1,11 @@
+﻿l_english:
+ lowlands_changeflag_decision:0 "Change [GetPlayer.GetAdjectiveNoFormatting] Flag"
+ lowlands_changeflag_decision_desc:0 "Override the flag of your country"
+ lowlands_changeflag_decision_tooltip:0 "Override the flag of your country"
+ lowlands_changeflag.1.title:0 "Change [GetPlayer.GetAdjectiveNoFormatting] Flag"
+ lowlands_changeflag.1.desc:0 "Override the flag of your country"
+ lowlands_changeflag.1.flavor:0 "You can use this menu to override [GetPlayer.GetNameNoFlag]'s flag for flavour (currently [GetPlayer.GetFlagTextIcon]).\n\nYou can loop through the available flags by clicking the #P Next flag#! and #P Previous flag#! buttons, or reset back to default game behaviour by clicking the #P Stop overriding#! button. To exit this menu, please click #P Exit#!..."
+ lowlands_changeflag.1.opt.1:0 "Stop overriding"
+ lowlands_changeflag.1.opt.2:0 "Next flag"
+ lowlands_changeflag.1.opt.3:0 "Previous flag"
+ lowlands_changeflag.1.opt.4:0 "Exit..."

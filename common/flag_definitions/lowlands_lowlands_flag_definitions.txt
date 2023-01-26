@@ -92,7 +92,100 @@ NET = {
 			lowlands_coa_has_military_junta = yes
 		}
 	}
-		
+	
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = NET_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = NET_statenvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = NET_prinsenvlag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
+	flag_definition = {
+		coa = NET_naval_jack_geusje
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 4 } }
+	}
+	flag_definition = {
+		coa = NET_naval_jack_prinsengeus
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 5 } }
+	}
+	flag_definition = {
+		coa = NET_naval_jack_prinsengeus_variant
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 6 } }
+	}
+	flag_definition = {
+		coa = NET_nederland_in_nood
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 7 } }
+	}
+	flag_definition = {
+		coa = NET_anarchism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 8 } }
+	}
+	flag_definition = {
+		coa = NET_communism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 9 } }
+	}
+	flag_definition = {
+		coa = NET_fascism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 10 } }
+	}
+	flag_definition = {
+		coa = NET_dictatorship
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 11 } }
+	}
+	flag_definition = {
+		coa = NET_theocracy
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 12 } }
+	}
+	flag_definition = {
+		coa = NET_coa_dutch_republic_old
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 13 } }
+	}
+	flag_definition = {
+		coa = NET_coa_dutch_republic_new
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 14 } }
+	}
+	flag_definition = {
+		coa = NET_coa_orange_nassau
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 15 } }
+	}
+	
 }
 
 # Friesland
@@ -128,8 +221,8 @@ HLN = {
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
 			}
 		}
 	}
@@ -140,9 +233,9 @@ HLN = {
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
-			coa_overlord_has_republic = yes
-			coa_overlord_has_radical_republic = no
-			coa_overlord_has_republican_dictatorship = no
+			lowlands_coa_overlord_has_republic = yes
+			lowlands_coa_overlord_has_radical_republic = no
+			lowlands_coa_overlord_has_republican_dictatorship = no
 		}
 	}
 	
@@ -187,7 +280,7 @@ HLN = {
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
-			coa_LIM_overlord = yes
+			coa_BEL_overlord = yes
 		}
 	}
 	
@@ -252,9 +345,10 @@ LIM = {
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
-			coa_overlord_has_republic = yes
-			coa_overlord_has_radical_republic = no
-			coa_overlord_has_republican_dictatorship = no
+			OR = {
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
+			}
 		}
 	}
 	
@@ -264,10 +358,9 @@ LIM = {
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
-			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
-			}
+			lowlands_coa_overlord_has_republic = yes
+			lowlands_coa_overlord_has_radical_republic = no
+			lowlands_coa_overlord_has_republican_dictatorship = no
 		}
 	}
 	
@@ -431,6 +524,69 @@ BEL = {
 		}
 	}
 	
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = BEL_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = BEL_brabant_revolution
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = BEL_revolution
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
+	flag_definition = {
+		coa = BEL_austrian_netherlands
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 4 } }
+	}
+	flag_definition = {
+		coa = BEL_anarchism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 5 } }
+	}
+	flag_definition = {
+		coa = BEL_communism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 6 } }
+	}
+	flag_definition = {
+		coa = BEL_fascism
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 7 } }
+	}
+	flag_definition = {
+		coa = BEL_dictatorship
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 8 } }
+	}
+	flag_definition = {
+		coa = BEL_theocracy
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 9 } }
+	}
+	flag_definition = {
+		coa = BEL_coa
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 10 } }
+	}
+	
 }
 
 # Flanders
@@ -464,157 +620,99 @@ FLA = {
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = FLA_subject_NET_orange_nassau_on_flag
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_monarchy = yes
-		}
-	}
-	
-	flag_definition = {
-		coa = FLA_subject_NET_dutch_republic_old
-		allow_overlord_canton = no
-		priority = 10
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_republic = yes
-			coa_overlord_has_radical_republic = no
-			coa_overlord_has_republican_dictatorship = no
-		}
-	}
-	
-	flag_definition = {
-		coa = FLA_subject_NET_dutch_republic_new
+		coa = FLA_coa_subject_NET_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
 			}
 		}
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_FRI
+		coa = FLA_coa_subject_NET_dutch_republic_new
+		allow_overlord_canton = no
+		priority = 10
+		trigger = {
+			coa_NET_overlord = yes
+			lowlands_coa_overlord_has_republic = yes
+			lowlands_coa_overlord_has_radical_republic = no
+			lowlands_coa_overlord_has_republican_dictatorship = no
+		}
+	}
+	
+	flag_definition = {
+		coa = FLA_coa_subject_NET_orange_nassau
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = FLA_coa_subject_FRI
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_FRI_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_HLN
+		coa = FLA_coa_subject_HLN
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_HLN_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_BRB
+		coa = FLA_coa_subject_BRB
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_BRB_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_LIM
+		coa = FLA_coa_subject_LIM
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_LIM_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
-	#flag_definition = {
-	#	coa = FLA_subject_BEL
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_BEL_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
-	#
-	#flag_definition = {
-	#	coa = FLA_subject_FLA
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_FLA_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
-		
 	flag_definition = {
-		coa = FLA_subject_WLL
+		coa = FLA_coa_subject_BEL
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_BEL_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = FLA_coa_subject_WLL
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_WLL_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = FLA_subject_LUX
+		coa = FLA_coa_subject_LUX
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_LUX_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
@@ -642,162 +740,103 @@ WLL = {
 			lowlands_coa_has_republic = yes
 		}
 	}
-
 	
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = WLL_subject_NET_orange_nassau_on_flag
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_monarchy = yes
-		}
-	}
-	
-	flag_definition = {
-		coa = WLL_subject_NET_dutch_republic_old
-		allow_overlord_canton = no
-		priority = 10
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_republic = yes
-			coa_overlord_has_radical_republic = no
-			coa_overlord_has_republican_dictatorship = no
-		}
-	}
-	
-	flag_definition = {
-		coa = WLL_subject_NET_dutch_republic_new
+		coa = WLL_coa_subject_NET_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
 			}
 		}
 	}
 	
 	flag_definition = {
-		coa = WLL_subject_FRI
+		coa = WLL_coa_subject_NET_dutch_republic_new
+		allow_overlord_canton = no
+		priority = 10
+		trigger = {
+			coa_NET_overlord = yes
+			lowlands_coa_overlord_has_republic = yes
+			lowlands_coa_overlord_has_radical_republic = no
+			lowlands_coa_overlord_has_republican_dictatorship = no
+		}
+	}
+	
+	flag_definition = {
+		coa = WLL_coa_subject_NET_orange_nassau
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = WLL_coa_subject_FRI
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_FRI_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = WLL_subject_HLN
+		coa = WLL_coa_subject_HLN
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_HLN_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = WLL_subject_LIM
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_LIM_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
-		}
-	}
-	
-	flag_definition = {
-		coa = WLL_subject_BRB
+		coa = WLL_coa_subject_BRB
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_BRB_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
-	#flag_definition = {
-	#	coa = WLL_subject_BEL
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_BEL_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
+	flag_definition = {
+		coa = WLL_coa_subject_LIM
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_LIM_overlord = yes
+		}
+	}
 	
 	flag_definition = {
-		coa = WLL_subject_FLA
+		coa = WLL_coa_subject_BEL
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_BEL_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = WLL_coa_subject_FLA
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_FLA_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
-	#flag_definition = {
-	#	coa = WLL_subject_WLL
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_WLL_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
-	
 	flag_definition = {
-		coa = WLL_subject_LUX
+		coa = WLL_coa_subject_LUX
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_LUX_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
@@ -810,191 +849,137 @@ LUX = {
 	
 	flag_definition = {
 		coa = LUX_regular
-		subject_canton = LUX_regular
-		allow_overlord_canton = yes
+		allow_overlord_canton = no
 		priority = 1
 	}
 	
 	flag_definition = {
 		coa = LUX_coa
-		subject_canton = LUX_coa
-		allow_overlord_canton = yes
+		allow_overlord_canton = no
 		priority = 2
 		trigger = {
-			lowlands_coa_has_monarchy = yes
-		}
-	}
-	
-	flag_definition = {
-		coa = LUX_full_coa
-		subject_canton = LUX_full_coa
-		allow_overlord_canton = no
-		priority = 3
-		trigger = {
-			OR = {
-				lowlands_coa_has_absolute_monarchy = yes
-				lowlands_coa_has_republican_dictatorship = yes
-				lowlands_coa_has_military_junta = yes
-				lowlands_coa_has_fascism = yes
-			}
+			lowlands_coa_has_absolute_monarchy = yes
 		}
 	}
 	
 	# custom overlord cantons
 	
 	flag_definition = {
-		coa = LUX_subject_NET_orange_nassau_on_flag
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_monarchy = yes
-		}
-	}
-	
-	flag_definition = {
-		coa = LUX_subject_NET_dutch_republic_old
-		allow_overlord_canton = no
-		priority = 10
-		trigger = {
-			coa_NET_overlord = yes
-			coa_overlord_has_republic = yes
-			coa_overlord_has_radical_republic = no
-			coa_overlord_has_republican_dictatorship = no
-		}
-	}
-	
-	flag_definition = {
-		coa = LUX_subject_NET_dutch_republic_new
+		coa = LUX_coa_subject_NET_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 10
 		trigger = {
 			coa_NET_overlord = yes
 			OR = {
-				coa_overlord_has_radical_republic = yes
-				coa_overlord_has_republican_dictatorship = yes
+				lowlands_coa_overlord_has_radical_republic = yes
+				lowlands_coa_overlord_has_republican_dictatorship = yes
 			}
 		}
 	}
 	
 	flag_definition = {
-		coa = LUX_subject_FRI
+		coa = LUX_coa_subject_NET_dutch_republic_new
+		allow_overlord_canton = no
+		priority = 10
+		trigger = {
+			coa_NET_overlord = yes
+			lowlands_coa_overlord_has_republic = yes
+			lowlands_coa_overlord_has_radical_republic = no
+			lowlands_coa_overlord_has_republican_dictatorship = no
+		}
+	}
+	
+	flag_definition = {
+		coa = LUX_coa_subject_NET_orange_nassau
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_NET_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = LUX_coa_subject_FRI
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_FRI_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = LUX_subject_HLN
+		coa = LUX_coa_subject_HLN
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_HLN_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
 	flag_definition = {
-		coa = LUX_subject_LIM
-		allow_overlord_canton = no
-		priority = 5
-		trigger = {
-			coa_LIM_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
-		}
-	}
-	
-	flag_definition = {
-		coa = LUX_subject_BRB
+		coa = LUX_coa_subject_BRB
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_BRB_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
-	#flag_definition = {
-	#	coa = LUX_subject_BEL
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_BEL_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
+	flag_definition = {
+		coa = LUX_coa_subject_LIM
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_LIM_overlord = yes
+		}
+	}
 	
 	flag_definition = {
-		coa = LUX_subject_FLA
+		coa = LUX_coa_subject_BEL
+		allow_overlord_canton = no
+		priority = 5
+		trigger = {
+			coa_BEL_overlord = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = LUX_coa_subject_FLA
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_FLA_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 		
 	flag_definition = {
-		coa = LUX_subject_WLL
+		coa = LUX_coa_subject_WLL
 		allow_overlord_canton = no
 		priority = 5
 		trigger = {
 			coa_WLL_overlord = yes
-			OR = {
-				coa_overlord_has_monarchy = yes
-				coa_overlord_has_republican_dictatorship = yes
-				coa_overlord_has_military_junta = yes
-				coa_overlord_has_fascism = yes
-			}
 		}
 	}
 	
-	#flag_definition = {
-	#	coa = LUX_subject_LUX
-	#	allow_overlord_canton = no
-	#	priority = 5
-	#	trigger = {
-	#		coa_LUX_overlord = yes
-	#		OR = {
-	#			coa_overlord_has_monarchy = yes
-	#			coa_overlord_has_republican_dictatorship = yes
-	#			coa_overlord_has_military_junta = yes
-	#			coa_overlord_has_fascism = yes
-	#		}
-	#	}
-	#}
+	# custom decision/events-based overrides
+	
+	flag_definition = {
+		coa = LUX_regular
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 1 } }
+	}
+	flag_definition = {
+		coa = LUX_civil_flag
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 2 } }
+	}
+	flag_definition = {
+		coa = LUX_regular_with_coa
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 3 } }
+	}
 	
 }

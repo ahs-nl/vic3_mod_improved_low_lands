@@ -1,0 +1,44 @@
+﻿lowlands_changeflag_decision = {
+	
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:NET
+				c:NET = { is_player = yes }
+			}
+			AND = {
+				exists = c:BEL
+				c:BEL = { is_player = yes }
+			}
+			AND = {
+				exists = c:LUX
+				c:LUX = { is_player = yes }
+			}
+			AND = {
+				exists = c:SAF
+				c:SAF = { is_player = yes }
+			}
+			AND = {
+				exists = c:ORA
+				c:ORA = { is_player = yes }
+			}
+			AND = {
+				exists = c:TRN
+				c:TRN = { is_player = yes }
+			}
+		}
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = lowlands_changeflag.1
+			days = 0
+			popup = yes
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+	
+}

@@ -40,7 +40,7 @@ KLE = { # Klein Vrijstaat
 }
 
 ORA = { # Orange Free State
-	color = { 224 139 47 }
+	color = { 224 109 47 }
 	country_type = colonial
 	tier = principality
 	cultures = { boer }
