@@ -244,6 +244,24 @@ lowlands_coa_overlord_has_egalitarianism = {
 	scope:overlord = { lowlands_coa_egalitarianism_trigger = yes }
 }
 
+# catholic
+lowlands_coa_is_catholic = {
+	exists = scope:actor
+	scope:actor = { rel:catholic = { is_state_religion = scope:actor } }
+}
+
+# protestant
+lowlands_coa_is_protestant = {
+	exists = scope:actor
+	scope:actor = { rel:protestant = { is_state_religion = scope:actor } }
+}
+
+# reformed
+lowlands_coa_is_reformed = {
+	exists = scope:actor
+	scope:actor = { rel:reformed = { is_state_religion = scope:actor } }
+}
+
 # check if a given scoped country equals this country's overlord
 lowlands_coa_is_overlord_trigger = {
 	NOT = { has_game_rule = no_subject_flags }

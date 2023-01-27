@@ -205,12 +205,12 @@ NET_dictatorship = {
 		texture = "ce_wreath.dds"
 		color1 = "green"
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }
-	}	
+	}
 	colored_emblem = {
 		texture = "ce_shield_accolade_straight.dds"
 		color1 = wappenwiki_gules
 		instance = { scale = { 0.60 0.60 } position = { 0.50 0.50 } }
-	}		
+	}
 	sub = {
 		parent = "sub_NET_coa_minimal_dutch_republic_new" 
 		instance = { scale = { 0.50 0.50 } offset = { 0.25 0.25 } }
@@ -218,20 +218,50 @@ NET_dictatorship = {
 	
 }
 
-NET_theocracy = {
+NET_theocracy_catholic = {
+	
+	# flag of Sticht Utrecht and current archdiocese Utrecht
+	# https://nl.wikipedia.org/wiki/Wapen_van_het_aartsbisdom_Utrecht
+	
+	pattern = "pattern_cross.dds"
+	color1 = wappenwiki_gules
+	color2 = wappenwiki_argent
+	
+}
+
+NET_theocracy_protestant = {
+	
+	# fantasy flag based on catholic diocese Groningen-Leeuwarden
+	# no standardized evangelical/lutheran heraldry or vexicology exists, chose catholic diocese Groningen-Leeuwarden as a clear differentiator and because of historical strength of lutheranism in the north-east
+	
+	pattern = "pattern_cross.dds"
+	color1 = wappenwiki_vert
+	color2 = wappenwiki_or
+	
+}
+
+NET_theocracy_reformed = {
+	
+	# fantasy flag based on catholic diocese Haarlem-Amsterdam
+	# it's fantasy because reformed tends to lack proper heraldry or vexicology, chose catholic diocese Haarlem-Amsterdam as a clear differentiator and because of concentration on Holland
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_gules
+	color1 = wappenwiki_argent
 	
 	colored_emblem = {
-		texture = "ce_tricolor_upperlowersixths_horizontal.dds"
-		color1 = wappenwiki_argent
-		color2 = wappenwiki_azure
+		texture = "ce_cross_england.dds"
+		color1 = wappenwiki_gules
+		instance = { scale = { 1.80 1.80 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "protestant_cross.dds"
-		color1 = wappenwiki_sable
-		instance = { scale = { 0.55 0.55 } position = { 0.50 0.50 } }
+		texture = "ce_cross_england.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 1.40 1.40 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = wappenwiki_gules
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
 	}
 	
 }
@@ -1597,45 +1627,71 @@ BEL_dictatorship = {
 		color1 = wappenwiki_or
 		color2 = wappenwiki_gules
 		color3 = wappenwiki_sable
-	}		
+	}
 	colored_emblem = {
 		texture = "ce_shield_accolade_02.dds"
 		color1 = wappenwiki_sable
 		color2 = wappenwiki_sable
 		instance = { scale = { 0.80 0.80 } position = { 0.50 0.50 } }		
-	}		
+	}
 	colored_emblem = {
 		texture = "coa_brabant.dds"
 		color1 = wappenwiki_or
 		color2 = wappenwiki_gules
 		instance = { scale = { 0.65 0.65 } position = { 0.50 0.52 } }
-	}	
+	}
+	
 }
 
-BEL_theocracy = {
+BEL_theocracy_catholic = {
+	
+	# chosen coat-of-arms of City of Brussels, as part of the coat-of-arms of the catholic archdiocese of Mechelen-Brussels
+	# https://en.wikipedia.org/wiki/City_of_Brussels
+	# the historical coat-of-arms of the archdiocese is the same as Scotland, but this is confusing so avoided using this
 	
 	pattern = "pattern_solid.tga"
-	color1 = wappenwiki_sable
+	color1 = wappenwiki_gules
 	
 	colored_emblem = {
-		texture = "ce_tricolor_vertical.dds"
+		texture = "st_michael_slaying_devil.dds"
 		color1 = wappenwiki_or
-		color2 = wappenwiki_gules
+		color2 = wappenwiki_sable
+		instance = { scale = { 1.20 1.20 } position = { 0.50 0.50 } }
 	}
+	
+}
+
+BEL_theocracy_protestant = {
+	
+	# fantasy flag based on or/sable being brabant/belgian colours
+	
+	pattern = "pattern_cross.dds"
+	color1 = wappenwiki_or
+	color2 = wappenwiki_sable
+	
+}
+
+BEL_theocracy_reformed = {
+	
+	# fantasy flag based on gules/or/sable as belgian colours
+	
+	pattern = "pattern_solid.tga"
+	color1 = wappenwiki_or
+	
 	colored_emblem = {
-		texture = "ce_solid_rectangular.dds"
-		color1 = wappenwiki_or
-		instance = { scale = { 0.55 1.00 } position = { 0.50 0.50 } }
-	}
-	colored_emblem = {
-		texture = "protestant_cross.dds"
+		texture = "ce_cross_england.dds"
 		color1 = wappenwiki_gules
-		instance = { scale = { 0.75 0.75 } position = { 0.50 0.50 } }
+		instance = { scale = { 1.80 1.80 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "protestant_cross.dds"
+		texture = "ce_cross_england.dds"
+		color1 = wappenwiki_or
+		instance = { scale = { 1.40 1.40 } position = { 0.50 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
 		color1 = wappenwiki_sable
-		instance = { scale = { 0.70 0.70 } position = { 0.50 0.50 } }
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
 	}
 	
 }

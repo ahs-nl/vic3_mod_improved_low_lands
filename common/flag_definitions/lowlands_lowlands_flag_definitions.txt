@@ -75,11 +75,30 @@ NET = {
 	
 	# theocracy
 	flag_definition = {
-		coa = NET_theocracy
+		coa = NET_theocracy_catholic
 		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
 			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_catholic = yes
+		}
+	}
+	flag_definition = {
+		coa = NET_theocracy_protestant
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_protestant = yes
+		}
+	}
+	flag_definition = {
+		coa = NET_theocracy_reformed
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_reformed = yes
 		}
 	}
 	
@@ -515,15 +534,33 @@ BEL = {
 	
 	# theocracy
 	flag_definition = {
-		coa = BEL_theocracy
-		allow_overlord_canton = yes
-		coa_with_overlord_canton = BEL_subject
+		coa = BEL_theocracy_catholic
+		allow_overlord_canton = no
 		priority = 1000
 		trigger = {
 			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_catholic = yes
 		}
 	}
-	
+	flag_definition = {
+		coa = BEL_theocracy_protestant
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_protestant = yes
+		}
+	}
+	flag_definition = {
+		coa = BEL_theocracy_reformed
+		allow_overlord_canton = no
+		priority = 1000
+		trigger = {
+			lowlands_coa_has_theocracy = yes
+			lowlands_coa_is_reformed = yes
+		}
+	}
+		
 	# custom decision/events-based overrides
 	
 	flag_definition = {
