@@ -24,14 +24,14 @@ lowlands_changeflag.1 = {
 				exists = c:NET
 				c:NET = { is_player = yes }
 			}
-			save_scope_value_as = { name = max_flag_definitions value = 15 }
+			save_scope_value_as = { name = max_flag_definitions value = 17 }
 		}
 		else_if = {
 			limit = {
 				exists = c:BEL
 				c:BEL = { is_player = yes }
 			}
-			save_scope_value_as = { name = max_flag_definitions value = 10 }
+			save_scope_value_as = { name = max_flag_definitions value = 12 }
 		}
 		else_if = {
 			limit = {

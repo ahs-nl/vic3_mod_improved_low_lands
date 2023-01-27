@@ -181,28 +181,40 @@ NET = {
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 11 } }
 	}
 	flag_definition = {
-		coa = NET_theocracy
+		coa = NET_theocracy_catholic
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 12 } }
 	}
 	flag_definition = {
-		coa = NET_coa_dutch_republic_old
+		coa = NET_theocracy_protestant
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 13 } }
 	}
 	flag_definition = {
-		coa = NET_coa_dutch_republic_new
+		coa = NET_theocracy_reformed
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 14 } }
 	}
 	flag_definition = {
-		coa = NET_coa_orange_nassau
+		coa = NET_coa_dutch_republic_old
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 15 } }
+	}
+	flag_definition = {
+		coa = NET_coa_dutch_republic_new
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 16 } }
+	}
+	flag_definition = {
+		coa = NET_coa_orange_nassau
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 17 } }
 	}
 	
 }
@@ -612,16 +624,28 @@ BEL = {
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 8 } }
 	}
 	flag_definition = {
-		coa = BEL_theocracy
+		coa = BEL_theocracy_catholic
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 9 } }
 	}
 	flag_definition = {
-		coa = BEL_coa
+		coa = BEL_theocracy_protestant
 		allow_overlord_canton = no
 		priority = 9999
 		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 10 } }
+	}
+	flag_definition = {
+		coa = BEL_theocracy_reformed
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 11 } }
+	}
+	flag_definition = {
+		coa = BEL_coa
+		allow_overlord_canton = no
+		priority = 9999
+		trigger = { scope:actor = { has_variable = lowlands_flagchanged var:lowlands_flagchanged = 12 } }
 	}
 	
 }
